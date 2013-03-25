@@ -52,6 +52,12 @@ $(function(){
 	// 	}
 	// });
 
+	$('.dot').popover({trigger: 'hover'})
+
+	$('.dot').hover(function(){
+		$(this).children('.mapMarkGlow').hide();
+	});
+
 });
 
 

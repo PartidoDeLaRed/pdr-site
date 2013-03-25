@@ -107,7 +107,7 @@ header.site-header
 	text-align: center;
 	font-family: "brandon-grotesque";
 	font-size: 12px;
-	padding: 26px 50px 18px 50px;
+	padding: 18px 50px 10px 50px;
 	position: fixed;
 	left: 0;
 	right: 0;
@@ -117,7 +117,7 @@ header.site-header
 	letter-spacing: 2px;
 	h1 
 		font-size: 12px;
-		line-height: 18px;
+		line-height: 34px;
 		display: inline-block;
 		margin: 0;
 		padding: 0;
@@ -128,17 +128,25 @@ header.site-header
 		font-weight: bold;
 		line-height: 12px;
 		color: black;
-	nav
+	nav.navbar
 		display: inline-block;
-
-		ul 
+		padding: 0;
+		margin: 0;
+		ul.nav
 			margin: 0;
+			padding: 0;
 			li 
 				float: left;
 				margin: 0;
 				a 
 					margin: 0 20px;
 					color: #999;
+					background: none;
+					box-shadow: none;
+
+					&:hover
+						background: none;
+						box-shadow: none;
 				&.active
 					a 
 						color: #333;
@@ -334,10 +342,13 @@ section.section
 
 			.dot
 				position: absolute;
+				width: 60px;
+				height: 60px;
+				display: block;
 
 				&.dot-problematicas
-					top: 94px;
-					left: 160px;
+					top: 74px;
+					left: 266px;
 
 				&.dot-write
 					bottom: 180px;
@@ -345,12 +356,12 @@ section.section
 
 
 				&.dot-profile
-					top: 94px;
+					top: 74px;
 					right: 70px;
 
 
 				&.dot-problematica
-					top: 208px;
+					top: 190px;
 					left: 60px;
 
 
@@ -363,10 +374,21 @@ section.section
 					bottom: 180px;
 					right: 60px;
 
+
+			.popover
+				margin-top: 20px;
+			.popover-title
+				background: white;
+				text-transform: uppercase;
+				font-size: 11px;
+				letter-spacing: 2px;
+
+
+
 			.mapMarkShape
 				position: absolute;
-				top: 5px;
-				left: 5px;
+				top: 24px;
+				left: 24px;
 				width: 10px;
 				height: 10px;
 				-webkit-border-radius: 20px;
@@ -379,8 +401,8 @@ section.section
 
 			.mapMarkGlow
 				position: absolute;
-				top: -10px;
-				left: -10px;
+				top: 9px;
+				left: 9px;
 				width: 30px;
 				height: 30px;	
 				-webkit-border-radius: 20px;
