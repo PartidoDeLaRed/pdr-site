@@ -412,8 +412,8 @@ section.section.how-contribute {
   background-color: #2cabed;
 }
 section.section.argentina {
-  background: #e2e9eb;
-  background-size: 124%;
+  background: #e2e9eb url("../images/bg-argentina.jpg");
+  background-size: 110%;
   min-height: 400px;
 }
 section.section.argentina .argentina-content {
@@ -434,6 +434,7 @@ section.section.argentina .argentina-content .what-we-need {
   float: left;
   font-size: 22px;
   line-height: 34px;
+  color: #000;
 }
 section.section.argentina .argentina-content .what-we-need .btn.btn-white {
   padding: 4px 20px;
