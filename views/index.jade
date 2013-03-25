@@ -1,0 +1,305 @@
+!!! 5
+html(lang='en')
+	head
+		meta(charset='utf-8')
+		title Partido De La Red
+		meta(name='description', content='')
+		meta(name='author', content='')
+
+		meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+
+		link(rel='stylesheet', href='stylesheets/base.css')
+		link(rel='stylesheet', href='stylesheets/layout.css')
+		//if lt IE 9
+			script(src='http://html5shim.googlecode.com/svn/trunk/html5.js')
+
+		link(rel='shortcut icon', href='images/favicon.ico')
+		link(rel='apple-touch-icon', href='images/apple-touch-icon.png')
+		link(rel='apple-touch-icon', sizes='72x72', href='images/apple-touch-icon-72x72.png')
+		link(rel='apple-touch-icon', sizes='114x114', href='images/apple-touch-icon-114x114.png')
+		
+		script(type='text/javascript', src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js')
+		// script(type='text/javascript', src='https://github.com/protonet/jquery.inview/raw/master/jquery.inview.min.js')
+		// script(type='text/javascript', src='javascripts/vendor/scroll-parallax/jquery.scrollParallax.min.js')
+		script(type="text/javascript", src="//raw.github.com/flesler/jquery.scrollTo/master/jquery.scrollTo.min.js")
+		script(type="text/javascript", src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/js/bootstrap.min.js")
+
+		script(type="text/javascript", src="javascripts/site.js")
+
+
+		script(type='text/javascript', src='//use.typekit.net/nzi0bpe.js')
+		script(type='text/javascript')
+			try{Typekit.load();}catch(e){}
+	body(data-spy="scroll", data-target=".navbar", data-offset="120")
+		header.site-header
+			h1
+				a(href='#splash', title='Partido De La Red') Partido De La Red
+			.social
+				a(target="_blank", href='http://facebook.com/partidodelared', title='').facebook Facebook
+				a(target="_blank", href='http://twitter.com/partidodelared', title='').twitter Twitter
+			nav.navbar
+				ul.nav
+					li.hide.active
+						a(href='#splash', title='') Manifiesto
+					li
+						a(href='#manifiesto', title='') Manifiesto
+					li
+						a(href='#democracia', title='') Democracia En Red
+					li 
+						a(href='#argentina', title='') Argentina
+					li
+						a(href='#quienes-somos', title='') Quienes Somos
+					li
+						a(href='#colaborar', title='') Colaborar
+
+		section.splash.section#splash
+			.section-title
+				.section-content
+					p
+						img(src="images/logo.png")
+					h1 Somos la Red
+					p.description
+						| Abriendo el ancho de banda de la democracia y pensando en red
+					a.btn.btn2.btn-kickstarter(href='#colaborar', title='Colabora en Kickstarter')
+						| Colabora con el partido
+					a.btn.btn2(href='#manifiesto', title='Mira nuestros videos') Mira nuestros videos
+			
+			a(href="#manifiesto").arrow-down
+
+
+		section.videos-section.section#manifiesto
+			.section-title
+				h2 Trabajando en red
+				p.description
+					| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin semper metus a nunc rutrum viverra eget vitae nulla. Sed et eros eu nulla consectetur .
+			.videos
+				.video.santi
+					i
+					span #Software
+				.video.gonzalo
+					i
+					span #Educacion
+				.video.pia
+					i
+					span #Acceso
+				.video.ricardo
+					i
+					span #Transparencia
+				.left
+					.video
+						i
+						span #Libertad
+					.video
+						i
+						span #ReglasClaras
+				.center
+					.video.video-large
+						i
+						span #PartidoDeLaRed
+					.video
+						i
+						span #Participacion
+					.video
+						i
+						span #Software
+				.right
+					.video
+						i
+						span #Software
+					.video
+						i
+						span #Software
+				.video
+					i
+					span #Software
+				.video
+					i
+					span #Software
+		
+		section.democracy-network.section#democracia
+			.section-title
+				h2 Democracia en red
+				p.description
+					| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin semper metus a nunc rutrum viverra eget vitae nulla. Sed et eros eu nulla consectetur .
+
+			.browser
+				a(href="").dot-problematicas.dot
+					span.mapMarkGlow
+					span.mapMarkShape
+
+				a(href="").dot-write.dot
+					span.mapMarkGlow
+					span.mapMarkShape
+
+				a(href="").dot-profile.dot
+					span.mapMarkGlow
+					span.mapMarkShape
+
+				a(href="").dot-problematica.dot
+					span.mapMarkGlow
+					span.mapMarkShape
+
+				a(href="").dot-propuestas.dot
+					span.mapMarkGlow
+					span.mapMarkShape
+
+				a(href="").dot-delegar.dot
+					span.mapMarkGlow
+					span.mapMarkShape
+
+
+
+		section.argentina.section#argentina
+			.section-title
+				h2 Argentina
+		
+			.argentina-content.clearfix
+				.video-manu
+					i 
+
+				.what-we-need
+					p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin semper metus a nunc rutrum viverra eget vitae nulla. 
+					p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin semper metus a nunc rutrum viverra eget vitae nulla. 
+
+					a(href="").btn.btn-white Enviar datos
+					a(href="").btn.btn-white Preguntas Frecuentes
+
+		section.who-we-are.section.clearfix#quienes-somos
+			.section-title
+				h2 Quienes Somos
+				.clearfix
+					p.description.left
+						| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin semper metus a nunc rutrum viverra eget vitae nulla. Sed et eros eu nulla consectetur .Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin semper metus a nunc rutrum viverra eget vitae nulla. Sed et eros eu nulla consectetur .
+					p.description.right
+						| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin semper metus a nunc rutrum viverra eget vitae nulla. Sed et eros eu nulla consectetur .Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin semper metus a nunc rutrum viverra eget vitae nulla. Sed et eros eu nulla consectetur .
+		
+			.members.clearfix
+				a(href="http://twitter.com/santisiri") 
+					img(src="https://twimg0-a.akamaihd.net/profile_images/2629670468/7f2398abb6bb598c5c1c13250ae91982.png")	
+
+				a(href="https://twimg0-a.akamaihd.net/profile_images/2929777312/f7b77beb1804d76922be519c8be8eb17.jpeghttp://twitter.com/santisiri") 
+					img(src="https://twimg0-a.akamaihd.net/profile_images/2929777312/f7b77beb1804d76922be519c8be8eb17.jpeg")	
+				a(href="http://twitter.com/santisiri") 
+					img(src="https://twimg0-a.akamaihd.net/profile_images/2583335118/yts2np89ifncbi0j3vgm.jpeg")	
+				a(href="http://twitter.com/santisiri") 
+					img(src="https://twimg0-a.akamaihd.net/profile_images/2717903918/2e9acfade7ce4cbf10fa7d5250a9a72f_bigger.jpeg")	
+				a(href="http://twitter.com/santisiri") 
+					img(src="https://twimg0-a.akamaihd.net/profile_images/1226574726/Gonza-banio_2_bigger.jpg")	
+				a(href="http://twitter.com/santisiri") 
+					img(src="https://twimg0-a.akamaihd.net/profile_images/36276062/Ajo2006_041_-_solo_bigger.jpg")	
+				a(href="http://twitter.com/santisiri") 
+					img(src="https://twimg0-a.akamaihd.net/profile_images/3221976131/86115731e151ec2a203627652f86147b_bigger.jpeg")	
+
+
+				a(href="http://twitter.com/santisiri") 
+					img(src="https://twimg0-a.akamaihd.net/profile_images/2629670468/7f2398abb6bb598c5c1c13250ae91982.png")	
+
+				a(href="https://twimg0-a.akamaihd.net/profile_images/2929777312/f7b77beb1804d76922be519c8be8eb17.jpeghttp://twitter.com/santisiri") 
+					img(src="https://twimg0-a.akamaihd.net/profile_images/2929777312/f7b77beb1804d76922be519c8be8eb17.jpeg")	
+				a(href="http://twitter.com/santisiri") 
+					img(src="https://twimg0-a.akamaihd.net/profile_images/2583335118/yts2np89ifncbi0j3vgm.jpeg")	
+				a(href="http://twitter.com/santisiri") 
+					img(src="https://twimg0-a.akamaihd.net/profile_images/2717903918/2e9acfade7ce4cbf10fa7d5250a9a72f_bigger.jpeg")	
+				a(href="http://twitter.com/santisiri") 
+					img(src="https://twimg0-a.akamaihd.net/profile_images/1226574726/Gonza-banio_2_bigger.jpg")	
+				a(href="http://twitter.com/santisiri") 
+					img(src="https://twimg0-a.akamaihd.net/profile_images/36276062/Ajo2006_041_-_solo_bigger.jpg")	
+				a(href="http://twitter.com/santisiri") 
+					img(src="https://twimg0-a.akamaihd.net/profile_images/3221976131/86115731e151ec2a203627652f86147b_bigger.jpeg")	
+
+
+				a(href="http://twitter.com/santisiri") 
+					img(src="https://twimg0-a.akamaihd.net/profile_images/2629670468/7f2398abb6bb598c5c1c13250ae91982.png")	
+
+				a(href="https://twimg0-a.akamaihd.net/profile_images/2929777312/f7b77beb1804d76922be519c8be8eb17.jpeghttp://twitter.com/santisiri") 
+					img(src="https://twimg0-a.akamaihd.net/profile_images/2929777312/f7b77beb1804d76922be519c8be8eb17.jpeg")	
+				a(href="http://twitter.com/santisiri") 
+					img(src="https://twimg0-a.akamaihd.net/profile_images/2583335118/yts2np89ifncbi0j3vgm.jpeg")	
+				a(href="http://twitter.com/santisiri") 
+					img(src="https://twimg0-a.akamaihd.net/profile_images/2717903918/2e9acfade7ce4cbf10fa7d5250a9a72f_bigger.jpeg")	
+				a(href="http://twitter.com/santisiri") 
+					img(src="https://twimg0-a.akamaihd.net/profile_images/1226574726/Gonza-banio_2_bigger.jpg")	
+				a(href="http://twitter.com/santisiri") 
+					img(src="https://twimg0-a.akamaihd.net/profile_images/36276062/Ajo2006_041_-_solo_bigger.jpg")	
+				a(href="http://twitter.com/santisiri") 
+					img(src="https://twimg0-a.akamaihd.net/profile_images/3221976131/86115731e151ec2a203627652f86147b_bigger.jpeg")	
+
+
+				a(href="http://twitter.com/santisiri") 
+					img(src="https://twimg0-a.akamaihd.net/profile_images/2629670468/7f2398abb6bb598c5c1c13250ae91982.png")	
+
+				a(href="https://twimg0-a.akamaihd.net/profile_images/2929777312/f7b77beb1804d76922be519c8be8eb17.jpeghttp://twitter.com/santisiri") 
+					img(src="https://twimg0-a.akamaihd.net/profile_images/2929777312/f7b77beb1804d76922be519c8be8eb17.jpeg")	
+				a(href="http://twitter.com/santisiri") 
+					img(src="https://twimg0-a.akamaihd.net/profile_images/2583335118/yts2np89ifncbi0j3vgm.jpeg")	
+				a(href="http://twitter.com/santisiri") 
+					img(src="https://twimg0-a.akamaihd.net/profile_images/2717903918/2e9acfade7ce4cbf10fa7d5250a9a72f_bigger.jpeg")	
+				a(href="http://twitter.com/santisiri") 
+					img(src="https://twimg0-a.akamaihd.net/profile_images/1226574726/Gonza-banio_2_bigger.jpg")	
+				a(href="http://twitter.com/santisiri") 
+					img(src="https://twimg0-a.akamaihd.net/profile_images/36276062/Ajo2006_041_-_solo_bigger.jpg")	
+				a(href="http://twitter.com/santisiri") 
+					img(src="https://twimg0-a.akamaihd.net/profile_images/3221976131/86115731e151ec2a203627652f86147b_bigger.jpeg")	
+
+
+				a(href="http://twitter.com/santisiri") 
+					img(src="https://twimg0-a.akamaihd.net/profile_images/36276062/Ajo2006_041_-_solo_bigger.jpg")	
+				a(href="http://twitter.com/santisiri") 
+					img(src="https://twimg0-a.akamaihd.net/profile_images/3221976131/86115731e151ec2a203627652f86147b_bigger.jpeg")	
+
+
+			.join-the-team
+				p Si te interesa participar del equipo del Partido De La Red 
+					a(href="").btn Ingresa con tu cuenta de Twitter
+
+		section.how-to-join.section.clearfix#colaborar
+
+			.colaborate-box
+				.section-title
+					h2 ¿Como puedo colaborar?
+					p.description
+						| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin semper metus a nunc rutrum viverra eget vitae nulla. Sed et eros eu nulla consectetur.
+			
+				a(href="").help-link.help-money
+					i 
+					| Dona dinero en 
+					span Kickstarter
+
+
+				a(href="").help-link.ideame
+					i 
+					| Dona dinero en 
+					span Ideame
+
+				a(href="").help-link.help-sign
+					i
+					| Firma el petitorio
+
+
+				hr
+				p
+					| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin semper metus a nunc rutrum viverra eget vitae nulla. Sed et eros eu nulla consectetur.
+
+
+		footer
+			nav
+				ul.nav
+					li.hide.active
+						a(href='#splash', title='') Manifiesto
+					li
+						a(href='#manifiesto', title='') Manifiesto
+					li
+						a(href='#democracia', title='') Democracia En Red
+					li 
+						a(href='#argentina', title='') Argentina
+					li
+						a(href='#quienes-somos', title='') Quienes Somos
+					li
+						a(href='#colaborar', title='') Colaborar
+			
+			.last-line © 2013 Partido De La Red — Buenos Aires, Argentina
+
+
+
+
+

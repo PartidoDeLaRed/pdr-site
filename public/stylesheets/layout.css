@@ -1,0 +1,646 @@
+/*
+* Skeleton V1.2
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 6/20/2012
+*/
+/* Table of Content
+==================================================
+#Site Styles
+#Page Styles
+#Media Queries
+#Font-Face */
+/* #Site Styles
+================================================== */
+/* #Clearing
+================================================== */
+/* Self Clearing Goodness */
+.container:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+/* Use clearfix class on parent to clear nested columns,
+or wrap each row of columns in a <div class="row"> */
+.clearfix:before,
+.clearfix:after,
+.row:before,
+.row:after {
+  content: '\0020';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+.row:after,
+.clearfix:after {
+  clear: both;
+}
+.row,
+.clearfix {
+  zoom: 1;
+}
+/* You can also use a <br class="clear" /> to clear columns */
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+body {
+  font-family: "ff-tisa-web-pro";
+  background: #012140 url("../images/bg-splash.jpg") left bottom fixed;
+  background-size: cover;
+}
+a:visited {
+  color: inherit;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.btn {
+  font-family: "brandon-grotesque";
+  font-weight: bold;
+}
+.hide {
+  display: none;
+}
+.btn {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
+  background: #97d842;
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 3px;
+  text-decoration: none;
+  color: #333;
+  box-shadow: 0 -2px 2px rgba(0,0,0,0.2) inset;
+}
+.btn.btn-white {
+  background: #fff;
+  box-shadow: none;
+}
+.btn.btn2 {
+  border: 2px solid #fff;
+  background: rgba(0,0,0,0.7);
+  text-shadow: none;
+  color: #fff;
+}
+.btn.btn2 span {
+  color: #97d842;
+}
+.btn.btn2:hover {
+  background-color: #000;
+  border-color: #3f90ba;
+  color: #3f90ba;
+}
+header.site-header {
+  text-align: center;
+  font-family: "brandon-grotesque";
+  font-size: 12px;
+  padding: 26px 50px 18px 50px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 10000;
+  background: rgba(255,255,255,0.96);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+header.site-header h1 {
+  font-size: 12px;
+  line-height: 18px;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  left: 50px;
+}
+header.site-header a {
+  text-decoration: none;
+  font-weight: bold;
+  line-height: 12px;
+  color: #000;
+}
+header.site-header nav {
+  display: inline-block;
+}
+header.site-header nav ul {
+  margin: 0;
+}
+header.site-header nav ul li {
+  float: left;
+  margin: 0;
+}
+header.site-header nav ul li a {
+  margin: 0 20px;
+  color: #999;
+}
+header.site-header nav ul li.active a {
+  color: #333;
+}
+header.site-header .social {
+  position: fixed;
+  right: 50px;
+  top: 24px;
+}
+header.site-header .social a {
+  width: 24px;
+  height: 20px;
+  display: block;
+  text-indent: -1000em;
+  float: left;
+  margin-left: 20px;
+}
+header.site-header .social .twitter {
+  background: url("../images/icon-twitter.png") center no-repeat;
+}
+header.site-header .social .facebook {
+  background: url("../images/icon-facebook.png") center no-repeat;
+}
+section.section {
+  padding: 100px 50px;
+  background: #fff;
+}
+section.section .section-title {
+  text-align: center;
+  width: 600px;
+  margin: auto auto 80px auto;
+}
+section.section .section-title h2 {
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 900;
+  padding-bottom: 0;
+  line-height: 28px;
+  margin-bottom: 30px;
+  display: inline-block;
+  letter-spacing: 5px;
+}
+section.section .section-title .description {
+  font-size: 16px;
+  line-height: 34px;
+}
+section.section .section-title .btn {
+  color: #333;
+}
+section.section.splash {
+  text-align: center;
+  color: #fff;
+  height: 800px;
+  overflow: hidden;
+  background: transparent;
+  padding: 0;
+  position: relative;
+  position: relative;
+}
+section.section.splash img {
+  height: 96px;
+}
+section.section.splash .section-title {
+  background: rgba(0,0,0,0.8);
+  width: 580px;
+  margin: auto;
+  padding: 40px;
+  margin-top: 140px;
+}
+section.section.splash .section-title .section-content {
+  opacity: 0;
+  animation: fadeIn ease-in 1;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+}
+section.section.splash .section-title h1 {
+  color: #fff;
+  font-weight: 900;
+  font-size: 40px;
+  text-transform: uppercase;
+  display: inline-block;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+section.section.splash .section-title .description {
+  margin-bottom: 30px;
+  font-size: 20px;
+  padding: 10px;
+}
+section.section.splash .section-title .description a {
+  color: #f9f9f9;
+  margin: 0 10px;
+}
+section.section.splash .section-title .description a.current {
+  color: #fff;
+}
+section.section.splash .section-title .btn {
+  margin-bottom: 20px;
+  color: rgba(0,0,0,0.9);
+  margin: 0 14px;
+}
+section.section.splash .section-title .btn.btn-kickstarter {
+  border-color: #97d842;
+}
+section.section.splash .section-title .btn.btn2 {
+  color: #fff;
+}
+section.section.splash .arrow-down {
+  width: 30px;
+  height: 36px;
+  background: #edede4 url("../images/icon-arrow-down.png") no-repeat center;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  margin: auto;
+  left: 48%;
+  width: 4%;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+section.section.splash .arrow-down:hover {
+  opacity: 0.9;
+}
+section.section.videos-section {
+  overflow: hidden;
+  background: #edede4 url("../images/bg-network.png") repeat-x fixed;
+}
+section.section.videos-section .videos {
+  width: 1080px;
+  margin: auto;
+}
+section.section.videos-section .videos .left {
+  float: left;
+  width: 268px;
+}
+section.section.videos-section .videos .video {
+  width: 248px;
+  height: 150px;
+  margin: 0 20px 20px 0;
+  background: #000;
+  display: inline-block;
+  float: left;
+  background: url("../images/video-santi.png");
+  position: relative;
+}
+section.section.videos-section .videos .video span {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: #fff;
+}
+section.section.videos-section .videos .video i {
+  display: none;
+  background: rgba(0,0,0,0.6) url("../images/icon-play.png") center no-repeat;
+  background-size: 20%;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+section.section.videos-section .videos .video:hover i {
+  display: block;
+}
+section.section.videos-section .videos .video.santi {
+  background: url("../images/video-santi.png");
+}
+section.section.videos-section .videos .video.pia {
+  background: url("../images/video-santi.png");
+}
+section.section.videos-section .videos .video.ricardo {
+  background: url("../images/video-ricardo.png");
+}
+section.section.videos-section .videos .video.gonzalo {
+  background: url("../images/video-gonzalo.png");
+}
+section.section.videos-section .videos .video.video-large {
+  background: url("../images/video-manu.png");
+  width: 516px;
+  height: 320px;
+}
+section.section.democracy-network {
+  background: #fff url("../images/bg-icons.png") center 480px repeat-x;
+}
+section.section.democracy-network .section-title {
+  margin-bottom: 40px;
+}
+section.section.democracy-network .section-title .btn {
+  margin-top: 20px;
+}
+section.section.democracy-network .browser {
+  position: relative;
+  overflow: visible;
+  background: #fff url("../images/browser.png") center no-repeat;
+  width: 800px;
+  height: 600px;
+  margin: auto;
+  margin-top: 0px;
+}
+section.section.democracy-network .browser .dot {
+  position: absolute;
+}
+section.section.democracy-network .browser .dot.dot-problematicas {
+  top: 94px;
+  left: 160px;
+}
+section.section.democracy-network .browser .dot.dot-write {
+  bottom: 180px;
+  right: 60px;
+}
+section.section.democracy-network .browser .dot.dot-profile {
+  top: 94px;
+  right: 70px;
+}
+section.section.democracy-network .browser .dot.dot-problematica {
+  top: 208px;
+  left: 60px;
+}
+section.section.democracy-network .browser .dot.dot-propuestas {
+  bottom: 150px;
+  left: 60px;
+}
+section.section.democracy-network .browser .dot.dot-delegar {
+  bottom: 180px;
+  right: 60px;
+}
+section.section.democracy-network .browser .mapMarkShape {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 0 2px #fff;
+/* background: #ee2200 -webkit-gradient(radial, 5 3, 0, 5 5, 5, from(rgba(255,255,255,.3)), to(rgba(255,255,255,0)));			 */
+  background: #ff2400;
+}
+section.section.democracy-network .browser .mapMarkGlow {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 30px;
+  height: 30px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  border: 5px solid #f00;
+  opacity: 0;
+  -webkit-animation-name: 'blip';
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+}
+section.section.democracy-network .browser .mapMark.visited .mapMarkShape {
+  background-color: #936760;
+}
+section.section.democracy-network .browser .mapMark.visited .mapMarkGlow {
+  -webkit-animation-name: 'blip2';
+  border-color: transparent;
+}
+section.section.how-contribute {
+  background-color: #2cabed;
+}
+section.section.argentina {
+  background: #e2e9eb;
+  background-size: 124%;
+  min-height: 400px;
+}
+section.section.argentina .argentina-content {
+  width: 90%;
+  margin: auto;
+}
+section.section.argentina .argentina-content .video-manu {
+  width: 48%;
+  height: 290px;
+  background: #000;
+  float: left;
+  margin-right: 4%;
+  background: rgba(0,0,0,0.6) url("../images/icon-play.png") center no-repeat;
+  background-size: 20%;
+}
+section.section.argentina .argentina-content .what-we-need {
+  width: 48%;
+  float: left;
+  font-size: 22px;
+  line-height: 34px;
+}
+section.section.argentina .argentina-content .what-we-need .btn.btn-white {
+  padding: 4px 20px;
+  margin-right: 20px;
+}
+section.section.who-we-are {
+  background: #fff;
+  padding: 100px 0 50px 0;
+}
+section.section.who-we-are .section-title {
+  padding: 0 50px;
+  margin-bottom: 40px;
+  width: auto;
+}
+section.section.who-we-are .section-title h2 {
+  margin-bottom: 50px;
+}
+section.section.who-we-are .description {
+  width: 48%;
+  float: left;
+  text-align: left;
+}
+section.section.who-we-are .description.left {
+  margin-right: 4%;
+}
+section.section.who-we-are .members a {
+  width: 10%;
+  float: left;
+  display: block;
+  opacity: 0.8;
+}
+section.section.who-we-are .members a:hover {
+  opacity: 1;
+}
+section.section.who-we-are .members a img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+section.section.who-we-are .join-the-team {
+  text-align: center;
+  font-size: 20px;
+  padding: 20px;
+}
+section.section.who-we-are .join-the-team .btn {
+  display: inline-block;
+  background-color: #2cabed;
+  color: #fff;
+  margin-top: 80px;
+  margin-left: 20px;
+  line-height: 20px;
+}
+section.section.how-to-join {
+  background: #f1f1f1 url("../images/bg-congress-2.jpg");
+  background-size: cover;
+}
+section.section.how-to-join .colaborate-box {
+  padding: 20px;
+}
+section.section.how-to-join .colaborate-box .help-link {
+  margin-bottom: 20px;
+  width: 26%;
+  display: block;
+  float: left;
+  text-align: center;
+  background: #333;
+  margin: 0 2% 20px 2%;
+  padding: 2%;
+  color: #fff;
+  text-decoration: none;
+  font-family: "brandon-grotesque";
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 11px;
+  border-radius: 3px;
+  background: #222 url("../images/logo-kickstarter.png") center 56px no-repeat;
+}
+section.section.how-to-join .colaborate-box .help-link.ideame {
+  background: #fff url("../images/logo-ideame.png") center 40px no-repeat;
+  color: #333;
+}
+section.section.how-to-join .colaborate-box .help-link.help-sign {
+  margin-right: 0;
+  background: #d6765f url("../images/icon-sign.png") center 30px no-repeat;
+}
+section.section.how-to-join .colaborate-box .help-link i {
+  width: 100px;
+  height: 100px;
+  display: block;
+}
+section.section.how-to-join p {
+  font-size: 16px;
+  line-height: 34px;
+  text-align: center;
+}
+footer {
+  font-family: "brandon-grotesque";
+  background: #272723;
+  text-align: center;
+  color: #cacac2;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 11px;
+  letter-spacing: 3px;
+}
+footer nav {
+  padding: 60px;
+}
+footer nav ul {
+  margin: 0;
+}
+footer nav li {
+  display: inline-block;
+  margin: 0;
+}
+footer nav a {
+  display: inline-block;
+  color: #cacac2;
+  text-decoration: none;
+  margin: 0 30px;
+}
+footer nav a:hover {
+  color: #fff;
+}
+footer .last-line {
+  border-top: 1px solid #33332d;
+  padding: 20px;
+  color: #cacac2;
+}
+/* #Page Styles
+================================================== */
+/* #Media Queries
+================================================== */
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {
+}
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+}
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+}
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+}
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+}
+/* #Font-Face
+================================================== */
+/* 	This is the proper syntax for an @font-face file
+		Just create a "fonts" folder at the root,
+		copy your FontName into code below and remove
+		comment brackets */
+/*	@font-face {
+	    font-family: 'FontName';
+	    src: url('../fonts/FontName.eot');
+	    src: url('../fonts/FontName.eot?iefix') format('eot'),
+	         url('../fonts/FontName.woff') format('woff'),
+	         url('../fonts/FontName.ttf') format('truetype'),
+	         url('../fonts/FontName.svg#webfontZam02nTh') format('svg');
+	    font-weight: normal;
+	    font-style: normal; }
+*/
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
