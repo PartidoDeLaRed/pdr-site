@@ -58,6 +58,19 @@ $(function(){
 		$(this).children('.mapMarkGlow').hide();
 	});
 
+
+	$('.members a').popover({trigger: 'hover'})
+
+	$('.popover-ajax').each(function(index){
+
+    var el=$(this);
+
+    $.get(el.attr('data-load'),function(d){
+        el.popover({content: d});       
+    });     
+
+});
+
 });
 
 

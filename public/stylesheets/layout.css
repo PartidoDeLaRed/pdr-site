@@ -72,6 +72,15 @@ h6,
   font-family: "brandon-grotesque";
   font-weight: bold;
 }
+.popover {
+  border-radius: 0;
+}
+.popover .popover-title {
+  background: #fff;
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 2px;
+}
 .hide {
   display: none;
 }
@@ -86,6 +95,8 @@ h6,
   text-decoration: none;
   color: #333;
   box-shadow: 0 -2px 2px rgba(0,0,0,0.2) inset;
+  border: 0;
+  text-shadow: none;
 }
 .btn.btn-white {
   background: #fff;
@@ -109,7 +120,7 @@ header.site-header {
   text-align: center;
   font-family: "brandon-grotesque";
   font-size: 12px;
-  padding: 18px 50px 10px 50px;
+  padding: 28px 50px 20px 50px;
   position: fixed;
   left: 0;
   right: 0;
@@ -120,7 +131,7 @@ header.site-header {
 }
 header.site-header h1 {
   font-size: 12px;
-  line-height: 34px;
+  line-height: 12px;
   display: inline-block;
   margin: 0;
   padding: 0;
@@ -145,12 +156,15 @@ header.site-header nav.navbar ul.nav {
 header.site-header nav.navbar ul.nav li {
   float: left;
   margin: 0;
+  padding: 0;
 }
 header.site-header nav.navbar ul.nav li a {
   margin: 0 20px;
+  padding: 0;
   color: #999;
   background: none;
   box-shadow: none;
+  text-shadow: none;
 }
 header.site-header nav.navbar ul.nav li a:hover {
   background: none;
@@ -365,12 +379,12 @@ section.section.democracy-network .browser .dot.dot-problematicas {
   left: 266px;
 }
 section.section.democracy-network .browser .dot.dot-write {
-  bottom: 180px;
-  right: 60px;
+  top: 74px;
+  right: 190px;
 }
 section.section.democracy-network .browser .dot.dot-profile {
   top: 74px;
-  right: 70px;
+  right: 66px;
 }
 section.section.democracy-network .browser .dot.dot-problematica {
   top: 190px;
@@ -381,17 +395,14 @@ section.section.democracy-network .browser .dot.dot-propuestas {
   left: 60px;
 }
 section.section.democracy-network .browser .dot.dot-delegar {
-  bottom: 180px;
-  right: 60px;
+  bottom: 140px;
+  right: 40px;
 }
 section.section.democracy-network .browser .popover {
-  margin-top: 20px;
+  margin-top: 18px;
 }
-section.section.democracy-network .browser .popover-title {
-  background: #fff;
-  text-transform: uppercase;
-  font-size: 11px;
-  letter-spacing: 2px;
+section.section.democracy-network .browser .popover p {
+  margin-bottom: 10px;
 }
 section.section.democracy-network .browser .mapMarkShape {
   position: absolute;
@@ -458,7 +469,7 @@ section.section.argentina .argentina-content .what-we-need {
   color: #000;
 }
 section.section.argentina .argentina-content .what-we-need .btn.btn-white {
-  padding: 4px 20px;
+  padding: 10px 20px;
   margin-right: 20px;
 }
 section.section.who-we-are {
@@ -499,14 +510,15 @@ section.section.who-we-are .join-the-team {
   text-align: center;
   font-size: 20px;
   padding: 20px;
+  margin-top: 80px;
 }
 section.section.who-we-are .join-the-team .btn {
   display: inline-block;
   background-color: #2cabed;
   color: #fff;
-  margin-top: 80px;
   margin-left: 20px;
   line-height: 20px;
+  margin-top: -4px;
 }
 section.section.how-to-join {
   background: #f1f1f1 url("../images/bg-congress-2.jpg");
