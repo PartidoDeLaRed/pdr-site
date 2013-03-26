@@ -198,7 +198,7 @@ section.section {
 }
 section.section .section-title {
   text-align: center;
-  width: 600px;
+  width: 640px;
   margin: auto auto 80px auto;
 }
 section.section .section-title h2 {
@@ -207,13 +207,14 @@ section.section .section-title h2 {
   font-weight: 900;
   padding-bottom: 0;
   line-height: 28px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   display: inline-block;
   letter-spacing: 5px;
 }
 section.section .section-title .description {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 34px;
+  margin-top: 20px;
 }
 section.section .section-title .btn {
   color: #333;
@@ -375,11 +376,11 @@ section.section.democracy-network .browser .dot {
   display: block;
 }
 section.section.democracy-network .browser .dot.dot-problematicas {
-  top: 74px;
-  left: 266px;
+  top: 75px;
+  left: 116px;
 }
 section.section.democracy-network .browser .dot.dot-write {
-  top: 74px;
+  top: 75px;
   right: 190px;
 }
 section.section.democracy-network .browser .dot.dot-profile {
@@ -387,16 +388,16 @@ section.section.democracy-network .browser .dot.dot-profile {
   right: 66px;
 }
 section.section.democracy-network .browser .dot.dot-problematica {
-  top: 190px;
-  left: 60px;
+  top: 163px;
+  left: 24px;
 }
 section.section.democracy-network .browser .dot.dot-propuestas {
-  bottom: 150px;
-  left: 60px;
+  bottom: 138px;
+  left: 18px;
 }
 section.section.democracy-network .browser .dot.dot-delegar {
-  bottom: 140px;
-  right: 40px;
+  bottom: 138px;
+  right: 270px;
 }
 section.section.democracy-network .browser .popover {
   margin-top: 18px;
@@ -564,6 +565,9 @@ section.section.how-to-join p {
   line-height: 34px;
   text-align: center;
 }
+section.section.how-to-join p:last-child {
+  margin-bottom: 0;
+}
 footer {
   font-family: "brandon-grotesque";
   background: #272723;
@@ -577,21 +581,24 @@ footer {
 footer nav {
   padding: 60px;
 }
-footer nav ul {
+footer nav ul.nav {
   margin: 0;
 }
-footer nav li {
+footer nav ul.nav li {
   display: inline-block;
   margin: 0;
+  padding: 0;
 }
-footer nav a {
+footer nav ul.nav li a {
   display: inline-block;
   color: #cacac2;
+  padding: 0;
   text-decoration: none;
-  margin: 0 30px;
+  margin: 0 20px;
 }
-footer nav a:hover {
+footer nav ul.nav li a:hover {
   color: #fff;
+  background: none;
 }
 footer .last-line {
   border-top: 1px solid #33332d;
