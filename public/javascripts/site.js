@@ -19,7 +19,7 @@ $(function(){
 
 	$('.videos-section .modal').bind('hide', function () {
 		var iframe = $(this).children('div.modal-body').find('iframe');
-		var src = iframe.attr('src').split("?rel=0&autoplay=1");
+		var src = iframe.attr('src').replace("?rel=0&autoplay=1", '');
 		// alert($(this).children('div.modal-body').html());
 		iframe.attr('src', '');
 		iframe.attr('src', src);
