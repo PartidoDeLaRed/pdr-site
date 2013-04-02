@@ -328,6 +328,7 @@ section.section.videos-section {
 }
 section.section.videos-section .modal {
   width: 590px;
+  background: #fff;
 }
 section.section.videos-section .videos {
   width: 1080px;
