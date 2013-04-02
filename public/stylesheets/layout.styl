@@ -218,7 +218,7 @@ section.section
 		padding: 0;
 		position: relative;
 		img 
-			height: 96px;
+			height: 60px;
 		.section-title
 			background: rgba(0,0,0,.8);
 			width: 580px;
@@ -239,12 +239,12 @@ section.section
 				text-transform: uppercase;
 				display: inline-block;
 				letter-spacing: 2px;
-				margin-bottom: 10px;
+				margin-bottom: 0;
 
 			.description
-				margin-bottom: 30px;
-				font-size: 20px;
-				padding: 10px;
+				font-size: 18px;
+				padding: 0px;
+				margin-bottom: 40px;
 
 				a 
 					color: #f9f9f9;
@@ -298,7 +298,8 @@ section.section
 				background: black;
 				display: inline-block;
 				float: left;
-				background: url('../images/video-santi.png');
+				background: url('../images/video-santi.png') center;
+				background-size: cover;
 				position: relative;
 
 				span
@@ -321,21 +322,71 @@ section.section
 				&:hover
 					i
 						display: block;
-				&.santi 
-					background: url('../images/video-santi.png');
+				&.guido 
+					background-image: url('../images/videos/guido.png');
 
 				&.pia 
-					background: url('../images/video-santi.png');
+					background: url('../images/videos/pia.png');
 
-				&.ricardo 
-					background: url('../images/video-ricardo.png');
+				&.lucas 
+					background: url('../images/videos/lucas.png');
+
+				&.martin 
+					background: url('../images/videos/martin.png');
+
+				&.nicole 
+					background: url('../images/videos/nicole.png');
+
+				&.brenda 
+					background: url('../images/videos/brenda.png');
+
+				&.agustin 
+					background: url('../images/videos/agustin.png');
+
+				&.valentina 
+					background: url('../images/videos/valentina.png');
+
+
+				&.sebastian 
+					background: url('../images/videos/sebi.png');
+
+				&.santis 
+					background: url('../images/videos/santis.png');
 
 				&.gonzalo 
-					background: url('../images/video-gonzalo.png');
+					background: url('../images/videos/gonzalo.png');
 
+				&.mariano 
+					background: url('../images/videos/mariano.png');
+
+				&.florencia 
+					background: url('../images/videos/florencia.png');
+
+				&.esteban 
+					background: url('../images/videos/esteban.png');
+
+				&.santiago 
+					background: url('../images/videos/santiago.png');
+
+
+				&.lucia 
+					background: url('../images/videos/lucia.png');
+
+
+				&.felipe 
+					background: url('../images/videos/felipe.png');
+
+				&.francisco 
+					background: url('../images/videos/francisco.png');
+
+				&.ricardo 
+					background: url('../images/videos/ricardo.png');
+
+				&.pablo 
+					background: url('../images/videos/pablo.png');
 
 				&.video-large
-					background: url('../images/video-manu.png');
+					background-image: url('../images/videos/all.png');
 					width: 516px;
 					height: 320px;
 
@@ -451,19 +502,18 @@ section.section
 			width: 90%;
 			margin: auto;
 
-			.video-manu
+			.video-buenos-aires
 				width: 48%;
-				height: 290px;
-				background: black;
 				float: left;
 				margin-right: 4%;
-				background: rgba(0,0,0,.6) url('../images/icon-play.png') center no-repeat;
-				background-size: 20%; 
+				background-size: 20%;
+				iframe 
+					width: 100%;
 
 			.what-we-need
 				width: 48%;
 				float: left;
-				font-size: 22px;
+				font-size: 20px;
 				line-height: 34px;
 				color: black;
 

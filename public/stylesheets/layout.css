@@ -230,7 +230,7 @@ section.section.splash {
   position: relative;
 }
 section.section.splash img {
-  height: 96px;
+  height: 60px;
 }
 section.section.splash .section-title {
   background: rgba(0,0,0,0.8);
@@ -252,12 +252,12 @@ section.section.splash .section-title h1 {
   text-transform: uppercase;
   display: inline-block;
   letter-spacing: 2px;
-  margin-bottom: 10px;
+  margin-bottom: 0;
 }
 section.section.splash .section-title .description {
-  margin-bottom: 30px;
-  font-size: 20px;
-  padding: 10px;
+  font-size: 18px;
+  padding: 0px;
+  margin-bottom: 40px;
 }
 section.section.splash .section-title .description a {
   color: #f9f9f9;
@@ -312,7 +312,8 @@ section.section.videos-section .videos .video {
   background: #000;
   display: inline-block;
   float: left;
-  background: url("../images/video-santi.png");
+  background: url("../images/video-santi.png") center;
+  background-size: cover;
   position: relative;
 }
 section.section.videos-section .videos .video span {
@@ -334,20 +335,68 @@ section.section.videos-section .videos .video i {
 section.section.videos-section .videos .video:hover i {
   display: block;
 }
-section.section.videos-section .videos .video.santi {
-  background: url("../images/video-santi.png");
+section.section.videos-section .videos .video.guido {
+  background-image: url("../images/videos/guido.png");
 }
 section.section.videos-section .videos .video.pia {
-  background: url("../images/video-santi.png");
+  background: url("../images/videos/pia.png");
 }
-section.section.videos-section .videos .video.ricardo {
-  background: url("../images/video-ricardo.png");
+section.section.videos-section .videos .video.lucas {
+  background: url("../images/videos/lucas.png");
+}
+section.section.videos-section .videos .video.martin {
+  background: url("../images/videos/martin.png");
+}
+section.section.videos-section .videos .video.nicole {
+  background: url("../images/videos/nicole.png");
+}
+section.section.videos-section .videos .video.brenda {
+  background: url("../images/videos/brenda.png");
+}
+section.section.videos-section .videos .video.agustin {
+  background: url("../images/videos/agustin.png");
+}
+section.section.videos-section .videos .video.valentina {
+  background: url("../images/videos/valentina.png");
+}
+section.section.videos-section .videos .video.sebastian {
+  background: url("../images/videos/sebi.png");
+}
+section.section.videos-section .videos .video.santis {
+  background: url("../images/videos/santis.png");
 }
 section.section.videos-section .videos .video.gonzalo {
-  background: url("../images/video-gonzalo.png");
+  background: url("../images/videos/gonzalo.png");
+}
+section.section.videos-section .videos .video.mariano {
+  background: url("../images/videos/mariano.png");
+}
+section.section.videos-section .videos .video.florencia {
+  background: url("../images/videos/florencia.png");
+}
+section.section.videos-section .videos .video.esteban {
+  background: url("../images/videos/esteban.png");
+}
+section.section.videos-section .videos .video.santiago {
+  background: url("../images/videos/santiago.png");
+}
+section.section.videos-section .videos .video.lucia {
+  background: url("../images/videos/lucia.png");
+}
+section.section.videos-section .videos .video.felipe {
+  background: url("../images/videos/felipe.png");
+}
+section.section.videos-section .videos .video.francisco {
+  background: url("../images/videos/francisco.png");
+}
+section.section.videos-section .videos .video.ricardo {
+  background: url("../images/videos/ricardo.png");
+}
+section.section.videos-section .videos .video.pablo {
+  background: url("../images/videos/pablo.png");
 }
 section.section.videos-section .videos .video.video-large {
-  background: url("../images/video-manu.png");
+  background-image: url("../images/videos/all.png");
   width: 516px;
   height: 320px;
 }
@@ -453,19 +502,19 @@ section.section.argentina .argentina-content {
   width: 90%;
   margin: auto;
 }
-section.section.argentina .argentina-content .video-manu {
+section.section.argentina .argentina-content .video-buenos-aires {
   width: 48%;
-  height: 290px;
-  background: #000;
   float: left;
   margin-right: 4%;
-  background: rgba(0,0,0,0.6) url("../images/icon-play.png") center no-repeat;
   background-size: 20%;
+}
+section.section.argentina .argentina-content .video-buenos-aires iframe {
+  width: 100%;
 }
 section.section.argentina .argentina-content .what-we-need {
   width: 48%;
   float: left;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 34px;
   color: #000;
 }
