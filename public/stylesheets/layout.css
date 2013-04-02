@@ -66,9 +66,6 @@ body {
 /* Fix for webkit rendering */
   -webkit-text-size-adjust: 100%;
 }
-a:visited {
-  color: inherit;
-}
 h1,
 h2,
 h3,
@@ -623,16 +620,16 @@ section.section.how-to-join {
 }
 section.section.how-to-join .colaborate-box {
   padding: 20px;
+  text-align: center;
 }
 section.section.how-to-join .colaborate-box .help-link {
   margin-bottom: 20px;
-  width: 26%;
+  width: 300px;
   display: block;
-  float: left;
   text-align: center;
   background: #333;
-  margin: 0 2% 20px 2%;
   padding: 2%;
+  margin: auto;
   color: #fff;
   text-decoration: none;
   font-family: "brandon-grotesque";
@@ -648,7 +645,7 @@ section.section.how-to-join .colaborate-box .help-link.ideame {
   color: #333;
 }
 section.section.how-to-join .colaborate-box .help-link.help-sign {
-  margin-right: 0;
+/*margin-right: 0;*/
   background: #d6765f url("../images/icon-sign.png") center 30px no-repeat;
 }
 section.section.how-to-join .colaborate-box .help-link i {
@@ -678,6 +675,7 @@ section.section.links .link-box {
   text-align: center;
   padding: 70px 0;
   font-size: 20px;
+  height: 70px;
 }
 section.section.links .link-box span {
   display: block;
@@ -686,6 +684,27 @@ section.section.links .link-box span {
 }
 section.section.links .link-box.facebook {
   background: #3a5998;
+}
+section.section.links .link-box.twitter {
+  background: #0babed;
+}
+section.section.links .link-box.twitter iframe {
+  margin: 0 20px;
+}
+section.section.links .link-box.wiki,
+section.section.links .link-box.blog {
+  height: 45px;
+  padding-top: 95px;
+}
+section.section.links .link-box.wiki a,
+section.section.links .link-box.blog a {
+  color: #fff;
+}
+section.section.links .link-box.wiki {
+  background-color: #60d285;
+}
+section.section.links .link-box.blog {
+  background-color: #ec7a6c;
 }
 footer {
   font-family: "brandon-grotesque";

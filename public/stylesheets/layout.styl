@@ -65,8 +65,7 @@ body
 	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
 	-webkit-text-size-adjust: 100%;
 
-a:visited
-	color: inherit;
+
 
 h1,h2,h3,h4,h5,h6, .btn
 	font-family: "brandon-grotesque";
@@ -618,16 +617,15 @@ section.section
 
 		.colaborate-box
 			padding: 20px;
-
+			text-align: center;
 			.help-link
 				margin-bottom: 20px;
-				width: 26%;
+				width: 300px;
 				display: block;
-				float: left;
 				text-align: center;
 				background: #333;
-				margin: 0 2% 20px 2%;
 				padding: 2%;
+				margin: auto;
 				color: white;
 				text-decoration: none;
 				font-family: "brandon-grotesque";
@@ -643,7 +641,7 @@ section.section
 					color: #333;
 
 				&.help-sign
-					margin-right: 0;
+					/*margin-right: 0;*/
 					background: #d6765f url('../images/icon-sign.png') center 30px  no-repeat ;
 
 				i 
@@ -673,6 +671,7 @@ section.section
 			text-align: center;
 			padding: 70px 0;
 			font-size: 20px;
+			height: 70px;
 			span
 				display: block;
 				margin-bottom: 20px;
@@ -681,6 +680,23 @@ section.section
 			&.facebook
 				background: #3a5998;
 
+			&.twitter
+				background: #0babed;
+
+				iframe
+					margin: 0 20px;
+
+			&.wiki, &.blog
+				height: 45px;
+				padding-top: 95px;
+				a
+					color: white;	
+
+			&.wiki
+				background-color: #60d285;
+
+			&.blog
+				background-color: #ec7a6c;
 footer
 	font-family: "brandon-grotesque";
 	background: #272723;

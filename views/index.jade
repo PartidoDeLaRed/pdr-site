@@ -379,18 +379,18 @@ html(lang='en')
 					p.description
 						| Hay varias formas de apoyar esta iniciativa. Hoy necesitamos 4000 adhesiones para conformarnos como Partido en la ciudad de Buenos Aires y financiar el desarrollo de nuestro software.
 			
-				a(href="#").help-link.help-money
-					i 
-					| Pronto podrás colaborar
+				//- a(href="#").help-link.help-money
+				//- 	i 
+				//- 	| Pronto podrás colaborar
 
 
-				a(href="#").help-link.ideame
-					i 
-					| Pronto podrás colaborar
+				//- a(href="#").help-link.ideame
+				//- 	i 
+				//- 	| Pronto podrás colaborar
 
-				a(href="#").help-link.help-sign
+				a(href="http://wiki.partidodelared.org/index.php/Donde_firmar_como_Adherente", target="_blank").help-link.help-sign
 					i
-					| Pronto podrás firma el petitorio
+					| Firma el petitorio
 
 
 				hr
@@ -408,10 +408,15 @@ html(lang='en')
 				a.twitter-follow-button(href='https://twitter.com/partidodelared', data-show-count='false', data-size='large') Follow @partidodelared
 					script
 						!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+				
+				a.twitter-hashtag-button(href='https://twitter.com/intent/tweet?button_hashtag=PartidoDeLaRed', data-size='large') Tweet #PartidoDeLaRed
+					script
+						!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+
 
 
 			.wiki.link-box
-				a(href="http://wiki.partidodelared.org", target="_blank") Informate Wiki
+				a(href="http://wiki.partidodelared.org", target="_blank") Informate en el Wiki
 
 			.blog.link-box
 				a(href="http://blog.partidodelared.org", target="_blank") Lee nuestro Blog
