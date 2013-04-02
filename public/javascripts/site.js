@@ -10,10 +10,9 @@ $(function(){
                     alert("Error: " + data.Message);
                 } else { // 200
 
-                    $('#myModal').html('<h3 class="thanks-message">Gracias por sumarte, pronto recibiras noticias de nosotros!</h3>');
+                    $('#myModal').html('<h3 class="thanks-message">Gracias por sumarte, pronto recibiras noticias de nosotros!</h3>').delay(2000);
 
-
-                    $('#myModal').modal('hide');
+                    setTimeout(function(){ $('#myModal').modal('hide'); }, 4000);
                 }
             });
     });
