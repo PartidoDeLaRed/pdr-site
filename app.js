@@ -5,10 +5,10 @@
 
 var express = require('express')
   , routes = require('./routes')
-  , user = require('./routes/user')
   , http = require('http')
   , path = require('path')
-  , users = require('./users.json').users;
+  , users = require('./users.json').users
+  , utils = require('./utils');
 
 var app = express();
 
@@ -23,6 +23,7 @@ app.configure(function(){
   app.use(express.cookieParser('your secret here'));
   app.use(express.session());
   app.use(function(req, res, next) {
+    res.locals.order = utils.shuffle(Object.keys(users))
     res.locals.users = users;
     next();
   })
@@ -36,7 +37,6 @@ app.configure('development', function(){
 });
 
 app.get('/', routes.index);
-app.get('/users', user.list);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log("Express server listening on port " + app.get('port'));
