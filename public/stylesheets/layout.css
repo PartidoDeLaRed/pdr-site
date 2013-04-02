@@ -79,20 +79,16 @@ h6,
   font-family: "brandon-grotesque";
   font-weight: bold;
 }
-input.btn,
 .modal {
   border-radius: 0;
 }
-input.btn .modal-header,
 .modal .modal-header {
   text-transform: uppercase;
 }
-input.btn .modal-header h3,
 .modal .modal-header h3 {
   font-size: 20px;
   padding: 20px;
 }
-input.btn label,
 .modal label {
   text-align: left;
 }
@@ -124,6 +120,9 @@ input.btn label,
   box-shadow: 0 -2px 2px rgba(0,0,0,0.2) inset;
   border: 0;
   text-shadow: none;
+}
+.btn:hover {
+  background-color: #7ebf28;
 }
 .btn.btn-white {
   background: #fff;
