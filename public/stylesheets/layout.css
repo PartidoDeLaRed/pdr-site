@@ -354,7 +354,7 @@ section.section.videos-section .videos .video span {
   color: #fff;
 }
 section.section.videos-section .videos .video i {
-  display: none;
+  opacity: 0;
   background: rgba(0,0,0,0.6) url("../images/icon-play.png") center no-repeat;
   background-size: 20%;
   position: absolute;
@@ -362,9 +362,10 @@ section.section.videos-section .videos .video i {
   top: 0;
   right: 0;
   left: 0;
+  -webkit-transition: opacity 0.7s;
 }
 section.section.videos-section .videos .video:hover i {
-  display: block;
+  opacity: 1;
 }
 section.section.videos-section .videos .video.guido {
   background-image: url("../images/videos/guido.png");

@@ -339,7 +339,7 @@ section.section
 
 
 				i
-					display: none;
+					opacity: 0;
 					background: rgba(0,0,0,.6) url('../images/icon-play.png') center no-repeat;
 					background-size: 20%; 
 					position: absolute;
@@ -347,10 +347,11 @@ section.section
 					top: 0;
 					right: 0;
 					left: 0;
+					-webkit-transition: opacity .7s;
 					
 				&:hover
 					i
-						display: block;
+						opacity: 1;
 				&.guido 
 					background-image: url('../images/videos/guido.png');
 
