@@ -181,8 +181,7 @@ html(lang='en')
 						, data-html="true"
 						, data-content= "<span>" + date.toLocaleDateString() + " " + date.toLocaleTimeString() + "</span>" + "<br />" + status.text
 						, data-title=user.name) 
-						img(src=user.image)	
-
+						img(src=user.image)
 
 
 			.join-the-team
@@ -235,6 +234,17 @@ html(lang='en')
 			
 			.last-line © 2013 Partido De La Red — Buenos Aires, Argentina
 
+	script
+		$('.members a').popover({
+			trigger: 'hover',
+			placement: function (tip, element) {
+				var offset = $(element).offset()
+					, width = $(document).outerWidth()
+					, horiz = 0.5 * width - offset.left
+					, horizPlacement = horiz > 0 ? 'right' : 'left'
+				return horizPlacement;
+			}
+		});
 
 
 
