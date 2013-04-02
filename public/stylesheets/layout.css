@@ -154,11 +154,11 @@ header.site-header {
   z-index: 10000;
   background: rgba(255,255,255,0.96);
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 header.site-header h1 {
   font-size: 12px;
-  line-height: 12px;
+  line-height: 16px;
   display: inline-block;
   margin: 0;
   padding: 0;
@@ -175,18 +175,21 @@ header.site-header nav.navbar {
   display: inline-block;
   padding: 0;
   margin: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 header.site-header nav.navbar ul.nav {
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 header.site-header nav.navbar ul.nav li {
-  float: left;
+  display: inline-block;
   margin: 0;
   padding: 0;
 }
 header.site-header nav.navbar ul.nav li a {
-  margin: 0 20px;
+  margin: 0 16px;
   padding: 0;
   color: #999;
   background: none;
@@ -211,7 +214,7 @@ header.site-header .social a {
   display: block;
   text-indent: -1000em;
   float: left;
-  margin-left: 20px;
+  margin-left: 10px;
 }
 header.site-header .social .twitter {
   background: url("../images/icon-twitter.png") center no-repeat;
@@ -550,7 +553,7 @@ section.section.argentina .argentina-content .what-we-need {
   color: #000;
 }
 section.section.argentina .argentina-content .what-we-need .btn.btn-white {
-  margin-top: 30px;
+  margin-top: 20px;
   padding: 10px 20px;
   margin-right: 20px;
 }
