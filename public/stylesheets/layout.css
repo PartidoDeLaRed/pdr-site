@@ -593,7 +593,7 @@ section.section.who-we-are .join-the-team {
   padding: 20px;
   margin-top: 80px;
 }
-section.section.who-we-are .join-the-team .btn {
+section.section.who-we-are .join-the-team .btn.btn-join {
   display: inline-block;
   background-color: #2cabed;
   color: #fff;

@@ -308,7 +308,7 @@ html(lang='en')
 					p Somos un partido con el objetivo de abrir el ancho de banda de la democracia: no alcanza con votar cada dos años si podemos expresarnos todos los días usando la red.
 					p Los legisladores de la red se comprometen a votar siempre acorde a lo que se resuelve online en la Democracia en Red. Cada click es ahora también un voto.
 
-					a(href="").btn.btn-white Enviar datos
+					a(href='#myModal', role='button', data-toggle='modal').btn.btn-white Enviar datos
 					a(href="").btn.btn-white Preguntas Frecuentes
 
 		section.who-we-are.section.clearfix#quienes-somos
@@ -334,26 +334,32 @@ html(lang='en')
 
 			.join-the-team
 				p Si te interesa participar del equipo del Partido De La Red 
-					a.btn(href='#myModal', role='button', data-toggle='modal') Dejanos tus datos para sumarte
+					a.btn.btn-join(href='#myModal', role='button', data-toggle='modal') Dejanos tus datos para sumarte
 
 					#myModal.modal.hide
 						.modal-header
 							h3 Sumate al partido
 
 						.modal-body
-							form#subForm(action='http://campaigns.gravityonmars.com/t/r/s/jdlliyj/', method='post')
-								div
-									label(for='name') Nombre:
-									input#name(type='text', name='cm-name')
-									label(for='jdlliyj-jdlliyj') Email:
-									input#jdlliyj-jdlliyj(type='text', name='cm-jdlliyj-jdlliyj')
-									label(for='Localidad') Localidad:
-									select(name='cm-fo-ydkhdui')
-										option(value='3698109') Capital Federal
-										option(value='3698110') Gran Buenos Aires
-										option(value='3698111') Otros
-
-									input(type='submit', value='Sumate ahora!').btn
+							form#subForm(action='http://campaigns.gravityonmars.com/t/r/s/jdlliyj/', method='post').form-horizontal
+								div.control-group
+									label.control-label(for='name') Nombre:
+									.controls
+										input#name(type='text', name='cm-name')
+								div.control-group
+									label.control-label(for='jdlliyj-jdlliyj') Email:
+									.controls
+										input#jdlliyj-jdlliyj(type='text', name='cm-jdlliyj-jdlliyj')
+								div.control-group
+									label.control-label(for='Localidad') Localidad:
+									.controls
+										select(name='cm-fo-ydkhdui')
+											option(value='3698109') Capital Federal
+											option(value='3698110') Gran Buenos Aires
+											option(value='3698111') Otros
+								div.control-group
+									.controls
+										input(type='submit', value='Sumate ahora!').btn
 
 
 		section.how-to-join.section.clearfix#colaborar
