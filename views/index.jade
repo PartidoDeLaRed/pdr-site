@@ -24,6 +24,8 @@ html(lang='en')
 		script(type="text/javascript", src="//raw.github.com/flesler/jquery.scrollTo/master/jquery.scrollTo.min.js")
 		script(type="text/javascript", src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/js/bootstrap.min.js")
 
+		script(type="text/javascript", src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.8/jquery.validate.min.js")
+
 		script(type="text/javascript", src="javascripts/site.js")
 
 
@@ -341,11 +343,17 @@ html(lang='en')
 							h3 Sumate al partido
 
 						.modal-body
-							form#subForm(action='http://campaigns.gravityonmars.com/t/r/s/jdlliyj/', method='post').form-horizontal
+							form#subForm(action='http://gravityonmars.createsend.com/t/r/s/jdlliyj/', method='post').form-horizontal
 								div.control-group
 									label.control-label(for='name') Nombre:
 									.controls
 										input#name(type='text', name='cm-name')
+
+								div.control-group
+									label.control-label(for='lastname') Apellido:
+									.controls
+										input#lastname(type='text', name='cm-f-ydkhhiu')
+
 								div.control-group
 									label.control-label(for='jdlliyj-jdlliyj') Email:
 									.controls
@@ -357,9 +365,8 @@ html(lang='en')
 											option(value='3698109') Capital Federal
 											option(value='3698110') Gran Buenos Aires
 											option(value='3698111') Otros
-								div.control-group
-									.controls
-										input(type='submit', value='Sumate ahora!').btn
+								p
+									input(type='submit', value='Sumate ahora!').btn.btn-sumate-ahora
 
 
 		section.how-to-join.section.clearfix#colaborar

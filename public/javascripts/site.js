@@ -1,5 +1,7 @@
 $(function(){
 
+	$("#subForm").validate();
+	
 	$('.videos-section .modal').bind('hide', function () {
 		var iframe = $(this).children('div.modal-body').find('iframe');
 		var src = iframe.attr('src').split("?rel=0&autoplay=1");

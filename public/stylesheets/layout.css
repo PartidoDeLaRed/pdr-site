@@ -601,6 +601,15 @@ section.section.who-we-are .join-the-team .btn.btn-join {
   line-height: 20px;
   margin-top: -4px;
 }
+section.section.who-we-are .modal {
+  width: 500px;
+}
+section.section.who-we-are .modal .modal-header {
+  margin-bottom: 20px;
+}
+section.section.who-we-are .btn-sumate-ahora {
+  margin-top: 20px;
+}
 section.section.how-to-join {
   background: #f1f1f1 url("../images/bg-congress-2.jpg");
   background-size: cover;
