@@ -173,16 +173,15 @@ html(lang='en')
 						| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin semper metus a nunc rutrum viverra eget vitae nulla. Sed et eros eu nulla consectetur .Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin semper metus a nunc rutrum viverra eget vitae nulla.
 		
 			.members.clearfix
-				- each uid in order
-					- var user = users[uid]
-					- var status = user.statuses[0]
+				- each member in members
+					- var status = member.statuses[0]
 					- var date = new Date(status.created_at)
-					a(href=user.url
+					a(href=member.url
 						, data-toggle="popover"
 						, data-html="true"
 						, data-content= "<span>" + date.toLocaleDateString() + " " + date.toLocaleTimeString() + "</span>" + "<br />" + status.text
-						, data-title=user.name) 
-						img(src=user.image)
+						, data-title=member.name) 
+						img(src=member.image)
 
 
 			.join-the-team

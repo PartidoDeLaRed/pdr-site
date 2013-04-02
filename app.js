@@ -7,7 +7,7 @@ var express = require('express')
   , routes = require('./routes')
   , http = require('http')
   , path = require('path')
-  , users = require('./users.json').users
+  , members = require('./members')
   , utils = require('./utils');
 
 var app = express();
@@ -23,8 +23,7 @@ app.configure(function(){
   app.use(express.cookieParser('your secret here'));
   app.use(express.session());
   app.use(function(req, res, next) {
-    res.locals.order = utils.shuffle(Object.keys(users))
-    res.locals.users = users;
+    res.locals.members = members;
     next();
   })
   app.use(app.router);
@@ -41,3 +40,11 @@ app.get('/', routes.index);
 http.createServer(app).listen(app.get('port'), function(){
   console.log("Express server listening on port " + app.get('port'));
 });
+
+setInterval(function() {
+  utils.members(function(updatedMembers) {
+    members = updatedMembers;
+
+    console.log('members updated!')
+  });
+}, 1000 * 60 * 60); // 1hr update timeout
