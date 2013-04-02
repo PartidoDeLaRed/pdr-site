@@ -607,6 +607,9 @@ section.section.who-we-are .modal {
 section.section.who-we-are .modal .modal-header {
   margin-bottom: 20px;
 }
+section.section.who-we-are .thanks-message {
+  padding: 20px;
+}
 section.section.who-we-are .btn-sumate-ahora {
   margin-top: 20px;
 }
