@@ -1,14 +1,24 @@
 $(function(){
 
 
+
 	$('.modal').bind('hide', function () {
 		var iframe = $(this).children('div.modal-body').find('iframe');
 		var src = iframe.attr('src');
-		alert($(this).children('div.modal-body').html());
+		// alert($(this).children('div.modal-body').html());
 		iframe.attr('src', '');
 		iframe.attr('src', src);
 	});
-	
+
+	$('.modal').bind('show', function () {
+		var iframe = $(this).children('div.modal-body').find('iframe');
+		var src = iframe.attr('src');
+		// alert($(this).children('div.modal-body').html());
+		iframe.attr('src', '');
+		iframe.attr('src', src + '&autoplay=1');
+	});
+
+
 	// $('.splash .').css('top', );
 
 	$('a[href*="#"]').click(function(event){

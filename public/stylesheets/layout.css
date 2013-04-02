@@ -54,6 +54,10 @@ or wrap each row of columns in a <div class="row"> */
   width: 0;
   height: 0;
 }
+a {
+  border: 0;
+  outline: none;
+}
 body {
   font-family: "ff-tisa-web-pro";
   background: #012140 url("../images/bg-splash.jpg") left bottom fixed;
@@ -83,6 +87,9 @@ h6,
 }
 .hide {
   display: none;
+}
+.modal {
+  margin-top: 100px;
 }
 .btn {
   text-transform: uppercase;
@@ -296,6 +303,9 @@ section.section.splash .arrow-down:hover {
 section.section.videos-section {
   overflow: hidden;
   background: #edede4 url("../images/bg-network.png") repeat-x fixed;
+}
+section.section.videos-section .modal {
+  width: 590px;
 }
 section.section.videos-section .videos {
   width: 1080px;
