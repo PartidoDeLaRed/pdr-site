@@ -55,43 +55,25 @@ exports.toArray = function toArray (obj) {
 
 exports.members = function members (fn) {
 
-tu.friendsIds(function(err, data) {
-  var ids = data.ids;
-  var users = {};
+var users = [];
 
-  if(ids && ids.length) {
-    tu.mentionsTimeline({ count: 200 }, function(err, data) {
+tu.friendsList(function(err, data) {
 
-      data = data.filter(function(mention) {
-        return ~ids.indexOf(mention.user.id);
-      });
+    users = data.users;
+    console.log(users.length);
 
-      data.forEach(function(item) {
-        var user = item.user;
-        if(!users[user.id_str]) {
-          users[user.id_str] = {
-            id: user.id,
-            name: user.name,
-            description: user.description,
-            screen_name: user.screen_name,
-            url: 'http://twitter.com/' + user.screen_name,
-            image: 'https://api.twitter.com/1/users/profile_image?size=reasonably_small&screen_name=' + user.screen_name,
-            statuses: []
-          };
-        }
-        delete item.user;
-        users[user.id_str].statuses.push(item);
-      });
+    tu.friendsList({cursor: data.next_cursor}, function(err, d){
 
-      users = exports.toArray(users);
+      users = users.concat(d.users);
 
       fn(users);
-
       fs.writeFile(path.join(__dirname, 'data.json'), JSON.stringify({ members: users }), function(err) {
         if(err) console.log(err);
       });
-    })
-  }
+
+
+    });
+
 })
 
 }
