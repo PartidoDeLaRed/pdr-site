@@ -7,7 +7,7 @@ $(function(){
 		var src = iframe.attr('src');
 		// alert($(this).children('div.modal-body').html());
 		iframe.attr('src', '');
-		iframe.attr('src', src);
+		// iframe.attr('src', src);
 	});
 
 	$('.modal').bind('show', function () {
@@ -15,7 +15,7 @@ $(function(){
 		var src = iframe.attr('src');
 		// alert($(this).children('div.modal-body').html());
 		iframe.attr('src', '');
-		iframe.attr('src', src + '&autoplay=1');
+		iframe.attr('src', src + '?rel=0&autoplay=1');
 	});
 
 
