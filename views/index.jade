@@ -9,7 +9,6 @@ html(lang='en')
 		meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
 
 		link(href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css", rel="stylesheet")
-		link(rel='stylesheet', href='stylesheets/base.css')
 		link(rel='stylesheet', href='stylesheets/layout.css')
 		//if lt IE 9
 			script(src='http://html5shim.googlecode.com/svn/trunk/html5.js')
@@ -335,16 +334,16 @@ html(lang='en')
 
 			.join-the-team
 				p Si te interesa participar del equipo del Partido De La Red 
-					a(href="", data-toggle="modal").btn Dejanos tus datos
-					
-					.form-info.modal.hide
+					a.btn(href='#myModal', role='button', data-toggle='modal') Dejanos tus datos para sumarte
+
+					#myModal.modal.hide
 						.modal-header
 							h3 Sumate al partido
 
 						.modal-body
 							form#subForm(action='http://campaigns.gravityonmars.com/t/r/s/jdlliyj/', method='post')
 								div
-									label(for='name') Name:
+									label(for='name') Nombre:
 									input#name(type='text', name='cm-name')
 									label(for='jdlliyj-jdlliyj') Email:
 									input#jdlliyj-jdlliyj(type='text', name='cm-jdlliyj-jdlliyj')
@@ -354,7 +353,7 @@ html(lang='en')
 										option(value='3698110') Gran Buenos Aires
 										option(value='3698111') Otros
 
-									input(type='submit', value='Subscribe')
+									input(type='submit', value='Sumate ahora!').btn
 
 
 		section.how-to-join.section.clearfix#colaborar

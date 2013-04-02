@@ -62,6 +62,9 @@ body {
   font-family: "ff-tisa-web-pro";
   background: #012140 url("../images/bg-splash.jpg") left bottom fixed;
   background-size: cover;
+  -webkit-font-smoothing: antialiased;
+/* Fix for webkit rendering */
+  -webkit-text-size-adjust: 100%;
 }
 a:visited {
   color: inherit;
@@ -75,6 +78,23 @@ h6,
 .btn {
   font-family: "brandon-grotesque";
   font-weight: bold;
+}
+input.btn,
+.modal {
+  border-radius: 0;
+}
+input.btn .modal-header,
+.modal .modal-header {
+  text-transform: uppercase;
+}
+input.btn .modal-header h3,
+.modal .modal-header h3 {
+  font-size: 20px;
+  padding: 20px;
+}
+input.btn label,
+.modal label {
+  text-align: left;
 }
 .popover {
   border-radius: 0;

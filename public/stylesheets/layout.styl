@@ -62,7 +62,9 @@ body
 	font-family: "ff-tisa-web-pro";
 	background: #012140 url('../images/bg-splash.jpg')  left bottom fixed;
 	background-size: cover;
-
+	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+	-webkit-text-size-adjust: 100%;
+	
 a:visited
 	color: inherit;
 
@@ -70,6 +72,18 @@ h1,h2,h3,h4,h5,h6, .btn
 	font-family: "brandon-grotesque";
 	font-weight: bold;
 
+input.btn 
+
+.modal
+	border-radius: 0;
+	.modal-header
+		text-transform: uppercase;
+		h3 
+			font-size: 20px;
+			padding: 20px;
+
+	label
+		text-align: left;
 
 .popover
 	border-radius: 0;

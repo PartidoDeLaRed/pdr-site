@@ -1,8 +1,6 @@
 $(function(){
 
-
-
-	$('.modal').bind('hide', function () {
+	$('.videos-section .modal').bind('hide', function () {
 		var iframe = $(this).children('div.modal-body').find('iframe');
 		var src = iframe.attr('src').split("?rel=0&autoplay=1");
 		// alert($(this).children('div.modal-body').html());
@@ -10,7 +8,7 @@ $(function(){
 		iframe.attr('src', src);
 	});
 
-	$('.modal').bind('show', function () {
+	$('.videos-section .modal').bind('show', function () {
 		var iframe = $(this).children('div.modal-body').find('iframe');
 		var src = iframe.attr('src');
 		// alert($(this).children('div.modal-body').html());
