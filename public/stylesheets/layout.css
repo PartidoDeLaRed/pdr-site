@@ -701,14 +701,14 @@ section.section.links .link-box.blog a {
   color: #fff;
 }
 section.section.links .link-box.wiki {
-  background-color: #8673dd;
+  background-color: #ca5a6e;
 }
 section.section.links .link-box.blog {
-  background-color: #f5807f;
+  background-color: #5462be;
 }
 footer {
   font-family: "brandon-grotesque";
-  background: #272723;
+  background: #222;
   text-align: center;
   color: #cacac2;
   text-transform: uppercase;
@@ -739,7 +739,7 @@ footer nav ul.nav li a:hover {
   background: none;
 }
 footer .last-line {
-  border-top: 1px solid #33332d;
+  border-top: 1px solid #333;
   padding: 20px;
   color: #cacac2;
 }
