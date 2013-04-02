@@ -686,6 +686,10 @@ section.section.links .link-box span {
 section.section.links .link-box.facebook {
   background: #3a5998;
 }
+section.section.links .link-box.facebook iframe {
+  background: #fff;
+  padding: 10px;
+}
 section.section.links .link-box.twitter {
   background: #0babed;
 }
