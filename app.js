@@ -23,7 +23,7 @@ app.configure(function(){
   app.use(express.cookieParser('your secret here'));
   app.use(express.session());
   app.use(function(req, res, next) {
-    res.locals.members = members;
+    res.locals.members = utils.shuffle(members);
     next();
   })
   app.use(app.router);
