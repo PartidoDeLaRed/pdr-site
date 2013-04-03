@@ -214,7 +214,7 @@ header.site-header .social a {
   display: block;
   text-indent: -1000em;
   float: left;
-  margin-left: 6px;
+  margin-left: 14px;
 }
 header.site-header .social .twitter {
   background: url("../images/icon-twitter.png") center no-repeat;
