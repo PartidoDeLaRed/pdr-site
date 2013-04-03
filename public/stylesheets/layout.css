@@ -584,6 +584,7 @@ section.section.who-we-are .members a {
   float: left;
   display: block;
   opacity: 0.8;
+  -webkit-transition: opacity 0.7s;
 }
 section.section.who-we-are .members a:hover {
   opacity: 1;
