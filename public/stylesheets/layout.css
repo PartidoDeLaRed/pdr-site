@@ -119,6 +119,7 @@ h6,
   box-shadow: 0 -2px 2px rgba(0,0,0,0.2) inset;
   border: 0;
   text-shadow: none;
+  border-width: 2px;
 }
 .btn:hover {
   background-color: #7ebf28;
@@ -257,7 +258,6 @@ section.section.splash {
   background: transparent;
   padding: 0;
   position: relative;
-  position: relative;
 }
 section.section.splash img {
   height: 60px;
@@ -289,20 +289,30 @@ section.section.splash .section-title .description {
   padding: 0px;
   margin-bottom: 40px;
 }
-section.section.splash .section-title .description a {
-  color: #f9f9f9;
-  margin: 0 10px;
-}
-section.section.splash .section-title .description a.current {
-  color: #fff;
-}
 section.section.splash .section-title .btn {
   margin-bottom: 20px;
   color: rgba(0,0,0,0.9);
   margin: 0 14px;
+  border: 2px solid #fff;
+  background: none;
+  color: #fff;
+  padding-left: 0;
+  padding-right: 0;
+  width: 220px;
+  text-align: center;
+}
+section.section.splash .section-title .btn:hover {
+  background-color: #fff;
+  color: #333;
+  border-color: #fff;
 }
 section.section.splash .section-title .btn.btn-kickstarter {
   border-color: #97d842;
+  color: #fff;
+}
+section.section.splash .section-title .btn.btn-kickstarter:hover {
+  background-color: #97d842;
+  color: #222;
 }
 section.section.splash .section-title .btn.btn2 {
   color: #fff;
@@ -576,7 +586,7 @@ section.section.argentina .argentina-content .what-we-need .btn {
   margin-top: 20px;
   padding: 10px 20px;
   background: #fff;
-  border: 3px solid #434749;
+  border: 2px solid #434749;
   margin-right: 20px;
 }
 section.section.argentina .argentina-content .what-we-need .btn:hover {

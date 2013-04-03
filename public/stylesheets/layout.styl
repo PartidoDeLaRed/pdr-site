@@ -111,6 +111,7 @@ h1,h2,h3,h4,h5,h6, .btn
 	box-shadow: 0 -2px 2px  rgba(0,0,0,.2) inset;
 	border: 0;
 	text-shadow: none;
+	border-width: 2px;
 
 	&:hover
 		background-color: #7ebf28;
@@ -273,24 +274,37 @@ section.section
 				padding: 0px;
 				margin-bottom: 40px;
 
-				a 
-					color: #f9f9f9;
-					margin: 0 10px;
-					&.current
-						color: white;
+
 
 			.btn
 				margin-bottom: 20px;
 				color: rgba(0,0,0,.9);
 				margin: 0 14px ;
+				border: 2px solid white;
+				background: none;
+				color: white;
+				padding-left: 0;
+				padding-right: 0;
+				width: 220px;
+				text-align: center;
+
+				&:hover
+					background-color: white;
+					color: #333;
+					border-color: white;
+
 
 				&.btn-kickstarter
 					border-color: #97d842;
+					color: #fff;
+					&:hover
+						background-color: #97d842;
+						color: #222;
+
 
 			.btn.btn2
 				color: white;
 
-		position: relative;
 
 		.arrow-down
 			width: 30px;
@@ -575,7 +589,7 @@ section.section
 					margin-top: 20px;
 					padding: 10px 20px;
 					background: #fff;
-					border: 3px solid #434749;
+					border: 2px solid #434749;
 					margin-right: 20px;
 
 					&:hover
