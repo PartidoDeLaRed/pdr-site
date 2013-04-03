@@ -572,10 +572,16 @@ section.section.argentina .argentina-content .what-we-need {
   line-height: 34px;
   color: #000;
 }
-section.section.argentina .argentina-content .what-we-need .btn.btn-white {
+section.section.argentina .argentina-content .what-we-need .btn {
   margin-top: 20px;
   padding: 10px 20px;
+  background: #fff;
+  border: 3px solid #434749;
   margin-right: 20px;
+}
+section.section.argentina .argentina-content .what-we-need .btn:hover {
+  background-color: #d4dada;
+  color: #434749;
 }
 section.section.who-we-are {
   background: #fff;
