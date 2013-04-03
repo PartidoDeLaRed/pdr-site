@@ -1,21 +1,21 @@
 $(function(){
 
 	$('#subForm').submit(function (e) {
-            e.preventDefault();
-            $.getJSON(
-            this.action + "?callback=?",
-            $(this).serialize(),
-            function (data) {
-                if (data.Status === 400) {
-                    alert("Error: " + data.Message);
-                } else { // 200
+    e.preventDefault();
+    $.getJSON(
+    this.action + "?callback=?",
+    $(this).serialize(),
+    function (data) {
+      if (data.Status === 400) {
+          alert("Error: " + data.Message);
+      } else { // 200
 
-                    $('#myModal').html('<h3 class="thanks-message">Gracias por sumarte, pronto recibiras noticias de nosotros!</h3>').delay(2000);
+        $('#myModal').html('<h3 class="thanks-message">Gracias por sumarte, pronto recibiras noticias de nosotros!</h3>').delay(2000);
 
-                    setTimeout(function(){ $('#myModal').modal('hide'); }, 4000);
-                }
-            });
+        setTimeout(function(){ $('#myModal').modal('hide'); }, 4000);
+      }
     });
+  });
 
 	$('.videos-section .modal').bind('hide', function () {
 		var iframe = $(this).children('div.modal-body').find('iframe');
