@@ -328,6 +328,10 @@ section.section.videos-section {
   background: #edede4 url("../images/bg-network.png") repeat-x fixed;
   background: #edede4;
 }
+section.section.videos-section .section-title {
+  padding-bottom: 0;
+  margin-bottom: 50px;
+}
 section.section.videos-section .modal {
   width: 590px;
   background: #fff;
