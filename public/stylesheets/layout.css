@@ -548,7 +548,7 @@ section.section.how-contribute {
   background-color: #2cabed;
 }
 section.section.argentina {
-  background: #e2e9eb url("../images/bg-argentina.jpg");
+  background: #e2e9eb url("../images/bg-argentina.jpg") fixed;
   background-size: 110%;
   min-height: 400px;
 }
@@ -585,7 +585,7 @@ section.section.argentina .argentina-content .what-we-need .btn:hover {
 }
 section.section.who-we-are {
   background: #fff;
-  padding: 100px 0 50px 0;
+  padding: 100px 0 100px 0;
 }
 section.section.who-we-are .section-title {
   padding: 0 50px;
@@ -622,7 +622,7 @@ section.section.who-we-are .join-the-team {
   text-align: center;
   font-size: 20px;
   padding: 20px;
-  margin-top: 80px;
+  margin-top: 100px;
 }
 section.section.who-we-are .join-the-team .btn.btn-join {
   display: inline-block;
@@ -645,7 +645,7 @@ section.section.who-we-are .btn-sumate-ahora {
   margin-top: 20px;
 }
 section.section.how-to-join {
-  background: #f1f1f1 url("../images/bg-congress-2.jpg");
+  background: #f1f1f1 url("../images/bg-congress-2.jpg") fixed;
   background-size: cover;
 }
 section.section.how-to-join .colaborate-box {
@@ -739,10 +739,10 @@ section.section.links .link-box.blog a {
   color: #fff;
 }
 section.section.links .link-box.wiki {
-  background-color: #7f86c8;
+  background-color: #6e303a;
 }
 section.section.links .link-box.blog {
-  background-color: #7fc8ac;
+  background-color: #2d6751;
 }
 footer {
   font-family: "brandon-grotesque";
