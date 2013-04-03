@@ -326,15 +326,24 @@ html(lang='en')
 						| Es a partir de aquellas reuniones que el proyecto cobra vida y nos impusimos como meta presentarnos a elecciones distritales y al mismo tiempo, impulsar el desarrollo del software que permita llevar directamente la voz de cada ciudadano a su parlamento correspondiente.
 		
 			.members.clearfix
-				- each member in members
-					- var status = member.statuses[0]
+				- each member, id in members
+					- if(id >= 40) return;
+					- var status = member.statuses[0] || {}
 					- var date = new Date(status.created_at)
-					a(target="_blank", href=member.url
-						, data-toggle="popover"
-						, data-html="true"
-						, data-content= status.text
-						, data-title=member.name) 
-						img(src=member.image)
+					
+					- if(status.text) {
+						a(target="_blank"
+							, href=member.url
+							, data-toggle="popover"
+							, data-html="true"
+							, data-content= status.text
+							, data-title=member.name) 
+							img(src=member.image)
+					- } else {
+						a(target="_blank"
+							, href=member.url)
+							img(src=member.image)
+					- }
 
 
 			.join-the-team

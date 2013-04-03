@@ -55,21 +55,32 @@ exports.toArray = function toArray (obj) {
 
 exports.members = function members (fn) {
 
-tu.friendsIds(function(err, data) {
-  var ids = data.ids;
-  var users = {};
+  tu.friendsList({ count: 200 }, function(err, res) {
+    var users = res.users
+      , ids
+      , members = {}
+      , nonMentioningMembers
+      ;
 
-  if(ids && ids.length) {
-    tu.mentionsTimeline({ count: 200 }, function(err, data) {
+    if(! ( users || users.length) ) {
+      return fn([]);
+    }
 
-      data = data.filter(function(mention) {
+    ids = users.map(function(user) { return user.id });
+
+    tu.mentionsTimeline({ count: 200 }, function(err, mentions) {
+
+      mentions = mentions.filter(function(mention) {
         return ~ids.indexOf(mention.user.id);
       });
 
-      data.forEach(function(item) {
-        var user = item.user;
-        if(!users[user.id_str]) {
-          users[user.id_str] = {
+      mentions.forEach(function(mention) {
+        var user = mention.user
+          , id = user.id_str
+          ;
+
+        if(!members[id]) {
+          members[id] = {
             id: user.id,
             name: user.name,
             description: user.description,
@@ -79,19 +90,33 @@ tu.friendsIds(function(err, data) {
             statuses: []
           };
         }
-        delete item.user;
-        users[user.id_str].statuses.push(item);
+        delete mention.user;
+        members[id].statuses.push(mention);
       });
 
-      users = exports.toArray(users);
+      nonMentioningMembers = users.filter(function(user) {
+        return !members[user.id_str];
+      }).map(function(user) {
+        return {
+            id: user.id,
+            name: user.name,
+            description: user.description,
+            screen_name: user.screen_name,
+            url: 'http://twitter.com/' + user.screen_name,
+            image: 'https://api.twitter.com/1/users/profile_image?size=reasonably_small&screen_name=' + user.screen_name,
+            statuses: []
+          }
+      });
+      members = exports.toArray(members);
 
-      fn(users);
+      members = members.concat(nonMentioningMembers);
+      
+      fn(members);
 
-      fs.writeFile(path.join(__dirname, 'data.json'), JSON.stringify({ members: users }), function(err) {
+      fs.writeFile(path.join(__dirname, 'data.json'), JSON.stringify({ members: members }), function(err) {
         if(err) console.log(err);
       });
     })
-  }
-})
+  })
 
 }
