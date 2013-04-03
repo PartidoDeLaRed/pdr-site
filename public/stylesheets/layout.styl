@@ -107,9 +107,9 @@ h1,h2,h3,h4,h5,h6, .btn
 	padding: 12px 24px;
 	border-radius: 3px;
 	text-decoration: none;
+	border: 2px solid #333;
 	color: #333;
 	box-shadow: 0 -2px 2px  rgba(0,0,0,.2) inset;
-	border: 0;
 	text-shadow: none;
 	border-width: 2px;
 
@@ -121,19 +121,6 @@ h1,h2,h3,h4,h5,h6, .btn
 		box-shadow: none;
 
 
-.btn.btn2
-	border: 2px solid white;
-	background: rgba(0,0,0,.7)
-	text-shadow: none;
-	color: white;
-
-	span
-		color: #97d842;
-
-	&:hover
-		background-color: black;
-		border-color: #3f90ba;
-		color: #3f90ba;
 
 
 
@@ -637,11 +624,16 @@ section.section
 
 			.btn.btn-join
 				display: inline-block;
-				background-color: #2cabed;
-				color: white;
-				margin-left: 20px;
+				border-color: #2cabed;
+				background: none;
+				color: #2cabed;
+				margin-left: 30px;
 				line-height: 20px;
-				margin-top: -4px;
+				margin-top: -5px;
+
+				&:hover
+					background-color: #2cabed;
+					color: white;
 
 		.modal 
 			width: 500px;
