@@ -66,6 +66,7 @@ body {
   -webkit-font-smoothing: antialiased;
 /* Fix for webkit rendering */
   -webkit-text-size-adjust: 100%;
+  min-width: 1024px;
 }
 h1,
 h2,
