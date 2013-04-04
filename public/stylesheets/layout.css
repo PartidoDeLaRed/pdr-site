@@ -101,7 +101,7 @@ h6,
   letter-spacing: 2px;
 }
 .hide {
-  display: none !important;
+  display: none;
 }
 .modal {
   margin-top: 100px;
@@ -190,6 +190,9 @@ header.site-header nav.navbar ul.nav li a:hover {
 }
 header.site-header nav.navbar ul.nav li.active a {
   color: #333;
+}
+header.site-header nav.navbar ul.nav li.hide {
+  display: none;
 }
 header.site-header .social {
   position: fixed;
