@@ -247,7 +247,7 @@ section.section.splash {
   position: relative;
 }
 section.section.splash img {
-  height: 60px;
+  height: 70px;
 }
 section.section.splash .section-title {
   background: rgba(0,0,0,0.82);
@@ -265,14 +265,14 @@ section.section.splash .section-title .section-content {
 section.section.splash .section-title h1 {
   color: #fff;
   font-weight: 900;
-  font-size: 40px;
+  font-size: 38px;
   text-transform: uppercase;
   display: inline-block;
   letter-spacing: 2px;
   margin-bottom: 0;
 }
 section.section.splash .section-title .description {
-  font-size: 18px;
+  font-size: 20px;
   padding: 0px;
   margin-bottom: 40px;
 }
@@ -324,9 +324,9 @@ section.section.videos-section {
   overflow: hidden;
   background: #edede4 url("../images/bg-network.png") repeat-x fixed;
   background: #edede4;
+  text-align: center;
 }
 section.section.videos-section .section-title {
-  padding-bottom: 0;
   margin-bottom: 50px;
 }
 section.section.videos-section .modal {
@@ -341,7 +341,7 @@ section.section.videos-section a.btn.read-manifiesto {
   font-family: brandon-grotesque;
   color: #333;
   background: none;
-  margin-top: 10px;
+  margin-top: 60px;
 }
 section.section.videos-section a.btn.read-manifiesto:hover {
   background-color: #333;

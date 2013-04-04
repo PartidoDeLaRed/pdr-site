@@ -1,5 +1,17 @@
 $(function(){
 
+	$('.members a').popover({
+		trigger: 'hover',
+		placement: function (tip, element) {
+			var offset = $(element).offset()
+				, width = $(document).outerWidth()
+				, horiz = 0.5 * width - offset.left
+				, horizPlacement = horiz > 0 ? 'right' : 'left'
+			return horizPlacement;
+		}
+	});
+
+
 	$('#subForm').submit(function (e) {
     e.preventDefault();
     $.getJSON(
