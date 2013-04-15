@@ -66,7 +66,6 @@ body {
   -webkit-font-smoothing: antialiased;
 /* Fix for webkit rendering */
   -webkit-text-size-adjust: 100%;
-  min-width: 1024px;
 }
 h1,
 h2,
@@ -130,7 +129,6 @@ h6,
   box-shadow: none;
 }
 header.site-header {
-  min-width: 1024px;
   text-align: center;
   font-family: "brandon-grotesque";
   font-size: 12px;
@@ -150,8 +148,7 @@ header.site-header h1 {
   display: inline-block;
   margin: 0;
   padding: 0;
-  position: fixed;
-  left: 50px;
+  float: left;
 }
 header.site-header a {
   text-decoration: none;
@@ -358,12 +355,13 @@ section.section.videos-section a.btn.read-manifiesto:hover {
   color: #fff;
 }
 section.section.videos-section .videos {
-  width: 1080px;
   margin: auto;
+  text-align: center;
 }
 section.section.videos-section .videos .left {
   float: left;
   width: 268px;
+  padding-left: 20px;
 }
 section.section.videos-section .videos .video {
   width: 248px;
@@ -371,7 +369,6 @@ section.section.videos-section .videos .video {
   margin: 0 20px 20px 0;
   background: #000;
   display: inline-block;
-  float: left;
   background: url("../images/video-santi.png") center;
   background-size: cover;
   position: relative;
@@ -801,6 +798,34 @@ footer .last-line {
 ================================================== */
 /* Smaller than standard 960 (devices and browsers) */
 @media only screen and (max-width: 959px) {
+  header.site-header {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  section.section {
+    padding: 100px 20px;
+  }
+  section.section.argentina .argentina-content .video-buenos-aires {
+    float: none;
+    width: 520px;
+    margin: auto;
+  }
+  section.section.argentina .argentina-content .what-we-need {
+    margin: auto;
+    margin-top: 40px;
+    float: none;
+    width: 94%;
+    text-align: center;
+  }
+  section.section.argentina .argentina-content .what-we-need .btn {
+    margin: 30px 20px 0 30px;
+  }
+  footer nav {
+    padding: 40px 0;
+  }
+  footer nav ul.nav li a {
+    margin: 0 14px;
+  }
 }
 /* Tablet Portrait size to standard 960 (devices and browsers) */
 @media only screen and (min-width: 768px) and (max-width: 959px) {

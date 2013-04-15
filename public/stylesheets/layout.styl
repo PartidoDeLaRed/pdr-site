@@ -65,9 +65,6 @@ body
 	background-size: cover;
 	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
 	-webkit-text-size-adjust: 100%;
-	min-width: 1024px;	
-
-
 
 h1,h2,h3,h4,h5,h6, .btn
 	font-family: "brandon-grotesque";
@@ -126,7 +123,6 @@ h1,h2,h3,h4,h5,h6, .btn
 
 
 header.site-header
-	min-width: 1024px;	
 	text-align: center;
 	font-family: "brandon-grotesque";
 	font-size: 12px;
@@ -145,8 +141,7 @@ header.site-header
 		display: inline-block;
 		margin: 0;
 		padding: 0;
-		position: fixed;
-		left: 50px;
+		float: left;
 	a 
 		text-decoration: none;
 		font-weight: bold;
@@ -345,21 +340,18 @@ section.section
 				color: white;
 
 		.videos
-			width: 1080px;
 			margin: auto;
-
-
-
+			text-align: center;
 			.left
 				float: left;
 				width: 268px;
+				padding-left: 20px;
 			.video
 				width: 248px;
 				height: 150px;
 				margin: 0 20px 20px 0;
 				background: black;
 				display: inline-block;
-				float: left;
 				background: url('../images/video-santi.png') center;
 				background-size: cover;
 				position: relative;
@@ -776,7 +768,37 @@ footer
 ================================================== */
 
 /* Smaller than standard 960 (devices and browsers) */
-@media only screen and (max-width: 959px) {}
+@media only screen and (max-width: 959px) 
+	header.site-header
+		padding-left: 30px; 
+		padding-right: 30px; 
+
+	section.section
+		padding: 100px 20px;
+
+	section.section.argentina 
+		.argentina-content
+			.video-buenos-aires
+				float: none;
+				width: 520px;
+				margin: auto;
+
+			.what-we-need
+				margin: auto;
+				margin-top: 40px;
+				float: none;
+				width: 94%;
+				text-align: center;
+				.btn 
+					margin: 30px 20px 0 30px;
+
+	footer
+		nav 
+			padding: 40px 0;
+			ul.nav
+				li 
+					a 
+						margin: 0 14px;
 
 /* Tablet Portrait size to standard 960 (devices and browsers) */
 @media only screen and (min-width: 768px) and (max-width: 959px) {}
