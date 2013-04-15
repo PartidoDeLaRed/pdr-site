@@ -300,7 +300,8 @@ section.section
 		.arrow-down
 			width: 30px;
 			height: 36px;
-			background: white url('../images/icon-arrow-down.png') no-repeat center;
+			background-color:#b4b9bc;
+
 			display: block;
 			position: absolute;
 			bottom: 0;
@@ -309,9 +310,14 @@ section.section
 			width: 4%;
 			border-top-left-radius: 3px;
 			border-top-right-radius: 3px;
-
+			i 
+				background: url('../images/icon-arrow-down.png') no-repeat center;
+				width: 20px;
+				height: 10px;
+				display: block;
+				margin: 14px auto;
 			&:hover
-				opacity: .9;
+				opacity: 1;
 
 	&.videos-section
 		overflow: hidden;
@@ -707,26 +713,27 @@ section.section
 			width: 50%;
 			float: left;
 			text-transform: uppercase;
-			background: #333;
+			background: #f1f1f1;
 			font-family: "brandon-grotesque";
 			text-align: center;
 			padding: 70px 0;
 			font-size: 20px;
-			height: 70px;
+			height: 40px;
 			span
 				display: block;
-				margin-bottom: 20px;
+				margin-bottom: 30px;
+				display: none;
 				letter-spacing: 2px;
 
 			&.facebook
-				background: #3a5998;
+				color: #3a5998;
 				iframe
 					background: white;
 					padding: 10px;
 					border: none; overflow: hidden; width: 450px; height: 24px;
 
 			&.twitter
-				background: #0babed;
+				color: #0babed;
 
 				iframe
 					margin: 0 20px;

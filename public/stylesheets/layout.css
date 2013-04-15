@@ -310,7 +310,7 @@ section.section.splash .section-title .btn.btn2 {
 section.section.splash .arrow-down {
   width: 30px;
   height: 36px;
-  background: #fff url("../images/icon-arrow-down.png") no-repeat center;
+  background-color: #b4b9bc;
   display: block;
   position: absolute;
   bottom: 0;
@@ -320,8 +320,15 @@ section.section.splash .arrow-down {
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
 }
+section.section.splash .arrow-down i {
+  background: url("../images/icon-arrow-down.png") no-repeat center;
+  width: 20px;
+  height: 10px;
+  display: block;
+  margin: 14px auto;
+}
 section.section.splash .arrow-down:hover {
-  opacity: 0.9;
+  opacity: 1;
 }
 section.section.videos-section {
   overflow: hidden;
@@ -705,20 +712,21 @@ section.section.links .link-box {
   width: 50%;
   float: left;
   text-transform: uppercase;
-  background: #333;
+  background: #f1f1f1;
   font-family: "brandon-grotesque";
   text-align: center;
   padding: 70px 0;
   font-size: 20px;
-  height: 70px;
+  height: 40px;
 }
 section.section.links .link-box span {
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  display: none;
   letter-spacing: 2px;
 }
 section.section.links .link-box.facebook {
-  background: #3a5998;
+  color: #3a5998;
 }
 section.section.links .link-box.facebook iframe {
   background: #fff;
@@ -729,7 +737,7 @@ section.section.links .link-box.facebook iframe {
   height: 24px;
 }
 section.section.links .link-box.twitter {
-  background: #0babed;
+  color: #0babed;
 }
 section.section.links .link-box.twitter iframe {
   margin: 0 20px;

@@ -10,28 +10,26 @@ html(lang='en')
 
 		link(href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css", rel="stylesheet")
 		link(rel='stylesheet', href='stylesheets/layout.css')
-		//if lt IE 9
-			script(src='http://html5shim.googlecode.com/svn/trunk/html5.js')
+		
 
 		link(rel='shortcut icon', href='/images/favicon.ico')
 		//- link(rel='apple-touch-icon', href='images/apple-touch-icon.png')
 		//- link(rel='apple-touch-icon', sizes='72x72', href='images/apple-touch-icon-72x72.png')
 		//- link(rel='apple-touch-icon', sizes='114x114', href='images/apple-touch-icon-114x114.png')
 		
+		//if lt IE 9
+			script(src='http://html5shim.googlecode.com/svn/trunk/html5.js')
+	
 		script(type='text/javascript', src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js')
-		// script(type='text/javascript', src='https://github.com/protonet/jquery.inview/raw/master/jquery.inview.min.js')
-		// script(type='text/javascript', src='javascripts/vendor/scroll-parallax/jquery.scrollParallax.min.js')
 		script(type="text/javascript", src="//raw.github.com/flesler/jquery.scrollTo/master/jquery.scrollTo.min.js")
 		script(type="text/javascript", src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/js/bootstrap.min.js")
 
-		// script(type="text/javascript", src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.8/jquery.validate.min.js")
-
 		script(type="text/javascript", src="javascripts/site.js")
-
 
 		script(type='text/javascript', src='//use.typekit.net/nzi0bpe.js')
 		script(type='text/javascript')
 			try{Typekit.load();}catch(e){}
+	
 	body(data-spy="scroll", data-target=".navbar", data-offset="120")
 		header.site-header.clearfix
 			
@@ -60,7 +58,7 @@ html(lang='en')
 					li
 						a(href='#colaborar', title='') Colaborar
 					li
-						a(href="http://wiki.partidodelared.org", target="_blank") Wiki
+						a(href="http://wiki.partidodelared.org/index.php/Página_principal", target="_blank") Wiki
 					li
 						a(href="http://blog.partidodelared.org", target="_blank") Blog
 
@@ -79,6 +77,7 @@ html(lang='en')
 					a.btn(href='#manifiesto', title='Mira nuestros videos') Nuestro manifiesto
 			
 			a(href="#argentina").arrow-down
+				i
 
 		section.argentina.section#argentina
 			.section-title
