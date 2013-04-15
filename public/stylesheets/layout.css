@@ -685,7 +685,7 @@ section.section.who-we-are .btn-sumate-ahora {
   margin-top: 20px;
 }
 section.section.how-to-join {
-  background: #f1f1f1 url("../images/bg-congress-2.jpg") fixed;
+  background: #dcdcd3 url("../images/bg-congress-2.jpg") fixed;
   background-size: cover;
 }
 section.section.how-to-join .colaborate-box {
@@ -867,9 +867,11 @@ footer .last-line {
   }
   section.section {
     padding: 40px;
+    background-image: none !important;
   }
   section.section .section-title {
     width: auto;
+    margin-bottom: 30px;
   }
   section.section .section-title h2 {
     font-size: 18px;
@@ -902,6 +904,9 @@ footer .last-line {
   }
   section.section.argentina .argentina-content .video-buenos-aires {
     width: auto;
+  }
+  section.section.who-we-are {
+    padding-top: 40px;
   }
   section.section.who-we-are .description {
     float: none;
