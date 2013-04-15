@@ -253,6 +253,7 @@ section.section.splash img {
   height: 70px;
 }
 section.section.splash .section-title {
+  background: #000;
   background: rgba(0,0,0,0.82);
   width: 700px;
   margin: auto;
@@ -716,12 +717,11 @@ section.section.links .link-box {
   font-family: "brandon-grotesque";
   text-align: center;
   padding: 70px 0;
-  font-size: 20px;
+  font-size: 16px;
 }
 section.section.links .link-box span {
   display: block;
-  margin-bottom: 30px;
-  display: none;
+  margin-bottom: 20px;
   letter-spacing: 2px;
 }
 section.section.links .link-box.facebook {
@@ -739,6 +739,7 @@ section.section.links .link-box.facebook iframe {
 }
 section.section.links .link-box.twitter {
   color: #0babed;
+  background: rgba(0,0,0,0.08);
 }
 section.section.links .link-box.twitter iframe {
   margin: 12px 20px 8px 20px;
