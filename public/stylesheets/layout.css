@@ -166,6 +166,7 @@ header.site-header .navbar-fixed-top {
 }
 header.site-header .navbar .container {
   padding: 0 50px;
+  width: auto;
 }
 header.site-header .navbar-inverse .navbar-inner {
   background: none;
@@ -757,7 +758,6 @@ section.section.links .link-box.facebook {
   box-shadow: #ccc 1px 0 0 inset;
 }
 section.section.links .link-box.facebook iframe {
-  background: #fff;
   margin-top: 3px;
   padding: 10px;
   border: none;
