@@ -487,11 +487,10 @@ section.section
 		.browser
 			position: relative;
 			overflow: visible;
-			background: white url('../images/browser.png') center no-repeat ;
-			width: 800px;
-			height: 600px;
 			margin: auto;
 			margin-top: 0px;
+			text-align: center;
+			max-width: 800px;
 
 			.dot
 				position: absolute;
@@ -801,9 +800,6 @@ footer
 
 /* Smaller than standard 960 (devices and browsers) */
 @media only screen and (max-width: 959px) 
-	header.site-header
-		background: red !important;
-
 	section.section
 		padding: 100px 20px;
 
@@ -833,9 +829,6 @@ footer
 
 /* Tablet Portrait size to standard 960 (devices and browsers) */
 @media only screen and (min-width: 768px) and (max-width: 959px) 
-	header.site-header
-		background: yellow !important;
-
 	section.section 
 		.section-title
 			width: auto;
@@ -849,10 +842,22 @@ footer
 		.section-title
 			width: auto;
 
+	section.section.splash .section-title
+		width: auto;
+		margin: 20px;
+		.description
+			font-size: 16px;
+			line-height: 28px;
+
+		.btn 
+			margin-bottom: 20px;
+
 	section.section.democracy-network .browser
 		background-size: cover;
 		width: auto;
 			
+		.dot 
+			display: none;
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 @media only screen and (min-width: 480px) and (max-width: 767px) 
@@ -863,6 +868,15 @@ footer
 		padding: 30px 0;
 		float: none;
 		width: 100%;
+
+
+	section.section.splash .section-title
+		padding: 20px;
+		.description
+			font-size: 16px;
+
+		.btn 
+			margin-bottom: 20px;
 
 	footer
 		font-size: 10px;

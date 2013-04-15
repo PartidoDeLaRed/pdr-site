@@ -502,11 +502,10 @@ section.section.democracy-network .section-title .btn {
 section.section.democracy-network .browser {
   position: relative;
   overflow: visible;
-  background: #fff url("../images/browser.png") center no-repeat;
-  width: 800px;
-  height: 600px;
   margin: auto;
   margin-top: 0px;
+  text-align: center;
+  max-width: 800px;
 }
 section.section.democracy-network .browser .dot {
   position: absolute;
@@ -830,9 +829,6 @@ footer .last-line {
 ================================================== */
 /* Smaller than standard 960 (devices and browsers) */
 @media only screen and (max-width: 959px) {
-  header.site-header {
-    background: #f00 !important;
-  }
   section.section {
     padding: 100px 20px;
   }
@@ -860,9 +856,6 @@ footer .last-line {
 }
 /* Tablet Portrait size to standard 960 (devices and browsers) */
 @media only screen and (min-width: 768px) and (max-width: 959px) {
-  header.site-header {
-    background: #ff0 !important;
-  }
   section.section .section-title {
     width: auto;
   }
@@ -875,9 +868,23 @@ footer .last-line {
   section.section .section-title {
     width: auto;
   }
+  section.section.splash .section-title {
+    width: auto;
+    margin: 20px;
+  }
+  section.section.splash .section-title .description {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  section.section.splash .section-title .btn {
+    margin-bottom: 20px;
+  }
   section.section.democracy-network .browser {
     background-size: cover;
     width: auto;
+  }
+  section.section.democracy-network .browser .dot {
+    display: none;
   }
 }
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
@@ -889,6 +896,15 @@ footer .last-line {
     padding: 30px 0;
     float: none;
     width: 100%;
+  }
+  section.section.splash .section-title {
+    padding: 20px;
+  }
+  section.section.splash .section-title .description {
+    font-size: 16px;
+  }
+  section.section.splash .section-title .btn {
+    margin-bottom: 20px;
   }
   footer {
     font-size: 10px;
