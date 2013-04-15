@@ -324,7 +324,6 @@ section.section
 
 
 		.arrow-down
-			width: 30px;
 			height: 36px;
 			background-color:#b4b9bc;
 			background-color: rgba(180,185, 188, .9);
@@ -332,8 +331,9 @@ section.section
 			position: absolute;
 			bottom: 0;
 			margin: auto;
-			left: 48%;
-			width: 4%;
+			left: 40%;
+			right: 40%;
+			width: 50px;
 			border-top-left-radius: 3px;
 			border-top-right-radius: 3px;
 			i 
@@ -842,20 +842,34 @@ footer
 		padding: 40px;
 		.section-title
 			width: auto;
+			h2 
+				font-size: 18px;
 			.description
 				font-size: 16px;
 				line-height: 28px;
 
-	section.section.splash .section-title
+	section.section.splash 
+		padding: 0;
+		height: auto !important; 
+		.section-title
+			width: auto;
+			margin: 0;
+			bottom: 0;
+
+			.description
+				font-size: 16px;
+				line-height: 28px;
+
+			.btn 
+				margin-bottom: 20px;
+
+		.arrow-down
+			display: none;
+
+	section.section.argentina .argentina-content 
 		width: auto;
-		margin: 20px;
-		.description
-			font-size: 16px;
-			line-height: 28px;
-
-		.btn 
-			margin-bottom: 20px;
-
+		.video-buenos-aires
+			width: auto;
 
 	section.section.who-we-are 
 		.description
@@ -884,12 +898,13 @@ footer
 		padding: 30px 0;
 		float: none;
 		width: 100%;
+	section.section.argentina .argentina-content .video-buenos-aires iframe
+		height: 200x;
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 @media only screen and (min-width: 480px) and (max-width: 767px) 
 	body
 		color: none;
-
 
 
 
