@@ -173,6 +173,7 @@ header.site-header .navbar-inverse .navbar-inner {
   box-shadow: none;
   border: 0;
   text-shadow: none;
+  background: #fff;
   background: rgba(255,255,255,0.96);
 }
 header.site-header .navbar-inverse .navbar-inner ul.nav {
