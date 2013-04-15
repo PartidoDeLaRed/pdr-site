@@ -120,21 +120,20 @@ h1,h2,h3,h4,h5,h6, .btn
 
 
 
+.container
+	padding: 0 50px;
 
 
 header.site-header
 	text-align: center;
 	font-family: "brandon-grotesque";
 	font-size: 12px;
-	padding: 28px 50px 0 50px;
-	position: fixed;
-	height: 39px;
 	left: 0;
 	right: 0;
 	z-index: 10000;
-	background: rgba(255,255,255,.96);
 	text-transform: uppercase;
 	letter-spacing: 1px;
+	overflow: hidden;
 	h1 
 		font-size: 12px;
 		line-height: 12px;
@@ -142,25 +141,36 @@ header.site-header
 		margin: 0;
 		padding: 0;
 		float: left;
+		padding-top: 2px;
+		padding: 24px 0;
+
 	a 
 		text-decoration: none;
 		font-weight: bold;
 		line-height: 12px;
 		color: black;
-	nav.navbar
-		display: inline-block;
-		padding: 0;
-		margin: 0;
-		float: right;
 
+	button.collapsed
+		margin-top: 15px;
+
+	.navbar-inverse .navbar-inner
+		background: none;
+		padding: 0;
+		box-shadow: none;
+		border: 0;
+		text-shadow: none;
+		background: rgba(255,255,255,.96);
 		ul.nav
-			margin: 0;
-			padding: 0;
 			text-align: right;
+			float: right;
 			li 
 				display: inline-block;
 				margin: 0;
 				padding: 0;
+				display: inline-block;
+				float: none;
+				padding: 24px 0;
+
 				a 
 					margin: 0 16px;
 					padding: 0;
@@ -178,9 +188,19 @@ header.site-header
 
 				&.hide
 					display: none;
+
+			&.in 
+				float: none;
+				li 
+					display: block;
+					a 
+						display: block;
+						text-align: center;
+						padding: 10px;
 	.social
 		float: right;
 		margin-top: -5px;
+		display: none;
 		a 
 			width: 24px;
 			height: 20px;
@@ -770,6 +790,7 @@ footer
 /* Smaller than standard 960 (devices and browsers) */
 @media only screen and (max-width: 959px) 
 	header.site-header
+		background: red !important;
 		padding-left: 30px; 
 		padding-right: 30px; 
 
@@ -801,13 +822,26 @@ footer
 						margin: 0 14px;
 
 /* Tablet Portrait size to standard 960 (devices and browsers) */
-@media only screen and (min-width: 768px) and (max-width: 959px) {}
+@media only screen and (min-width: 768px) and (max-width: 959px) 
+	header.site-header
+		background: yellow !important;
+
 
 /* All Mobile Sizes (devices and browser) */
-@media only screen and (max-width: 767px) {}
+@media only screen and (max-width: 767px) 
+	header.site-header
+		background: pink !important;
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-@media only screen and (min-width: 480px) and (max-width: 767px) {}
+@media only screen and (min-width: 480px) and (max-width: 767px) 
+	header.site-header
+		background: green !important;
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-@media only screen and (max-width: 479px) {}
+@media only screen and (max-width: 479px)
+	header.site-header
+		background: purple !important;
+
+
+
+

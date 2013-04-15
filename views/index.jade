@@ -32,35 +32,42 @@ html(lang='en')
 	
 	body(data-spy="scroll", data-target=".navbar", data-offset="120")
 		header.site-header.clearfix
-			
-			h1
-				a(href='#splash', title='Partido De La Red') Partido De La Red
-			
-			.social
-				a(target="_blank", href='http://facebook.com/partidodelared', title='').facebook Facebook
-				a(target="_blank", href='http://twitter.com/partidodelared', title='').twitter Twitter
-			
-			nav.navbar
-				ul.nav
-					li.hide.active
-						a(href='#splash', title='') Somos Red
+			.navbar.navbar-inverse.navbar-fixed-top
+				.navbar-inner
+					.container
+						button.btn.btn-navbar(type='button', data-toggle='collapse', data-target='.nav-collapse')
+							span.icon-bar
+							span.icon-bar
+							span.icon-bar
 
-					li 
-						a(href='#argentina', title='') Propuesta
+						h1
+							a(href='#splash', title='Partido De La Red') Partido De La Red
+						
+						.social
+							a(target="_blank", href='http://facebook.com/partidodelared', title='').facebook Facebook
+							a(target="_blank", href='http://twitter.com/partidodelared', title='').twitter Twitter
+						
+					
+						ul.nav.nav-collapse.collapse
+							li.hide.active
+								a(href='#splash', title='') Somos Red
 
-					li
-						a(href='#democracia', title='') Democracia
+							li 
+								a(href='#argentina', title='') Propuesta
 
-					li
-						a(href='#manifiesto', title='') Manifiesto
-					li
-						a(href='#quienes-somos', title='') Pares
-					li
-						a(href='#colaborar', title='') Colaborar
-					li
-						a(href="http://wiki.partidodelared.org/index.php/Página_principal", target="_blank") Wiki
-					li
-						a(href="http://blog.partidodelared.org", target="_blank") Blog
+							li
+								a(href='#democracia', title='') Democracia
+
+							li
+								a(href='#manifiesto', title='') Manifiesto
+							li
+								a(href='#quienes-somos', title='') Pares
+							li
+								a(href='#colaborar', title='') Colaborar
+							li
+								a(href="http://wiki.partidodelared.org/index.php/Página_principal", target="_blank") Wiki
+							li
+								a(href="http://blog.partidodelared.org", target="_blank") Blog
 
 
 
@@ -400,7 +407,7 @@ html(lang='en')
 		section.section.links.clearfix
 			.facebook.link-box
 				span Facebook
-				iframe(src='//www.facebook.com/plugins/like.php?href=http%3A%2F%2Ffacebook.com%2Fpartidodelared&send=false&layout=standard&width=450&show_faces=false&font&colorscheme=light&action=like&height=70', scrolling='no', frameborder='0', allowtransparency='true')
+				iframe(src='//www.facebook.com/plugins/like.php?href=http%3A%2F%2Ffacebook.com%2Fpartidodelared&send=false&layout=standard&width=420&show_faces=false&font&colorscheme=light&action=like&height=70', scrolling='no', frameborder='0', allowtransparency='true')
 
 			.twitter.link-box
 				span Twitter

@@ -128,19 +128,19 @@ h6,
   background: #fff;
   box-shadow: none;
 }
+.container {
+  padding: 0 50px;
+}
 header.site-header {
   text-align: center;
   font-family: "brandon-grotesque";
   font-size: 12px;
-  padding: 28px 50px 0 50px;
-  position: fixed;
-  height: 39px;
   left: 0;
   right: 0;
   z-index: 10000;
-  background: rgba(255,255,255,0.96);
   text-transform: uppercase;
   letter-spacing: 1px;
+  overflow: hidden;
 }
 header.site-header h1 {
   font-size: 12px;
@@ -149,6 +149,8 @@ header.site-header h1 {
   margin: 0;
   padding: 0;
   float: left;
+  padding-top: 2px;
+  padding: 24px 0;
 }
 header.site-header a {
   text-decoration: none;
@@ -156,23 +158,30 @@ header.site-header a {
   line-height: 12px;
   color: #000;
 }
-header.site-header nav.navbar {
-  display: inline-block;
+header.site-header button.collapsed {
+  margin-top: 15px;
+}
+header.site-header .navbar-inverse .navbar-inner {
+  background: none;
   padding: 0;
-  margin: 0;
+  box-shadow: none;
+  border: 0;
+  text-shadow: none;
+  background: rgba(255,255,255,0.96);
+}
+header.site-header .navbar-inverse .navbar-inner ul.nav {
+  text-align: right;
   float: right;
 }
-header.site-header nav.navbar ul.nav {
-  margin: 0;
-  padding: 0;
-  text-align: right;
-}
-header.site-header nav.navbar ul.nav li {
+header.site-header .navbar-inverse .navbar-inner ul.nav li {
   display: inline-block;
   margin: 0;
   padding: 0;
+  display: inline-block;
+  float: none;
+  padding: 24px 0;
 }
-header.site-header nav.navbar ul.nav li a {
+header.site-header .navbar-inverse .navbar-inner ul.nav li a {
   margin: 0 16px;
   padding: 0;
   color: #999;
@@ -180,19 +189,31 @@ header.site-header nav.navbar ul.nav li a {
   box-shadow: none;
   text-shadow: none;
 }
-header.site-header nav.navbar ul.nav li a:hover {
+header.site-header .navbar-inverse .navbar-inner ul.nav li a:hover {
   background: none;
   box-shadow: none;
 }
-header.site-header nav.navbar ul.nav li.active a {
+header.site-header .navbar-inverse .navbar-inner ul.nav li.active a {
   color: #333;
 }
-header.site-header nav.navbar ul.nav li.hide {
+header.site-header .navbar-inverse .navbar-inner ul.nav li.hide {
   display: none;
+}
+header.site-header .navbar-inverse .navbar-inner ul.nav.in {
+  float: none;
+}
+header.site-header .navbar-inverse .navbar-inner ul.nav.in li {
+  display: block;
+}
+header.site-header .navbar-inverse .navbar-inner ul.nav.in li a {
+  display: block;
+  text-align: center;
+  padding: 10px;
 }
 header.site-header .social {
   float: right;
   margin-top: -5px;
+  display: none;
 }
 header.site-header .social a {
   width: 24px;
@@ -799,6 +820,7 @@ footer .last-line {
 /* Smaller than standard 960 (devices and browsers) */
 @media only screen and (max-width: 959px) {
   header.site-header {
+    background: #f00 !important;
     padding-left: 30px;
     padding-right: 30px;
   }
@@ -829,15 +851,27 @@ footer .last-line {
 }
 /* Tablet Portrait size to standard 960 (devices and browsers) */
 @media only screen and (min-width: 768px) and (max-width: 959px) {
+  header.site-header {
+    background: #ff0 !important;
+  }
 }
 /* All Mobile Sizes (devices and browser) */
 @media only screen and (max-width: 767px) {
+  header.site-header {
+    background: #ffc0cb !important;
+  }
 }
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
+  header.site-header {
+    background: #008000 !important;
+  }
 }
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) {
+  header.site-header {
+    background: #800080 !important;
+  }
 }
 @-moz-keyframes fadeIn {
   0% {
