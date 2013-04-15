@@ -94,17 +94,17 @@ $(function(){
 	});
 
 
-	$('.members a').popover({trigger: 'hover'})
+	// $('.members a').popover({trigger: 'hover'})
 
-	$('.popover-ajax').each(function(index){
+	// 	$('.popover-ajax').each(function(index){
 
-    var el=$(this);
+	//     var el=$(this);
 
-    $.get(el.attr('data-load'),function(d){
-        el.popover({content: d});       
-    });     
+	//     $.get(el.attr('data-load'),function(d){
+	//         el.popover({content: d});       
+	//     });     
 
-});
+	// });
 
 });
 
