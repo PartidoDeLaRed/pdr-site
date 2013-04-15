@@ -158,8 +158,14 @@ header.site-header a {
   line-height: 12px;
   color: #000;
 }
-header.site-header button.collapsed {
+header.site-header button.btn-navbar {
   margin-top: 15px;
+}
+header.site-header .navbar-fixed-top {
+  margin-bottom: 0;
+}
+header.site-header .navbar .container {
+  padding: 0 50px;
 }
 header.site-header .navbar-inverse .navbar-inner {
   background: none;
@@ -172,6 +178,8 @@ header.site-header .navbar-inverse .navbar-inner {
 header.site-header .navbar-inverse .navbar-inner ul.nav {
   text-align: right;
   float: right;
+  padding: 0;
+  margin: 0;
 }
 header.site-header .navbar-inverse .navbar-inner ul.nav li {
   display: inline-block;
@@ -179,7 +187,6 @@ header.site-header .navbar-inverse .navbar-inner ul.nav li {
   padding: 0;
   display: inline-block;
   float: none;
-  padding: 24px 0;
 }
 header.site-header .navbar-inverse .navbar-inner ul.nav li a {
   margin: 0 16px;
@@ -188,6 +195,7 @@ header.site-header .navbar-inverse .navbar-inner ul.nav li a {
   background: none;
   box-shadow: none;
   text-shadow: none;
+  padding: 24px 0;
 }
 header.site-header .navbar-inverse .navbar-inner ul.nav li a:hover {
   background: none;
@@ -201,14 +209,17 @@ header.site-header .navbar-inverse .navbar-inner ul.nav li.hide {
 }
 header.site-header .navbar-inverse .navbar-inner ul.nav.in {
   float: none;
+  margin: 0;
 }
 header.site-header .navbar-inverse .navbar-inner ul.nav.in li {
   display: block;
 }
 header.site-header .navbar-inverse .navbar-inner ul.nav.in li a {
   display: block;
+  margin: 0;
   text-align: center;
-  padding: 10px;
+  padding: 18px 0;
+  border-top: 1px solid #ccc;
 }
 header.site-header .social {
   float: right;
@@ -821,8 +832,6 @@ footer .last-line {
 @media only screen and (max-width: 959px) {
   header.site-header {
     background: #f00 !important;
-    padding-left: 30px;
-    padding-right: 30px;
   }
   section.section {
     padding: 100px 20px;
@@ -854,23 +863,44 @@ footer .last-line {
   header.site-header {
     background: #ff0 !important;
   }
+  section.section .section-title {
+    width: auto;
+  }
 }
 /* All Mobile Sizes (devices and browser) */
 @media only screen and (max-width: 767px) {
-  header.site-header {
-    background: #ffc0cb !important;
+  body {
+    padding: 0;
+  }
+  section.section .section-title {
+    width: auto;
+  }
+  section.section.democracy-network .browser {
+    background-size: cover;
+    width: auto;
   }
 }
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  header.site-header {
-    background: #008000 !important;
+  body {
+    color: none;
+  }
+  section.section.links .link-box {
+    padding: 30px 0;
+    float: none;
+    width: 100%;
+  }
+  footer {
+    font-size: 10px;
+  }
+  footer nav {
+    display: none;
   }
 }
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) {
-  header.site-header {
-    background: #800080 !important;
+  body {
+    color: none;
   }
 }
 @-moz-keyframes fadeIn {

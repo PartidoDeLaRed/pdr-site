@@ -150,8 +150,14 @@ header.site-header
 		line-height: 12px;
 		color: black;
 
-	button.collapsed
+	button.btn-navbar
 		margin-top: 15px;
+
+	.navbar-fixed-top
+		margin-bottom: 0;
+
+	.navbar .container 
+		padding: 0 50px;
 
 	.navbar-inverse .navbar-inner
 		background: none;
@@ -163,13 +169,14 @@ header.site-header
 		ul.nav
 			text-align: right;
 			float: right;
+			padding: 0;
+			margin: 0;
 			li 
 				display: inline-block;
 				margin: 0;
 				padding: 0;
 				display: inline-block;
 				float: none;
-				padding: 24px 0;
 
 				a 
 					margin: 0 16px;
@@ -178,6 +185,7 @@ header.site-header
 					background: none;
 					box-shadow: none;
 					text-shadow: none;
+					padding: 24px 0;
 
 					&:hover
 						background: none;
@@ -191,12 +199,16 @@ header.site-header
 
 			&.in 
 				float: none;
+				margin: 0;
 				li 
 					display: block;
 					a 
 						display: block;
+						margin: 0;
 						text-align: center;
-						padding: 10px;
+						padding: 18px 0;
+						border-top: 1px solid #ccc;
+
 	.social
 		float: right;
 		margin-top: -5px;
@@ -791,8 +803,6 @@ footer
 @media only screen and (max-width: 959px) 
 	header.site-header
 		background: red !important;
-		padding-left: 30px; 
-		padding-right: 30px; 
 
 	section.section
 		padding: 100px 20px;
@@ -826,22 +836,43 @@ footer
 	header.site-header
 		background: yellow !important;
 
+	section.section 
+		.section-title
+			width: auto;
 
 /* All Mobile Sizes (devices and browser) */
 @media only screen and (max-width: 767px) 
-	header.site-header
-		background: pink !important;
+	body
+		padding: 0;
+
+	section.section 
+		.section-title
+			width: auto;
+
+	section.section.democracy-network .browser
+		background-size: cover;
+		width: auto;
+			
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 @media only screen and (min-width: 480px) and (max-width: 767px) 
-	header.site-header
-		background: green !important;
+	body
+		color: none;
+
+	section.section.links .link-box
+		padding: 30px 0;
+		float: none;
+		width: 100%;
+
+	footer
+		font-size: 10px;
+
+		nav 
+			display: none;
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px)
-	header.site-header
-		background: purple !important;
-
-
+	body
+		color: none;
 
 
