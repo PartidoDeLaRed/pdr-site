@@ -848,6 +848,10 @@ footer .last-line {
   section.section.argentina .argentina-content .what-we-need .btn {
     margin: 30px 20px 0 30px;
   }
+  section.section.who-we-are .join-the-team .btn.btn-join {
+    margin-top: 30px;
+    display: inline-block;
+  }
   footer nav {
     padding: 40px 0;
   }
@@ -908,6 +912,7 @@ footer .last-line {
   }
   section.section.who-we-are {
     padding-top: 40px;
+    padding-bottom: 40px;
   }
   section.section.who-we-are .description {
     float: none;
@@ -917,10 +922,7 @@ footer .last-line {
   }
   section.section.who-we-are .join-the-team {
     margin-top: 20px;
-  }
-  section.section.who-we-are .join-the-team .btn.btn-join {
-    display: block;
-    margin-top: 30px;
+    line-height: 30px;
   }
   section.section.democracy-network .browser {
     background-size: cover;
