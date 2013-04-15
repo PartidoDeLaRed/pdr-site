@@ -310,7 +310,7 @@ section.section.splash .section-title .btn.btn2 {
 section.section.splash .arrow-down {
   width: 30px;
   height: 36px;
-  background: #edede4 url("../images/icon-arrow-down.png") no-repeat center;
+  background: #fff url("../images/icon-arrow-down.png") no-repeat center;
   display: block;
   position: absolute;
   bottom: 0;
@@ -548,7 +548,7 @@ section.section.how-contribute {
   background-color: #2cabed;
 }
 section.section.argentina {
-  background: #e2e9eb url("../images/bg-argentina.jpg") fixed;
+  background: #d4dada url("../images/bg-argentina.jpg") fixed;
   background-size: 110%;
   min-height: 400px;
 }

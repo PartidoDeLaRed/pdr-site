@@ -45,13 +45,16 @@ html(lang='en')
 			nav.navbar
 				ul.nav
 					li.hide.active
-						a(href='#splash', title='') Somos La Red
-					li
-						a(href='#manifiesto', title='') Manifiesto
+						a(href='#splash', title='') Somos Red
+
+					li 
+						a(href='#argentina', title='') Propuesta
+
 					li
 						a(href='#democracia', title='') Democracia
-					li 
-						a(href='#argentina', title='') Buenos Aires
+
+					li
+						a(href='#manifiesto', title='') Manifiesto
 					li
 						a(href='#quienes-somos', title='') Pares
 					li
@@ -68,21 +71,69 @@ html(lang='en')
 				.section-content
 					p
 						img(src="images/logo.png")
-					h1 Somos La Red
+					h1 Somos Red
 					p.description
 						| Vivimos en una democracia estancada que no atiende a las nuevas demandas. Nuestra propuesta es la Democracia en Red: Vamos a presentar candidatos para la legislatura que se comprometen a votar siempre acorde a la red, abriendo el ancho de banda de la participación democrática. 
 					a.btn.btn-kickstarter(href='#colaborar', title='Colabora en Kickstarter')
 						| Como colaborar
 					a.btn(href='#manifiesto', title='Mira nuestros videos') Nuestro manifiesto
 			
-			a(href="#manifiesto").arrow-down
+			a(href="#argentina").arrow-down
+
+		section.argentina.section#argentina
+			.section-title
+				h2 Propuesta
+		
+			.argentina-content.clearfix
+				.video-buenos-aires
+					iframe(width='560', height='290', src='http://www.youtube.com/embed/mfEsv0JgMik', frameborder='0', allowfullscreen='allowfullscreen')
+
+				.what-we-need
+					p Somos un partido con el objetivo de abrir el ancho de banda de la democracia: no alcanza con votar cada dos años si podemos expresarnos todos los días usando la red.
+					p Los legisladores de la red se comprometen a votar siempre acorde a lo que se resuelve online en la Democracia en Red. Cada click es ahora también un voto.
+
+					a(href='#myModal', role='button', data-toggle='modal').btn Enviar datos
+					a(href="http://wiki.partidodelared.org/index.php/FAQ_-_Preguntas_Frecuentes", target="_blank").btn Preguntas Frecuentes
+
+
+		
+		section.democracy-network.section#democracia
+			.section-title
+				h2 Democracia en red
+				p.description
+					| Nuestro software, de código abierto y libre, es una plataforma que permite a todo ciudadano hacerle llegar su voto diario a los legisladores de la red.
+
+			.browser
+
+
+				a(href="", data-toggle="popover", data-content="Soluciones brindadas por ciudadanos y representantes para cada problématica se debaten entre todos.", data-title="Crear problématica", data-placement="left").dot-write.dot
+					span.mapMarkGlow
+					span.mapMarkShape
+
+				a(href="", data-toggle="popover", data-content="Se unifica la identidad virtual con la legal de todo ciudadano y luego se verifica entre pares.", data-title="Perfil de usuario", data-placement="left").dot-profile.dot
+					span.mapMarkGlow
+					span.mapMarkShape
+
+				a(href="", data-toggle="popover", data-content="El planteo de un problema ciudadano se delimita por tiempo y región, y todos pueden contribuir con fuentes y datos.", data-title="Problematica", data-placement="right").dot-problematica.dot
+					span.mapMarkGlow
+					span.mapMarkShape
+
+				//- a(href="", data-toggle="popover", data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit.", data-title="Propuestas", data-placement="right").dot-propuestas.dot
+				//- 	span.mapMarkGlow
+				//- 	span.mapMarkShape
+
+				a(href="", data-toggle="popover", data-content="Toda propuesta se puede votar directamente o delegar el voto a alguien de confianza.", data-title="Delegaciones", data-placement="left").dot-delegar.dot
+					span.mapMarkGlow
+					span.mapMarkShape
+
+
 
 
 		section.videos-section.section#manifiesto
 			.section-title
 				h2 Manifiesto de la Red
 				p.description
-					| Fruto de las mismas prácticas que propone, este manifiesto expresa la voz de todos los que creemos en la consolidación de la democracia en la era de la red.
+					| Fruto de las mismas prácticas que propone, este manifiesto expresa la voz de los que creemos en la consolidación de la democracia en red.
 				
 			.videos
 				
@@ -168,12 +219,12 @@ html(lang='en')
 
 
 				.center
-					a(data-target="#partidodelared", data-toggle="modal", href="/video/MYl7vfiqivE").video.video-large
-						i
-						span #PartidoDeLaRed
+					//- a(data-target="#partidodelared", data-toggle="modal", href="/video/MYl7vfiqivE").video.video-large
+					//- 	i
+					//- 	span #PartidoDeLaRed
 
-					#partidodelared.modal.hide.fade
-						.modal-body
+					//- #partidodelared.modal.hide.fade
+					//- 	.modal-body
 					
 
 					a(data-target="#agustin", data-toggle="modal", href="/video/PzhmbcvRZpk").video.agustin
@@ -257,52 +308,7 @@ html(lang='en')
 				a(href="http://wiki.partidodelared.org/index.php/Manifiesto_de_la_Red", target="_blank").read-manifiesto.btn Lee el manifiesto de la red
 
 
-		
-		section.democracy-network.section#democracia
-			.section-title
-				h2 Democracia en red
-				p.description
-					| Nuestro software, de código abierto y libre, es una plataforma que permite a todo ciudadano hacerle llegar su voto diario a los legisladores de la red.
 
-			.browser
-
-
-				a(href="", data-toggle="popover", data-content="Soluciones brindadas por ciudadanos y representantes para cada problématica se debaten entre todos.", data-title="Crear problématica", data-placement="left").dot-write.dot
-					span.mapMarkGlow
-					span.mapMarkShape
-
-				a(href="", data-toggle="popover", data-content="Se unifica la identidad virtual con la legal de todo ciudadano y luego se verifica entre pares.", data-title="Perfil de usuario", data-placement="left").dot-profile.dot
-					span.mapMarkGlow
-					span.mapMarkShape
-
-				a(href="", data-toggle="popover", data-content="El planteo de un problema ciudadano se delimita por tiempo y región, y todos pueden contribuir con fuentes y datos.", data-title="Problematica", data-placement="right").dot-problematica.dot
-					span.mapMarkGlow
-					span.mapMarkShape
-
-				//- a(href="", data-toggle="popover", data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit.", data-title="Propuestas", data-placement="right").dot-propuestas.dot
-				//- 	span.mapMarkGlow
-				//- 	span.mapMarkShape
-
-				a(href="", data-toggle="popover", data-content="Toda propuesta se puede votar directamente o delegar el voto a alguien de confianza.", data-title="Delegaciones", data-placement="left").dot-delegar.dot
-					span.mapMarkGlow
-					span.mapMarkShape
-
-
-
-		section.argentina.section#argentina
-			.section-title
-				h2 Buenos Aires
-		
-			.argentina-content.clearfix
-				.video-buenos-aires
-					iframe(width='560', height='290', src='http://www.youtube.com/embed/mfEsv0JgMik', frameborder='0', allowfullscreen='allowfullscreen')
-
-				.what-we-need
-					p Somos un partido con el objetivo de abrir el ancho de banda de la democracia: no alcanza con votar cada dos años si podemos expresarnos todos los días usando la red.
-					p Los legisladores de la red se comprometen a votar siempre acorde a lo que se resuelve online en la Democracia en Red. Cada click es ahora también un voto.
-
-					a(href='#myModal', role='button', data-toggle='modal').btn Enviar datos
-					a(href="http://wiki.partidodelared.org/index.php/FAQ_-_Preguntas_Frecuentes", target="_blank").btn Preguntas Frecuentes
 
 		section.who-we-are.section.clearfix#quienes-somos
 			.section-title
@@ -418,7 +424,7 @@ html(lang='en')
 			nav
 				ul.nav
 					li.hide.active
-						a(href='#splash', title='') Somos La Red
+						a(href='#splash', title='') Somos Red
 					li
 						a(href='#manifiesto', title='') Manifiesto
 					li

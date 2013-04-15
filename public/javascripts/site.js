@@ -74,7 +74,6 @@ $(function(){
 
 	$('section.section.splash .section-content').animate({opacity: 1}, 3000);
 
-
 	var new_height = $(window).height();
 
 	$('section.section.splash').delay(300).animate({height: new_height}, 1000, function(){
@@ -87,15 +86,6 @@ $(function(){
 
 		$('section.section.splash').animate({height: new_height}, 10);
 	});
-
-	// $(window).scroll(function() {
-	// 	if ($(window).scrollTop() >= 1700) {
-	// 		$('.point-1').animate({opacity: 1, top: 0}, 1000);
-	// 		$('.point-2').animate({opacity: 1, top: 0}, 1500);
-	// 		$('.point-3').animate({opacity: 1, top: 0}, 2000);
-	// 		$('.point-4').animate({opacity: 1, top: 0}, 2500);
-	// 	}
-	// });
 
 	$('.dot').popover({trigger: 'hover'})
 
