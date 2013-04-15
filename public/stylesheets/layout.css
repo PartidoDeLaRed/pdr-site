@@ -164,7 +164,6 @@ header.site-header nav.navbar {
   padding: 0;
   margin: 0;
   float: right;
-  margin-right: 80px;
 }
 header.site-header nav.navbar ul.nav {
   margin: 0;
@@ -195,9 +194,8 @@ header.site-header nav.navbar ul.nav li.hide {
   display: none;
 }
 header.site-header .social {
-  position: fixed;
-  right: 50px;
-  top: 24px;
+  float: right;
+  margin-top: -5px;
 }
 header.site-header .social a {
   width: 24px;
@@ -312,6 +310,7 @@ section.section.splash .arrow-down {
   width: 30px;
   height: 36px;
   background-color: #b4b9bc;
+  background-color: rgba(180,185,188,0.9);
   display: block;
   position: absolute;
   bottom: 0;
