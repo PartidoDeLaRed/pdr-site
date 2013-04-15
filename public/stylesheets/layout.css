@@ -717,7 +717,6 @@ section.section.links .link-box {
   text-align: center;
   padding: 70px 0;
   font-size: 20px;
-  height: 40px;
 }
 section.section.links .link-box span {
   display: block;
@@ -727,9 +726,11 @@ section.section.links .link-box span {
 }
 section.section.links .link-box.facebook {
   color: #3a5998;
+  box-shadow: #ccc 1px 0 0 inset;
 }
 section.section.links .link-box.facebook iframe {
   background: #fff;
+  margin-top: 3px;
   padding: 10px;
   border: none;
   overflow: hidden;
@@ -740,7 +741,7 @@ section.section.links .link-box.twitter {
   color: #0babed;
 }
 section.section.links .link-box.twitter iframe {
-  margin: 0 20px;
+  margin: 12px 20px 8px 20px;
 }
 section.section.links .link-box.wiki,
 section.section.links .link-box.blog {
