@@ -735,13 +735,13 @@ section.section.how-to-join p:last-child {
 section.section.links {
   padding: 0;
   color: #fff;
+  background: #f1f1f1;
 }
 section.section.links .link-box {
   display: inline-block;
   width: 50%;
   float: left;
   text-transform: uppercase;
-  background: #f1f1f1;
   font-family: "brandon-grotesque";
   text-align: center;
   padding: 70px 0;
