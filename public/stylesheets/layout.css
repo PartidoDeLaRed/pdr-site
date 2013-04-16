@@ -990,6 +990,9 @@ footer .last-line {
   body {
     color: none;
   }
+  header.site-header .social {
+    display: none;
+  }
   section.section {
     padding: 30px 10px;
   }
