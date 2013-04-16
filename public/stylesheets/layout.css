@@ -587,7 +587,6 @@ section.section.argentina {
   min-height: 400px;
 }
 section.section.argentina .argentina-content {
-  width: 90%;
   margin: auto;
 }
 section.section.argentina .argentina-content .video-buenos-aires {
@@ -954,6 +953,9 @@ footer .last-line {
   }
   section.section.who-we-are .members a {
     width: 20%;
+  }
+  section.section.argentina .argentina-content {
+    width: auto;
   }
   section.section.argentina .argentina-content .video-buenos-aires iframe {
     height: 200px;

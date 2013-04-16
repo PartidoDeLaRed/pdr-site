@@ -584,7 +584,6 @@ section.section
 
 
 		.argentina-content
-			width: 90%;
 			margin: auto;
 
 			.video-buenos-aires
@@ -828,6 +827,7 @@ footer
 
 
 
+
 	section.section.links .link-box
 		padding: 30px 0;
 		float: none;
@@ -924,9 +924,10 @@ footer
 	section.section.who-we-are .members a
 		width: 20%;
 
-
-	section.section.argentina .argentina-content .video-buenos-aires iframe
-		height: 200px;
+	section.section.argentina .argentina-content 
+		width: auto;
+		.video-buenos-aires iframe
+			height: 200px;
 
 	section.section.how-to-join .colaborate-box .help-link
 		width: 100%;
@@ -938,7 +939,7 @@ footer
 		nav 
 			display: none;
 
-			
+
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 @media only screen and (min-width: 480px) and (max-width: 767px) 
 	body
