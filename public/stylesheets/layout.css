@@ -387,10 +387,6 @@ section.section.videos-section a.btn.read-manifiesto:hover {
 section.section.videos-section .videos {
   margin: auto;
   text-align: center;
-}
-section.section.videos-section .videos .left {
-  float: left;
-  width: 268px;
   padding-left: 20px;
 }
 section.section.videos-section .videos .video {
@@ -1025,6 +1021,9 @@ footer .last-line {
   }
   section.section.who-we-are .tooltip {
     display: none;
+  }
+  section.section.videos-section .videos {
+    padding-left: 0;
   }
   section.section.videos-section .modal {
     width: 90%;
