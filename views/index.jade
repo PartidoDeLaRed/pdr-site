@@ -324,7 +324,7 @@ html(lang='en')
 		
 			.members.clearfix
 				- each member, id in members
-					- if(id >= 40) return;
+					- if(id >= 50) return;
 					- var status = member.statuses[0] || {}
 					- var date = new Date(status.created_at)
 
