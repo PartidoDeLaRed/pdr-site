@@ -92,9 +92,6 @@ h1,h2,h3,h4,h5,h6, .btn
 .hide
 	display: none;
 
-.modal 
-	margin-top: 100px;
-
 .btn 
 	text-transform: uppercase;
 	letter-spacing: 2px;
@@ -825,9 +822,10 @@ footer
 	section.section.who-we-are 
 		.join-the-team 
 
-			.btn.btn-join
-				margin-top: 30px;
-				display: inline-block;
+			span
+				display: block;
+				margin-bottom: 30px;
+
 
 
 	section.section.links .link-box
@@ -856,7 +854,7 @@ footer
 
 	section.section 
 		padding: 40px;
-		background-image: none !important;
+		/*background-image: none !important;*/
 		.section-title
 			width: auto;
 			margin-bottom: 30px;
@@ -904,6 +902,17 @@ footer
 			line-height: 30px;
 			.btn.btn-join
 				margin-left: 0;
+	
+	section.section.videos-section .modal
+		width: 90%;
+		iframe
+			width: 100%;
+
+	section.section.videos-section 
+		.videos .video
+			margin-right: 0;
+		a.btn.read-manifiesto
+			margin-top: 30px;
 
 	section.section.democracy-network .browser
 		background-size: cover;
@@ -919,10 +928,17 @@ footer
 	section.section.argentina .argentina-content .video-buenos-aires iframe
 		height: 200px;
 
-
 	section.section.how-to-join .colaborate-box .help-link
 		width: 100%;
+		padding-right: 0;
+		padding-left: 0;
 
+	footer
+		font-size: 10px;
+		nav 
+			display: none;
+
+			
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 @media only screen and (min-width: 480px) and (max-width: 767px) 
 	body
@@ -936,12 +952,6 @@ footer
 		.btn 
 			margin-bottom: 20px;
 
-
-	footer
-		font-size: 10px;
-
-		nav 
-			display: none;
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px)
@@ -975,6 +985,12 @@ footer
 			
 		.tooltip
 			display: none;
+
+	section.section.videos-section .modal
+		width: 90%;
+		iframe
+			width: 100%;
+			height: 200px;
 
 	section.section.argentina .argentina-content .what-we-need
 		font-size: 16px;
