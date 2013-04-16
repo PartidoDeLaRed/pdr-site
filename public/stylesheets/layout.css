@@ -756,6 +756,7 @@ section.section.links .link-box span {
 section.section.links .link-box.facebook {
   color: #3a5998;
   box-shadow: #ccc 1px 0 0 inset;
+  overflow: hidden;
 }
 section.section.links .link-box.facebook iframe {
   margin-top: 3px;
@@ -899,6 +900,9 @@ footer .last-line {
     margin: 0;
     bottom: 0;
   }
+  section.section.splash .section-title h2 {
+    font-size: 16px;
+  }
   section.section.splash .section-title .description {
     font-size: 16px;
     line-height: 28px;
@@ -929,6 +933,9 @@ footer .last-line {
     margin-top: 20px;
     line-height: 30px;
   }
+  section.section.who-we-are .join-the-team .btn.btn-join {
+    margin-left: 0;
+  }
   section.section.democracy-network .browser {
     background-size: cover;
     width: auto;
@@ -940,7 +947,10 @@ footer .last-line {
     width: 20%;
   }
   section.section.argentina .argentina-content .video-buenos-aires iframe {
-    height: 200 x;
+    height: 200px;
+  }
+  section.section.how-to-join .colaborate-box .help-link {
+    width: 100%;
   }
 }
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
@@ -949,7 +959,7 @@ footer .last-line {
     color: none;
   }
   section.section.splash .section-title {
-    padding: 20px;
+    padding: 20px 10px;
   }
   section.section.splash .section-title .description {
     font-size: 16px;
@@ -968,6 +978,42 @@ footer .last-line {
 @media only screen and (max-width: 479px) {
   body {
     color: none;
+  }
+  section.section {
+    padding: 30px 10px;
+  }
+  section.section .section-title {
+    padding: 0;
+  }
+  section.section .section-title h2 {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+  section.section.splash .section-title {
+    padding: 20px 10px;
+  }
+  section.section.splash .section-title h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  section.section.splash .section-title .description {
+    margin-top: 0;
+  }
+  section.section.who-we-are {
+    padding: 30px 0;
+  }
+  section.section.who-we-are .section-title {
+    padding: 0 10px;
+  }
+  section.section.who-we-are .section-title h2 {
+    margin-bottom: 30px;
+  }
+  section.section.who-we-are .tooltip {
+    display: none;
+  }
+  section.section.argentina .argentina-content .what-we-need {
+    font-size: 16px;
+    line-height: 22px;
   }
 }
 @-moz-keyframes fadeIn {
