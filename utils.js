@@ -11,10 +11,10 @@ var fs = require('fs')
  */
 
 var tu = exports.tu = tuiter({
-    "consumer_key": "JeC0SJinMgFTS0ZTrY3WdQ",
-    "consumer_secret": "gieHdGoRizAE7Hnd8HrbyU18zRdcOcOnzLEdPw4UlU",
-    "access_token_key": "582286332-uIeTstfKRjw2eqZ1zKhmv9IrdylVhs0QwfR4w6yE",
-    "access_token_secret": "TpO24u3YqAGKxwiCdUAwueybFAysJEtHxvDaPOGHYg"
+    "consumer_key": process.env.TW_CONSUMER_KEY,
+    "consumer_secret": process.env.TW_CONSUMER_SECRET,
+    "access_token_key": process.env.TW_ACCESS_TOKEN,
+    "access_token_secret": process.env.TW_ACCESS_SECRET
   });
 
 /**
