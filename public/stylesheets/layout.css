@@ -365,8 +365,11 @@ section.section.videos-section .section-title {
   margin-bottom: 50px;
 }
 section.section.videos-section .modal {
-  width: 590px;
-  background: #fff;
+  width: 560px;
+  background: #000;
+}
+section.section.videos-section .modal .modal-body {
+  padding: 0;
 }
 section.section.videos-section a.btn.read-manifiesto {
   display: inline-block;
