@@ -357,8 +357,7 @@ section.section.splash .arrow-down:hover {
 }
 section.section.videos-section {
   overflow: hidden;
-  background: #edede4 url("../images/bg-network.png") repeat-x fixed;
-  background: #edede4;
+  background: #fff;
   text-align: center;
 }
 section.section.videos-section .section-title {
@@ -486,7 +485,7 @@ section.section.videos-section .videos .video.video-large {
   height: 320px;
 }
 section.section.democracy-network {
-  background: #fff;
+  background: #fff url("../images/bg-argentina.jpg") fixed;
 }
 section.section.democracy-network .section-title {
   margin-bottom: 40px;
@@ -578,7 +577,7 @@ section.section.how-contribute {
   background-color: #2cabed;
 }
 section.section.argentina {
-  background: #fff url("../images/bg-argentina.jpg") fixed;
+  background: #fff;
   background-size: 110%;
   min-height: 400px;
 }
@@ -613,7 +612,7 @@ section.section.argentina .argentina-content .what-we-need .btn:hover {
   color: #434749;
 }
 section.section.who-we-are {
-  background: #fff;
+  background: #f9f9f9;
   padding: 100px 0 100px 0;
 }
 section.section.who-we-are .section-title {
