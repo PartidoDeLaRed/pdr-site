@@ -655,6 +655,7 @@ section.section.who-we-are .join-the-team {
 section.section.who-we-are .join-the-team .btn.btn-join {
   display: inline-block;
   border-color: #2cabed;
+  background-color: #2cabed;
   background: none;
   color: #2cabed;
   margin-left: 30px;
@@ -678,8 +679,9 @@ section.section.who-we-are .btn-sumate-ahora {
   margin-top: 20px;
 }
 section.section.how-to-join {
-  background: #dcdcd3 url("../images/bg-congress-2.jpg") fixed;
+  background: #fff url("../images/bg-mafalda.jpg") fixed;
   background-size: cover;
+  color: #000;
 }
 section.section.how-to-join .colaborate-box {
   padding: 20px;
@@ -709,7 +711,7 @@ section.section.how-to-join .colaborate-box .help-link.ideame {
 }
 section.section.how-to-join .colaborate-box .help-link.help-sign {
 /*margin-right: 0;*/
-  background: #d6765f url("../images/icon-sign.png") center 30px no-repeat;
+  background: #0875ce url("../images/icon-sign.png") center 30px no-repeat;
 }
 section.section.how-to-join .colaborate-box .help-link i {
   width: 100px;
@@ -727,7 +729,7 @@ section.section.how-to-join p:last-child {
 section.section.links {
   padding: 0;
   color: #fff;
-  background: #f1f1f1;
+  background: #fff;
 }
 section.section.links .link-box {
   display: inline-block;
@@ -743,6 +745,7 @@ section.section.links .link-box span {
   display: block;
   margin-bottom: 20px;
   letter-spacing: 2px;
+  display: none;
 }
 section.section.links .link-box.facebook {
   color: #3a5998;
@@ -759,7 +762,6 @@ section.section.links .link-box.facebook iframe {
 }
 section.section.links .link-box.twitter {
   color: #0babed;
-  background: rgba(0,0,0,0.08);
 }
 section.section.links .link-box.twitter iframe {
   margin: 12px 20px 8px 20px;
