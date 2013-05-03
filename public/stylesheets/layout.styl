@@ -17,43 +17,6 @@
 /* #Site Styles
 ================================================== */
 
-/* #Clearing
-================================================== */
-@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-
-/* Self Clearing Goodness */
-.container:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
-
-/* Use clearfix class on parent to clear nested columns,
-or wrap each row of columns in a <div class="row"> */
-.clearfix:before,
-.clearfix:after,
-.row:before,
-.row:after {
-	content: '\0020';
-	display: block;
-	overflow: hidden;
-	visibility: hidden;
-	width: 0;
-	height: 0; 
-}
-.row:after,
-.clearfix:after {
-  clear: both; }
-.row,
-.clearfix {
-  zoom: 1; }
-
-/* You can also use a <br class="clear" /> to clear columns */
-.clear {
-  clear: both;
-  display: block;
-  overflow: hidden;
-  visibility: hidden;
-  width: 0;
-  height: 0;
-}
-
 a
 	border: 0;
 	outline: none !important;
@@ -252,21 +215,23 @@ section.section
 			color: #333;
 
 	&.splash
-		text-align: center;	
 		color: white;
 		height: 800px;
 		overflow: hidden;
 		background: transparent;
 		padding: 0;
 		position: relative;
+		display: table;
+		text-align: center;
+		width: 100%;
 		img 
 			height: 96px;
 		.section-title
-			width: 740px;
+			width: 100%;
 			margin: auto;
 			padding: 40px;
-			margin-top: 120px;
-
+			display: table-cell;
+			vertical-align: middle;
 			.section-content
 				opacity: 0;
 				animation:fadeIn ease-in 1;
@@ -285,7 +250,8 @@ section.section
 				font-size: 22px;
 				padding: 0px;
 				margin-bottom: 40px;
-
+				width: 740px;
+				margin: 20px auto 50px auto;
 
 
 			.btn
@@ -1012,3 +978,41 @@ footer
 		font-size: 16px;
 		line-height: 22px;
 
+
+
+/* #Clearing
+================================================== */
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+/* Self Clearing Goodness */
+.container:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
+
+/* Use clearfix class on parent to clear nested columns,
+or wrap each row of columns in a <div class="row"> */
+.clearfix:before,
+.clearfix:after,
+.row:before,
+.row:after {
+	content: '\0020';
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0; 
+}
+.row:after,
+.clearfix:after {
+  clear: both; }
+.row,
+.clearfix {
+  zoom: 1; }
+
+/* You can also use a <br class="clear" /> to clear columns */
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
