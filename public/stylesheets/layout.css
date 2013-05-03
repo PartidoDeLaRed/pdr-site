@@ -783,8 +783,6 @@ footer .last-line {
   padding: 20px;
   color: #cacac2;
 }
-/* #Page Styles
-================================================== */
 /* #Media Queries
 ================================================== */
 /* Smaller than standard 960 (devices and browsers) */
@@ -854,7 +852,6 @@ footer .last-line {
   }
   section.section.splash {
     padding: 0;
-    height: auto !important;
   }
   section.section.splash .section-title {
     width: auto;
@@ -867,6 +864,7 @@ footer .last-line {
   section.section.splash .section-title .description {
     font-size: 16px;
     line-height: 28px;
+    width: auto;
   }
   section.section.splash .section-title .btn {
     margin-bottom: 20px;
