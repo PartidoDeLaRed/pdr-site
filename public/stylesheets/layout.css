@@ -407,7 +407,7 @@ section.section.videos-section .videos .video span {
 }
 section.section.videos-section .videos .video i {
   opacity: 0;
-  background: rgba(5,158,189,0.6) url("../images/icon-play.png") center no-repeat;
+  background: rgba(5,158,189,0.4) url("../images/icon-play.png") center no-repeat;
   background-size: 20%;
   position: absolute;
   bottom: 0;
