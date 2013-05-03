@@ -837,7 +837,6 @@ footer .last-line {
   }
   section.section {
     padding: 40px;
-/*background-image: none !important;*/
   }
   section.section .section-title {
     width: auto;
@@ -969,7 +968,7 @@ footer .last-line {
     margin-bottom: 0;
   }
   section.section.splash .section-title {
-    padding: 0;
+    padding: 10px;
   }
   section.section.splash .section-title h1 {
     font-size: 20px;
