@@ -1,5 +1,5 @@
-Partido De La Red -- Website
-============================
+Website
+=======
 
 ### [Follow us on twitter](https://twitter.com/partidodelared)
  
