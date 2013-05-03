@@ -1,10 +1,10 @@
 /*
-* Skeleton V1.2
-* Copyright 2011, Dave Gamache
-* www.getskeleton.com
+* Partido de la Red
+* Copyright 2013, Ricardo Rauch
+* www.partidodelared.org
 * Free to use under the MIT license.
 * http://www.opensource.org/licenses/mit-license.php
-* 6/20/2012
+* 3/03/2013
 */
 /* Table of Content
 ==================================================
@@ -837,7 +837,6 @@ footer .last-line {
   }
   section.section {
     padding: 40px;
-/*background-image: none !important;*/
   }
   section.section .section-title {
     width: auto;
