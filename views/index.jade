@@ -97,6 +97,7 @@ html(lang='en')
 
 		section.argentina.section#argentina
 			.section-title
+				img(src="/images/icons/icon-1.png")
 				h2 Propuesta
 		
 			.argentina-content.clearfix
@@ -114,6 +115,7 @@ html(lang='en')
 		
 		section.democracy-network.section#democracia
 			.section-title
+				img(src="/images/icons/icon-2.png")
 				h2 Democracia en red
 				p.description
 					| Nuestro software, de código abierto y libre, es una plataforma que permite a todo ciudadano hacerle llegar su voto diario a los legisladores de la red.
@@ -146,6 +148,7 @@ html(lang='en')
 
 		section.videos-section.section#manifiesto
 			.section-title
+				img(src="/images/icons/icon-3.png")
 				h2 Manifiesto de la Red
 				p.description
 					| Fruto de las mismas prácticas que propone, este manifiesto expresa la voz de los que creemos en la consolidación de la democracia en red.
@@ -324,6 +327,7 @@ html(lang='en')
 
 		section.who-we-are.section.clearfix#quienes-somos
 			.section-title
+				img(src="/images/icons/icon-4.png")
 				h2 Pares De La Red
 				.clearfix
 					p.description.left
@@ -392,6 +396,7 @@ html(lang='en')
 
 			.colaborate-box
 				.section-title
+					img(src="/images/icons/icon-5.png")
 					h2 ¿Como puedo colaborar?
 					p.description
 						| Hay varias formas de apoyar esta iniciativa. Hoy necesitamos 4000 adhesiones para conformarnos como Partido en la ciudad de Buenos Aires y financiar el desarrollo de nuestro software.
@@ -455,28 +460,28 @@ html(lang='en')
 			
 			.last-line (CC) 2013 FUNDACION HORMIGAS ARGENTINAS - BUENOS AIRES, ARGENTINA
 
-	script
-		$('.members a').popover({
-			trigger: 'hover',
-			placement: function (tip, element) {
-				var offset = $(element).offset()
-					, width = $(document).outerWidth()
-					, horiz = 0.5 * width - offset.left
-					, horizPlacement = horiz > 0 ? 'right' : 'left'
-				return horizPlacement;
-			}
-		});
+		script
+			$('.members a').popover({
+				trigger: 'hover',
+				placement: function (tip, element) {
+					var offset = $(element).offset()
+						, width = $(document).outerWidth()
+						, horiz = 0.5 * width - offset.left
+						, horizPlacement = horiz > 0 ? 'right' : 'left'
+					return horizPlacement;
+				}
+			});
 
-	script
-		var _gaq = _gaq || [];
-		_gaq.push(['_setAccount', 'UA-39850000-1']);
-		_gaq.push(['_trackPageview']);
+		script
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-39850000-1']);
+			_gaq.push(['_trackPageview']);
 
-		(function() {
-			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-		})();
+			(function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
 
 
 
