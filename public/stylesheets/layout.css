@@ -1,6 +1,6 @@
 /*
 * Partido de la Red
-* Copyright 2013, Ricardo Rauch
+* Copyright 2013, Ricardo Rauch @gravityonmars
 * www.partidodelared.org
 * Free to use under the MIT license.
 * http://www.opensource.org/licenses/mit-license.php
@@ -261,11 +261,10 @@ section.section.splash .section-title h1 {
   margin-bottom: 0;
 }
 section.section.splash .section-title .description {
-  font-size: 22px;
+  font-size: 18px;
   padding: 0px;
-  margin-bottom: 40px;
-  width: 740px;
-  margin: 20px auto 50px auto;
+  width: 700px;
+  margin: 20px auto 20px auto;
 }
 section.section.splash .section-title .btn {
   margin-bottom: 20px;
