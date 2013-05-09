@@ -14,6 +14,9 @@
 #Font-Face */
 /* #Site Styles
 ================================================== */
+.align-center {
+  text-align: center;
+}
 a {
   border: 0;
   outline: none !important;
@@ -365,6 +368,7 @@ section.section.videos-section a.btn.read-manifiesto {
   font-family: brandon-grotesque;
   color: #333;
   background: none;
+  margin: 0 20px;
   margin-top: 60px;
 }
 section.section.videos-section a.btn.read-manifiesto:hover {
@@ -556,6 +560,9 @@ section.section.democracy-network .browser .mapMark.visited .mapMarkShape {
 section.section.democracy-network .browser .mapMark.visited .mapMarkGlow {
   -webkit-animation-name: 'blip2';
   border-color: transparent;
+}
+section.section.democracy-network .clearfix {
+  margin-top: 60px;
 }
 section.section.how-contribute {
   background-color: #2cabed;
