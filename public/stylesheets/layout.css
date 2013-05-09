@@ -237,7 +237,7 @@ section.section.splash {
 }
 section.section.splash img {
   height: 70px;
-  margin-bottom: 10px;
+/*margin-bottom: 10px;*/
 }
 section.section.splash .section-title {
   width: 100%;
@@ -255,7 +255,7 @@ section.section.splash .section-title .section-content {
 section.section.splash .section-title h1 {
   color: #fff;
   font-weight: 900;
-  font-size: 44px;
+  font-size: 36px;
   text-transform: uppercase;
   display: inline-block;
   letter-spacing: 2px;
@@ -292,7 +292,7 @@ section.section.splash .section-title .btn.btn-kickstarter:hover {
   color: #222;
 }
 section.section.splash .section-title .countdown-container {
-  margin: 30px 0;
+  margin: 30px 0 50px 0;
 }
 section.section.splash .section-title .countdown-container strong {
   display: inline-block;
@@ -313,6 +313,12 @@ section.section.splash .section-title .countdown-container span {
 }
 section.section.splash .section-title .btn.btn2 {
   color: #fff;
+}
+section.section.splash .section-title .share-twitter {
+  color: #fff;
+  font-family: brandon-grotesque;
+  text-transform: uppercase;
+  margin-left: 20px;
 }
 section.section.splash .arrow-down {
   height: 36px;
