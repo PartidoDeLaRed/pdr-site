@@ -274,9 +274,6 @@ section.section.splash .section-title .btn {
   border: 2px solid #fff;
   background: none;
   color: #fff;
-  padding-left: 0;
-  padding-right: 0;
-  width: 220px;
   text-align: center;
 }
 section.section.splash .section-title .btn:hover {
@@ -301,7 +298,7 @@ section.section.splash .section-title .countdown-container strong {
   display: inline-block;
   padding: 20px 10px;
   font-weight: normal;
-  text-transform: uppercase;
+  font-size: 18px;
 }
 section.section.splash .section-title .countdown-container span {
   background: #fff;
