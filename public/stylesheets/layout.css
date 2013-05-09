@@ -17,6 +17,9 @@
 .align-center {
   text-align: center;
 }
+span.flaticon.social {
+  margin-right: 8px;
+}
 a {
   border: 0;
   outline: none !important;
@@ -184,21 +187,13 @@ header.site-header .navbar-inverse .navbar-inner ul.nav.in li a {
 }
 header.site-header .social {
   float: right;
-  margin-top: 18px;
+  margin-top: 12px;
+  font-size: 14px;
 }
 header.site-header .social a {
-  width: 24px;
-  height: 20px;
   display: block;
-  text-indent: -1000em;
   float: left;
   margin-left: 14px;
-}
-header.site-header .social .twitter {
-  background: url("../images/icon-twitter.png") center no-repeat;
-}
-header.site-header .social .facebook {
-  background: url("../images/icon-facebook.png") center no-repeat;
 }
 section.section {
   padding: 80px 50px 100px 50px;
@@ -324,6 +319,9 @@ section.section.splash .section-title .share-twitter {
   font-family: brandon-grotesque;
   text-transform: uppercase;
   margin-left: 20px;
+}
+section.section.splash .section-title .share-twitter:Hover {
+  text-decoration: none;
 }
 section.section.splash .arrow-down {
   height: 36px;
