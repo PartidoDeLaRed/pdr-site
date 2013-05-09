@@ -245,6 +245,7 @@ section.section.splash .section-title {
   padding: 40px;
   display: table-cell;
   vertical-align: middle;
+  padding-top: 100px;
 }
 section.section.splash .section-title .section-content {
   opacity: 0;
@@ -871,9 +872,6 @@ footer .last-line {
   section.section .section-title .description {
     font-size: 16px;
     line-height: 28px;
-  }
-  section.section.splash {
-    padding: 0;
   }
   section.section.splash .section-title {
     width: auto;
