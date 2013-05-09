@@ -921,10 +921,7 @@ footer .last-line {
   section.section.videos-section .modal iframe {
     width: 100%;
   }
-  section.section.videos-section .videos .video {
-    margin-right: 0;
-  }
-  section.section.videos-section a.btn.read-manifiesto {
+  section.section.videos-section .modal a.btn.read-manifiesto {
     margin-top: 30px;
   }
   section.section.democracy-network .browser {
@@ -971,6 +968,9 @@ footer .last-line {
   }
   section.section.splash .share-twitter {
     display: block;
+  }
+  section.section.videos-section .videos .video {
+    margin-right: 20px;
   }
 }
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
@@ -1024,6 +1024,9 @@ footer .last-line {
   }
   section.section.videos-section .videos {
     padding-left: 0;
+  }
+  section.section.videos-section .videos .video {
+    margin-right: 0;
   }
   section.section.videos-section .modal {
     width: 90%;
