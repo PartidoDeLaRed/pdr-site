@@ -193,7 +193,7 @@ header.site-header .social {
 header.site-header .social a {
   display: block;
   float: left;
-  margin-left: 14px;
+  margin-left: 20px;
 }
 section.section {
   padding: 80px 50px 100px 50px;
@@ -968,6 +968,9 @@ footer .last-line {
   }
   section.section.splash .section-title .btn {
     margin-bottom: 20px;
+  }
+  section.section.splash .share-twitter {
+    display: block;
   }
 }
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
