@@ -236,7 +236,8 @@ section.section.splash {
   width: 100%;
 }
 section.section.splash img {
-  height: 96px;
+  height: 70px;
+  margin-bottom: 10px;
 }
 section.section.splash .section-title {
   width: 100%;
@@ -292,6 +293,26 @@ section.section.splash .section-title .btn.btn-kickstarter:hover {
   background-color: #fff;
   border-color: #fff;
   color: #222;
+}
+section.section.splash .section-title .countdown-container {
+  margin: 30px 0;
+}
+section.section.splash .section-title .countdown-container strong {
+  display: inline-block;
+  padding: 20px 10px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+section.section.splash .section-title .countdown-container span {
+  background: #fff;
+  color: #333;
+  display: inline-block;
+  margin: 0 1px;
+  padding: 20px 10px;
+  border-radius: 3px;
+  font-size: 40px;
+  margin-bottom: -24px;
+  box-shadow: 0 -27px 0 #f1f1f1 inset;
 }
 section.section.splash .section-title .btn.btn2 {
   color: #fff;
@@ -981,6 +1002,9 @@ footer .last-line {
     font-size: 14px;
     line-height: 22px;
     margin-bottom: 20px;
+  }
+  section.section.splash .section-title .countdown-container strong {
+    display: block;
   }
   section.section.who-we-are {
     padding: 30px 0;
