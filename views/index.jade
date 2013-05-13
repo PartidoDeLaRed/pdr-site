@@ -9,6 +9,7 @@ html(lang='en')
 		meta(name='viewport', content='width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0')
 
 		link(href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css", rel="stylesheet")
+		link(rel='stylesheet', href='stylesheets/fonts/social.css')
 		link(rel='stylesheet', href='stylesheets/layout.css')
 		
 
@@ -44,8 +45,8 @@ html(lang='en')
 							a(href='#splash', title='Partido De La Red') Partido De La Red
 						
 						.social
-							a(target="_blank", href='http://facebook.com/partidodelared', title='').facebook Facebook
-							a(target="_blank", href='http://twitter.com/partidodelared', title='').twitter Twitter
+							a(target="_blank", href='http://facebook.com/partidodelared', title='').flaticon.social.facebook
+							a(target="_blank", href='http://twitter.com/partidodelared', title='').flaticon.social.twitter
 						
 					
 						ul.nav.nav-collapse.collapse
@@ -85,18 +86,21 @@ html(lang='en')
 					.countdown-container
 						strong Nos faltan 
 						span 1
-						span 7
-						span 7
-						span 3 
+						span 6
+						span 5
+						span 5 
 						strong adhesiones
 
-					a.btn(href='http://wiki.partidodelared.org/index.php/D%C3%B3nde_firmar_como_Adherente', target="_blank") Sumate y firmá tu adhesión
-					a(target="_blank",href="http://twitter.com/share?text=Al%20@PartidoDeLaRed%20le%20faltan%201773%20adhesiones%20para%20presentarse%20en%20las%20elecciones%202013%20¡Sumate%20y%20firmá%20la%20tuya!&url=http://bit.ly/145rO6T").share-twitter Compartilo en Twitter
+					a.btn(href='http://wiki.partidodelared.org/index.php/D%C3%B3nde_firmar_como_Adherente', target="_blank").btn-kickstarter Sumate y firmá tu adhesión
+					a(target="_blank",href="http://twitter.com/share?text=Al%20@PartidoDeLaRed%20le%20faltan%201655%20adhesiones%20para%20presentarse%20en%20las%20elecciones%202013%20¡Sumate%20y%20firmá%20la%20tuya!&url=http://bit.ly/145rO6T").share-twitter 
+						span.flaticon.social.twitter
+						span Compartilo en Twitter
 			a(href="#argentina").arrow-down
 				i
 
 		section.argentina.section#argentina
 			.section-title
+				img(src="/images/icons/icon-1.png")
 				h2 Propuesta
 		
 			.argentina-content.clearfix
@@ -114,6 +118,7 @@ html(lang='en')
 		
 		section.democracy-network.section#democracia
 			.section-title
+				img(src="/images/icons/icon-2.png")
 				h2 Democracia en red
 				p.description
 					| Nuestro software, de código abierto y libre, es una plataforma que permite a todo ciudadano hacerle llegar su voto diario a los legisladores de la red.
@@ -141,11 +146,15 @@ html(lang='en')
 					span.mapMarkGlow
 					span.mapMarkShape
 
-
+			.clearfix.align-center
+				a(href="https://github.com/DemocraciaEnRed/app/tree/development", target="_blank").read-manifiesto.btn 
+					span.flaticon.social.github-1  
+					span Ver el código fuente
 
 
 		section.videos-section.section#manifiesto
 			.section-title
+				img(src="/images/icons/icon-3.png")
 				h2 Manifiesto de la Red
 				p.description
 					| Fruto de las mismas prácticas que propone, este manifiesto expresa la voz de los que creemos en la consolidación de la democracia en red.
@@ -324,6 +333,7 @@ html(lang='en')
 
 		section.who-we-are.section.clearfix#quienes-somos
 			.section-title
+				img(src="/images/icons/icon-4.png")
 				h2 Pares De La Red
 				.clearfix
 					p.description.left
@@ -392,6 +402,7 @@ html(lang='en')
 
 			.colaborate-box
 				.section-title
+					img(src="/images/icons/icon-5.png")
 					h2 ¿Como puedo colaborar?
 					p.description
 						| Hay varias formas de apoyar esta iniciativa. Hoy necesitamos 4000 adhesiones para conformarnos como Partido en la ciudad de Buenos Aires y financiar el desarrollo de nuestro software.
@@ -455,28 +466,28 @@ html(lang='en')
 			
 			.last-line (CC) 2013 FUNDACION HORMIGAS ARGENTINAS - BUENOS AIRES, ARGENTINA
 
-	script
-		$('.members a').popover({
-			trigger: 'hover',
-			placement: function (tip, element) {
-				var offset = $(element).offset()
-					, width = $(document).outerWidth()
-					, horiz = 0.5 * width - offset.left
-					, horizPlacement = horiz > 0 ? 'right' : 'left'
-				return horizPlacement;
-			}
-		});
+		script
+			$('.members a').popover({
+				trigger: 'hover',
+				placement: function (tip, element) {
+					var offset = $(element).offset()
+						, width = $(document).outerWidth()
+						, horiz = 0.5 * width - offset.left
+						, horizPlacement = horiz > 0 ? 'right' : 'left'
+					return horizPlacement;
+				}
+			});
 
-	script
-		var _gaq = _gaq || [];
-		_gaq.push(['_setAccount', 'UA-39850000-1']);
-		_gaq.push(['_trackPageview']);
+		script
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-39850000-1']);
+			_gaq.push(['_trackPageview']);
 
-		(function() {
-			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-		})();
+			(function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
 
 
 

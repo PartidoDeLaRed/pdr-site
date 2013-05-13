@@ -16,6 +16,11 @@
 
 /* #Site Styles
 ================================================== */
+.align-center
+	text-align: center;
+
+span.flaticon.social
+	margin-right: 8px;
 
 a
 	border: 0;
@@ -172,24 +177,16 @@ header.site-header
 
 	.social
 		float: right;
-		margin-top: 18px;
+		margin-top: 12px;
+		font-size: 14px;
 		a 
-			width: 24px;
-			height: 20px;
 			display: block;
-			text-indent: -1000em;
 			float: left;
-			margin-left: 14px;
-
-		.twitter
-			background: url('../images/icon-twitter.png') center no-repeat;
-
-		.facebook
-			background: url('../images/icon-facebook.png') center no-repeat;
+			margin-left: 20px;
 
 
 section.section
-	padding: 100px 50px;
+	padding: 80px 50px 100px 50px;
 	background: white;
 
 	.section-title
@@ -202,8 +199,9 @@ section.section
 			font-weight: 900;
 			padding-bottom: 0;
 			line-height: 28px;
+			margin-top: 30px;
 			margin-bottom: 10px;
-			display: inline-block;
+			display: block;
 			letter-spacing: 5px;
 
 		.description
@@ -233,7 +231,7 @@ section.section
 			padding: 40px;
 			display: table-cell;
 			vertical-align: middle;
-			padding-top: 100px;
+			padding-top: 70px;
 			.section-content
 				opacity: 0;
 				animation:fadeIn ease-in 1;
@@ -271,7 +269,7 @@ section.section
 				&.btn-kickstarter
 					border-color: #ffec0a;
 					background-color: #ffec0a;
-					color: #333;
+					color: #565004;
 					&:hover
 						background-color: #fff;
 						border-color: white;
@@ -302,6 +300,8 @@ section.section
 				font-family: brandon-grotesque;
 				text-transform: uppercase;
 				margin-left: 20px;
+				&:Hover 
+					text-decoration: none;
 
 		.arrow-down
 			height: 36px;
@@ -328,8 +328,7 @@ section.section
 		overflow: hidden;
 		background: #fff; 
 		text-align: center;
-		.section-title
-			margin-bottom: 50px;
+
 
 		.modal
 			width: 560px;
@@ -346,6 +345,7 @@ section.section
 			font-family: brandon-grotesque;
 			color: #333;
 			background: none;
+			margin: 0 20px;
 			margin-top: 60px;
 
 			&:hover
@@ -459,7 +459,6 @@ section.section
 	&.democracy-network
 		background: #fff url('../images/bg-argentina.jpg') fixed;
 		.section-title	
-			margin-bottom: 40px;
 			.btn
 				margin-top: 20px;
 
@@ -552,7 +551,8 @@ section.section
 				border-color: transparent;
 
 
-
+		.clearfix
+			margin-top: 60px;
 
 	&.how-contribute
 		background-color: #2cabed;
@@ -595,7 +595,7 @@ section.section
 
 	&.who-we-are
 		background: #f9f9f9;
-		padding: 100px 0 100px 0;
+		padding: 80px 0 100px 0;
 		.section-title
 			padding: 0 50px;
 			margin-bottom: 40px;
@@ -663,7 +663,7 @@ section.section
 		color: #000;
 
 		.colaborate-box
-			padding: 20px;
+			padding: 0 20px;
 			text-align: center;
 			.help-link
 				margin-bottom: 20px;
@@ -886,9 +886,7 @@ footer
 		iframe
 			width: 100%;
 
-	section.section.videos-section 
-		.videos .video
-			margin-right: 0;
+
 		a.btn.read-manifiesto
 			margin-top: 30px;
 
@@ -923,15 +921,21 @@ footer
 	body
 		color: none;
 
-	section.section.splash .section-title
-		padding: 20px 10px;
-		
-		.description
-			font-size: 16px;
-		.btn 
-			margin-bottom: 20px;
+	section.section.splash 
+		.section-title
+			padding: 20px 10px;
+			
+			.description
+				font-size: 16px;
+			.btn 
+				margin-bottom: 20px;
 
+		.share-twitter 
+			display: block;
 
+	section.section.videos-section 
+		.videos .video
+			margin-right: 20px;
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px)
 	body
@@ -981,11 +985,16 @@ footer
 	section.section.videos-section 
 		.videos
 			padding-left: 0;
+
+			.video
+				margin-right: 0;
 		.modal
 			width: 90%;
 			iframe
 				width: 100%;
 				height: 200px;
+
+		
 
 	section.section.argentina .argentina-content .what-we-need
 		font-size: 16px;

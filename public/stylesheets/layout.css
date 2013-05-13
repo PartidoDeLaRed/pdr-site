@@ -14,6 +14,12 @@
 #Font-Face */
 /* #Site Styles
 ================================================== */
+.align-center {
+  text-align: center;
+}
+span.flaticon.social {
+  margin-right: 8px;
+}
 a {
   border: 0;
   outline: none !important;
@@ -181,24 +187,16 @@ header.site-header .navbar-inverse .navbar-inner ul.nav.in li a {
 }
 header.site-header .social {
   float: right;
-  margin-top: 18px;
+  margin-top: 12px;
+  font-size: 14px;
 }
 header.site-header .social a {
-  width: 24px;
-  height: 20px;
   display: block;
-  text-indent: -1000em;
   float: left;
-  margin-left: 14px;
-}
-header.site-header .social .twitter {
-  background: url("../images/icon-twitter.png") center no-repeat;
-}
-header.site-header .social .facebook {
-  background: url("../images/icon-facebook.png") center no-repeat;
+  margin-left: 20px;
 }
 section.section {
-  padding: 100px 50px;
+  padding: 80px 50px 100px 50px;
   background: #fff;
 }
 section.section .section-title {
@@ -212,8 +210,9 @@ section.section .section-title h2 {
   font-weight: 900;
   padding-bottom: 0;
   line-height: 28px;
+  margin-top: 30px;
   margin-bottom: 10px;
-  display: inline-block;
+  display: block;
   letter-spacing: 5px;
 }
 section.section .section-title .description {
@@ -245,7 +244,7 @@ section.section.splash .section-title {
   padding: 40px;
   display: table-cell;
   vertical-align: middle;
-  padding-top: 100px;
+  padding-top: 70px;
 }
 section.section.splash .section-title .section-content {
   opacity: 0;
@@ -285,7 +284,7 @@ section.section.splash .section-title .btn:hover {
 section.section.splash .section-title .btn.btn-kickstarter {
   border-color: #ffec0a;
   background-color: #ffec0a;
-  color: #333;
+  color: #565004;
 }
 section.section.splash .section-title .btn.btn-kickstarter:hover {
   background-color: #fff;
@@ -321,6 +320,9 @@ section.section.splash .section-title .share-twitter {
   text-transform: uppercase;
   margin-left: 20px;
 }
+section.section.splash .section-title .share-twitter:Hover {
+  text-decoration: none;
+}
 section.section.splash .arrow-down {
   height: 36px;
   background-color: #01203b;
@@ -349,9 +351,6 @@ section.section.videos-section {
   background: #fff;
   text-align: center;
 }
-section.section.videos-section .section-title {
-  margin-bottom: 50px;
-}
 section.section.videos-section .modal {
   width: 560px;
   background: #000;
@@ -367,6 +366,7 @@ section.section.videos-section a.btn.read-manifiesto {
   font-family: brandon-grotesque;
   color: #333;
   background: none;
+  margin: 0 20px;
   margin-top: 60px;
 }
 section.section.videos-section a.btn.read-manifiesto:hover {
@@ -476,9 +476,6 @@ section.section.videos-section .videos .video.video-large {
 section.section.democracy-network {
   background: #fff url("../images/bg-argentina.jpg") fixed;
 }
-section.section.democracy-network .section-title {
-  margin-bottom: 40px;
-}
 section.section.democracy-network .section-title .btn {
   margin-top: 20px;
 }
@@ -562,6 +559,9 @@ section.section.democracy-network .browser .mapMark.visited .mapMarkGlow {
   -webkit-animation-name: 'blip2';
   border-color: transparent;
 }
+section.section.democracy-network .clearfix {
+  margin-top: 60px;
+}
 section.section.how-contribute {
   background-color: #2cabed;
 }
@@ -602,7 +602,7 @@ section.section.argentina .argentina-content .what-we-need .btn:hover {
 }
 section.section.who-we-are {
   background: #f9f9f9;
-  padding: 100px 0 100px 0;
+  padding: 80px 0 100px 0;
 }
 section.section.who-we-are .section-title {
   padding: 0 50px;
@@ -673,7 +673,7 @@ section.section.how-to-join {
   color: #000;
 }
 section.section.how-to-join .colaborate-box {
-  padding: 20px;
+  padding: 0 20px;
   text-align: center;
 }
 section.section.how-to-join .colaborate-box .help-link {
@@ -921,10 +921,7 @@ footer .last-line {
   section.section.videos-section .modal iframe {
     width: 100%;
   }
-  section.section.videos-section .videos .video {
-    margin-right: 0;
-  }
-  section.section.videos-section a.btn.read-manifiesto {
+  section.section.videos-section .modal a.btn.read-manifiesto {
     margin-top: 30px;
   }
   section.section.democracy-network .browser {
@@ -968,6 +965,12 @@ footer .last-line {
   }
   section.section.splash .section-title .btn {
     margin-bottom: 20px;
+  }
+  section.section.splash .share-twitter {
+    display: block;
+  }
+  section.section.videos-section .videos .video {
+    margin-right: 20px;
   }
 }
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
@@ -1021,6 +1024,9 @@ footer .last-line {
   }
   section.section.videos-section .videos {
     padding-left: 0;
+  }
+  section.section.videos-section .videos .video {
+    margin-right: 0;
   }
   section.section.videos-section .modal {
     width: 90%;
