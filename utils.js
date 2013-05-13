@@ -55,8 +55,8 @@ exports.toArray = function toArray (obj) {
 
 exports.members = function members (fn) {
 
-  tu.friendsList({ count: 200 }, function(err, res) {
-    var users = res.users
+  exports.getPartyMembers(function(err, membersTwitter) {
+    var users = membersTwitter
       , ids
       , members = {}
       , nonMentioningMembers
@@ -118,5 +118,47 @@ exports.members = function members (fn) {
       });
     })
   })
+}
 
+/**
+ * Get Party's members
+ * @param {Function} fn callback function. Accepts `err`, `members`
+ *                      which is an array of twitter screen_names.
+ * @api public
+ */
+
+exports.getPartyMembers = function getPartyMembers(fn) {
+  exports.getMembersFromWiki(function(err, wikis) {
+    if (err) {
+      return fn(err);
+    }
+
+    tu.usersLookup({screen_name: wikis}, function(err, users) {
+      fn(err, users);
+    });
+  })
+};
+
+
+exports.getMembersFromWiki = function getMembersFromWiki (fn) {
+  var request = require('superagent')
+    , regex = /twitter.com\/([a-zA-Z0-9_]{1,15})/gi
+    , pairs = [];
+
+  request
+  .get('http://wiki.partidodelared.org/index.php/Integrantes_del_Partido')
+  .end(function(err, res) {
+    if (err) {
+      return fn(err);
+    };
+
+    var text = res.text
+      , test;
+
+    while ( (test = regex.exec(text)) ) {
+      pairs.push(test[1]);
+    }
+
+    fn(null, pairs);
+  });
 }
