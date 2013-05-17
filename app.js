@@ -8,7 +8,8 @@ var express = require('express')
   , http = require('http')
   , path = require('path')
   , members = require('./members')
-  , utils = require('./utils');
+  , utils = require('./utils')
+  , counter = '1223'; // default counter value
 
 var app = express();
 
@@ -24,6 +25,7 @@ app.configure(function(){
   app.use(express.session());
   app.use(function(req, res, next) {
     res.locals.members = utils.shuffle(members);
+    res.locals.counter = counter; // default counter
     next();
   })
   app.use(app.router);
@@ -49,3 +51,14 @@ setInterval(function() {
     console.log('members updated!')
   });
 }, 1000 * 60 * 60); // 1hr update timeout
+
+setInterval(function() {
+  utils.getCounterFromWiki(function(err, updated) {
+    if (err) {
+      console.log(err);
+      return;
+    };
+
+    counter = updated;
+  });
+}, 1000 * 60 * 10);

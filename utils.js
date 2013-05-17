@@ -133,14 +133,14 @@ exports.getPartyMembers = function getPartyMembers(fn) {
       return fn(err);
     }
 
-    tu.usersLookup({screen_name: wikis}, function(err, users) {
+    tu.usersLookup({screen_name: wikis}, function (err, users) {
       fn(err, users);
     });
   })
 };
 
 
-exports.getMembersFromWiki = function getMembersFromWiki (fn) {
+exports.getMembersFromWiki = function getMembersFromWiki(fn) {
   var request = require('superagent')
     , regex = /twitter.com\/([a-zA-Z0-9_]{1,15})/gi
     , pairs = [];
@@ -161,4 +161,28 @@ exports.getMembersFromWiki = function getMembersFromWiki (fn) {
 
     fn(null, pairs);
   });
+}
+
+exports.getCounterFromWiki = function getCounterFromWiki(fn) {
+  var request = require('superagent')
+    , regex = /<([a-z][a-z0-9]*)\b[^>]*>(.*?)<\/\1>/gi;
+
+  request
+  .get('http://wiki.partidodelared.org/index.php/Index.php')
+  .end(function _execRequest(err, res) {
+    if (err) {
+      return fn(err);
+    };
+
+    var text = res.text
+      , start = text.indexOf('<p>')
+      , len = text.indexOf('</p>') + 4 - start;
+
+    text = text.substr(start, len);
+    text = (regex.exec(text))[2];
+
+    fn(null, text);
+  });
+
+
 }
