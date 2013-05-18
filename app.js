@@ -9,7 +9,7 @@ var express = require('express')
   , path = require('path')
   , members = require('./members')
   , utils = require('./utils')
-  , counter = '1223'; // default counter value
+  , counter = '1034'; // default counter value
 
 var app = express();
 
@@ -51,14 +51,3 @@ setInterval(function() {
     console.log('members updated!')
   });
 }, 1000 * 60 * 60); // 1hr update timeout
-
-setInterval(function() {
-  utils.getCounterFromWiki(function(err, updated) {
-    if (err) {
-      console.log(err);
-      return;
-    };
-
-    counter = updated;
-  });
-}, 1000 * 60 * 10);
