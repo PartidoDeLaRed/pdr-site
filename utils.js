@@ -86,7 +86,7 @@ exports.members = function members (fn) {
             description: user.description,
             screen_name: user.screen_name,
             url: 'http://twitter.com/' + user.screen_name,
-            image: user.profile_image_url.replace('_normal.', '.'),
+            image: user.profile_image_url.replace('_normal.', '_reasonably_small.'),
             statuses: []
           };
         }
@@ -103,7 +103,7 @@ exports.members = function members (fn) {
             description: user.description,
             screen_name: user.screen_name,
             url: 'http://twitter.com/' + user.screen_name,
-            image: user.profile_image_url.replace('_normal.', '.'),
+            image: user.profile_image_url.replace('_normal.', '_reasonably_small.'),
             statuses: []
           }
       });
