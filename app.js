@@ -9,7 +9,7 @@ var express = require('express')
   , path = require('path')
   , members = require('./members')
   , utils = require('./utils')
-  , counter = '395'; // default counter value
+  , counter = '350'; // default counter value
 
 var app = express();
 
