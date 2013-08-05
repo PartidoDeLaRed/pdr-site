@@ -1,6 +1,5 @@
 !!! 5
 html(lang='en')
-<<<<<<< HEAD
     head
         meta(charset='utf-8')
         title Partido De La Red
@@ -137,143 +136,11 @@ html(lang='en')
                 a(href="", data-toggle="popover", data-content="El planteo de un problema ciudadano se delimita por tiempo y región, y todos pueden contribuir con fuentes y datos.", data-title="Problematica", data-placement="right").dot-problematica.dot
                     span.mapMarkGlow
                     span.mapMarkShape
-=======
-	head
-		meta(charset='utf-8')
-		title Partido De La Red
-		meta(name='description', content='Vivimos en una democracia estancada que no atiende a las nuevas demandas. Nuestra propuesta es la Democracia en Red: Vamos a presentar candidatos para la Legislatura de la Ciudad Autónoma de Buenos Aires que se comprometen a votar siempre acorde a la red, abriendo el ancho de banda de la participación democrática.')
-		meta(name='author', content='Ricardo Rauch @gravityonmars')
-
-		meta(name='viewport', content='width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0')
-
-		link(href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css", rel="stylesheet")
-		link(rel='stylesheet', href='stylesheets/fonts/social.css')
-		link(rel='stylesheet', href='stylesheets/layout.css')
-		
-
-		link(rel='shortcut icon', href='/images/favicon.ico')
-		//- link(rel='apple-touch-icon', href='images/apple-touch-icon.png')
-		//- link(rel='apple-touch-icon', sizes='72x72', href='images/apple-touch-icon-72x72.png')
-		//- link(rel='apple-touch-icon', sizes='114x114', href='images/apple-touch-icon-114x114.png')
-		
-		//if lt IE 9
-			script(src='http://html5shim.googlecode.com/svn/trunk/html5.js')
-	
-		script(type='text/javascript', src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js')
-		script(type="text/javascript", src="//raw.github.com/flesler/jquery.scrollTo/master/jquery.scrollTo.min.js")
-		script(type="text/javascript", src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/js/bootstrap.min.js")
-
-		script(type="text/javascript", src="javascripts/site.js")
-
-		script(type='text/javascript', src='//use.typekit.net/nzi0bpe.js')
-		script(type='text/javascript')
-			try{Typekit.load();}catch(e){}
-	
-	body(data-spy="scroll", data-target=".navbar", data-offset="120")
-		header.site-header.clearfix
-			.navbar.navbar-inverse.navbar-fixed-top
-				.navbar-inner
-					.container
-						button.btn.btn-navbar(type='button', data-toggle='collapse', data-target='.nav-collapse')
-							span.icon-bar
-							span.icon-bar
-							span.icon-bar
-
-						h1
-							a(href='#splash', title='Partido De La Red') Partido De La Red
-						
-						.social
-							a(target="_blank", href='http://facebook.com/partidodelared', title='').flaticon.social.facebook
-							a(target="_blank", href='http://twitter.com/partidodelared', title='').flaticon.social.twitter
-						
-					
-						ul.nav.nav-collapse.collapse
-							li.hide.active
-								a(href='#splash', title='') Somos Red
-
-							li 
-								a(href='#argentina', title='') Propuesta
-
-							li
-								a(href='#democracia', title='') Democracia
-
-							li
-								a(href='#manifiesto', title='') Manifiesto
-							li
-								a(href='#quienes-somos', title='') Pares
-							li
-								a(href='#colaborar', title='') Colaborar
-							li
-								a(href="http://wiki.partidodelared.org/index.php/Página_principal", target="_blank") Wiki
-							li
-								a(href="http://blog.partidodelared.org", target="_blank") Blog
 
 
-
-		section.splash.section#splash
-			.section-title
-				.section-content
-					p
-						img(src="images/logo.png")
-					h1 VOTÁ IDEAS, NO PERSONAS
-					p.description
-						| El Partido de la Red es un partido político que propone mejorar la democracia aprovechando las virtudes de Internet. Queremos que tu opinión sea escuchada: todo porteño podrá participar en nuestra plataforma online, y lo que decidamos entre todos es lo que nuestros legisladores votarán en la Legislatura.
-					p.description
-						| Para presentarnos en las elecciones 2013, necesitamos 4000 adhesiones. 
-
-					.countdown-container
-						strong Nos faltan 
-						span 0
-						- each digit in counter
-							span=digit
-						strong adhesiones
-
-					a.btn(href='http://wiki.partidodelared.org/index.php/D%C3%B3nde_firmar_como_Adherente', target="_blank").btn-kickstarter Sumate y firmá tu adhesión
-					a(target="_blank",href="http://twitter.com/intent/tweet?text=Al%20@PartidoDeLaRed%20le%20faltan%20#{counter}%20adhesiones%20para%20presentarse%20en%20las%20%23elecciones2013%20¡Muchas%20gracias%20a%20todos%20por%20la%20participación%20y%20el%20apoyo!").share-twitter 
-						span.flaticon.social.twitter
-						span Compartilo en Twitter
-			a(href="#argentina").arrow-down
-				i
-
-		section.argentina.section#argentina
-			.section-title
-				img(src="/images/icons/icon-1.png")
-				h2 Propuesta
-		
-			.argentina-content.clearfix
-				.video-buenos-aires
-					iframe(width='560', height='290', src='http://www.youtube.com/embed/mfEsv0JgMik', frameborder='0', allowfullscreen='allowfullscreen')
-
-				.what-we-need
-					p Somos un partido con el objetivo de abrir el ancho de banda de la democracia: no alcanza con votar cada dos años si podemos expresarnos todos los días usando la red.
-					p Los legisladores de la red se comprometen a votar siempre acorde a lo que se resuelve online en la Democracia en Red. Cada click es ahora también un voto.
-
-					a(href='#myModal', role='button', data-toggle='modal').btn Enviar datos
-					a(href="http://wiki.partidodelared.org/index.php/FAQ_-_Preguntas_Frecuentes", target="_blank").btn Preguntas Frecuentes
-
-
-		
-		section.democracy-network.section#democracia
-			.section-title
-				img(src="/images/icons/icon-2.png")
-				h2 Democracia en red
-				p.description
-					| Nuestro software, de código abierto y libre, es una plataforma que permite a todo ciudadano hacerle llegar su voto diario a los legisladores de la red.
-
-			.browser
-				img(src="/images/browser.png")
-
-				a(href="", data-toggle="popover", data-content="Soluciones brindadas por ciudadanos y representantes para cada problématica se debaten entre todos.", data-title="Crear problématica", data-placement="left").dot-write.dot
-					span.mapMarkGlow
-					span.mapMarkShape
-
-				a(href="", data-toggle="popover", data-content="Se unifica la identidad virtual con la legal de todo ciudadano y luego se verifica entre pares.", data-title="Perfil de usuario", data-placement="left").dot-profile.dot
-					span.mapMarkGlow
-					span.mapMarkShape
-
-				a(href="", data-toggle="popover", data-content="El planteo de un problema ciudadano se delimita por tiempo y región, y todos pueden contribuir con fuentes y datos.", data-title="Problematica", data-placement="right").dot-problematica.dot
-					span.mapMarkGlow
-					span.mapMarkShape
+                //- a(href="", data-toggle="popover", data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit.", data-title="Propuestas", data-placement="right").dot-propuestas.dot
+                //-     span.mapMarkGlow
+                //-     span.mapMarkShape
 
                 a(href="", data-toggle="popover", data-content="Toda propuesta se puede votar directamente o delegar el voto a alguien de confianza.", data-title="Delegaciones", data-placement="left").dot-delegar.dot
                     span.mapMarkGlow
