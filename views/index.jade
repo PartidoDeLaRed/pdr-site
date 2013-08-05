@@ -1,492 +1,508 @@
 !!! 5
 html(lang='en')
-	head
-		meta(charset='utf-8')
-		title Partido De La Red
-		meta(name='description', content='Vivimos en una democracia estancada que no atiende a las nuevas demandas. Nuestra propuesta es la Democracia en Red: Vamos a presentar candidatos para la Legislatura de la Ciudad Autónoma de Buenos Aires que se comprometen a votar siempre acorde a la red, abriendo el ancho de banda de la participación democrática.')
-		meta(name='author', content='Ricardo Rauch @gravityonmars')
-
-		meta(name='viewport', content='width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0')
-
-		link(href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css", rel="stylesheet")
-		link(rel='stylesheet', href='stylesheets/fonts/social.css')
-		link(rel='stylesheet', href='stylesheets/layout.css')
-		
-
-		link(rel='shortcut icon', href='/images/favicon.ico')
-		//- link(rel='apple-touch-icon', href='images/apple-touch-icon.png')
-		//- link(rel='apple-touch-icon', sizes='72x72', href='images/apple-touch-icon-72x72.png')
-		//- link(rel='apple-touch-icon', sizes='114x114', href='images/apple-touch-icon-114x114.png')
-		
-		//if lt IE 9
-			script(src='http://html5shim.googlecode.com/svn/trunk/html5.js')
-	
-		script(type='text/javascript', src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js')
-		script(type="text/javascript", src="//raw.github.com/flesler/jquery.scrollTo/master/jquery.scrollTo.min.js")
-		script(type="text/javascript", src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/js/bootstrap.min.js")
-
-		script(type="text/javascript", src="javascripts/site.js")
-
-		script(type='text/javascript', src='//use.typekit.net/nzi0bpe.js')
-		script(type='text/javascript')
-			try{Typekit.load();}catch(e){}
-	
-	body(data-spy="scroll", data-target=".navbar", data-offset="120")
-		header.site-header.clearfix
-			.navbar.navbar-inverse.navbar-fixed-top
-				.navbar-inner
-					.container
-						button.btn.btn-navbar(type='button', data-toggle='collapse', data-target='.nav-collapse')
-							span.icon-bar
-							span.icon-bar
-							span.icon-bar
-
-						h1
-							a(href='#splash', title='Partido De La Red') Partido De La Red
-						
-						.social
-							a(target="_blank", href='http://facebook.com/partidodelared', title='').flaticon.social.facebook
-							a(target="_blank", href='http://twitter.com/partidodelared', title='').flaticon.social.twitter
-						
-					
-						ul.nav.nav-collapse.collapse
-							li.hide.active
-								a(href='#splash', title='') Somos Red
-
-							li 
-								a(href='#argentina', title='') Propuesta
-
-							li
-								a(href='#democracia', title='') Democracia
-
-							li
-								a(href='#manifiesto', title='') Manifiesto
-							li
-								a(href='#quienes-somos', title='') Pares
-							li
-								a(href='#colaborar', title='') Colaborar
-							li
-								a(href="http://wiki.partidodelared.org/index.php/Página_principal", target="_blank") Wiki
-							li
-								a(href="http://blog.partidodelared.org", target="_blank") Blog
-
-
-
-		section.splash.section#splash
-			.section-title
-				.section-content
-					p
-						img(src="images/logo.png")
-					h1 VOTÁ IDEAS, NO PERSONAS
-					p.description
-						| El Partido de la Red es un partido político que propone mejorar la democracia aprovechando las virtudes de Internet. Queremos que tu opinión sea escuchada: todo porteño podrá participar en nuestra plataforma online, y lo que decidamos entre todos es lo que nuestros legisladores votarán en la Legislatura.
-					p.description
-						| Para presentarnos en las elecciones 2013, necesitamos 4000 adhesiones. 
-
-					.countdown-container
-						strong Nos faltan 
-						span 0
-						- each digit in counter
-							span=digit
-						strong adhesiones
-
-					a.btn(href='http://wiki.partidodelared.org/index.php/D%C3%B3nde_firmar_como_Adherente', target="_blank").btn-kickstarter Sumate y firmá tu adhesión
-					a(target="_blank",href="http://twitter.com/share?text=Al%20@PartidoDeLaRed%20le%20faltan%20#{counter}%20adhesiones%20para%20presentarse%20en%20las%20elecciones%202013%20¡Sumate%20y%20firmá%20la%20tuya!&url=http://bit.ly/145rO6T").share-twitter 
-						span.flaticon.social.twitter
-						span Compartilo en Twitter
-			a(href="#argentina").arrow-down
-				i
-
-		section.argentina.section#argentina
-			.section-title
-				img(src="/images/icons/icon-1.png")
-				h2 Propuesta
-		
-			.argentina-content.clearfix
-				.video-buenos-aires
-					iframe(width='560', height='290', src='http://www.youtube.com/embed/mfEsv0JgMik', frameborder='0', allowfullscreen='allowfullscreen')
+    head
+        meta(charset='utf-8')
+        title Partido De La Red
+        meta(name='description', content='Vivimos en una democracia estancada que no atiende a las nuevas demandas. Nuestra propuesta es la Democracia en Red: Vamos a presentar candidatos para la Legislatura de la Ciudad Autónoma de Buenos Aires que se comprometen a votar siempre acorde a la red, abriendo el ancho de banda de la participación democrática.')
+        meta(name='author', content='Ricardo Rauch @gravityonmars')
+
+        meta(name='viewport', content='width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0')
+
+        link(href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css", rel="stylesheet")
+        link(rel='stylesheet', href='stylesheets/fonts/social.css')
+        link(rel='stylesheet', href='stylesheets/layout.css')
+        
+
+        link(rel='shortcut icon', href='/images/favicon.ico')
+        //- link(rel='apple-touch-icon', href='images/apple-touch-icon.png')
+        //- link(rel='apple-touch-icon', sizes='72x72', href='images/apple-touch-icon-72x72.png')
+        //- link(rel='apple-touch-icon', sizes='114x114', href='images/apple-touch-icon-114x114.png')
+        
+        //if lt IE 9
+            script(src='http://html5shim.googlecode.com/svn/trunk/html5.js')
+    
+        script(type='text/javascript', src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js')
+        script(type="text/javascript", src="//raw.github.com/flesler/jquery.scrollTo/master/jquery.scrollTo.min.js")
+        script(type="text/javascript", src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/js/bootstrap.min.js")
+
+        script(type="text/javascript", src="javascripts/site.js")
+
+        script(type='text/javascript', src='//use.typekit.net/nzi0bpe.js')
+        script(type='text/javascript')
+            try{Typekit.load();}catch(e){}
+    
+    body(data-spy="scroll", data-target=".navbar", data-offset="120")
+        header.site-header.clearfix
+            .navbar.navbar-inverse.navbar-fixed-top
+                .navbar-inner
+                    .container
+                        button.btn.btn-navbar(type='button', data-toggle='collapse', data-target='.nav-collapse')
+                            span.icon-bar
+                            span.icon-bar
+                            span.icon-bar
+
+                        h1
+                            a(href='#splash', title='Partido De La Red') Partido De La Red
+                        
+                        .social
+                            a(target="_blank", href='http://facebook.com/partidodelared', title='').flaticon.social.facebook
+                            a(target="_blank", href='http://twitter.com/partidodelared', title='').flaticon.social.twitter
+                        
+                    
+                        ul.nav.nav-collapse.collapse
+                            li.hide.active
+                                a(href='#splash', title='') Somos Red
+
+                            li 
+                                a(href='#argentina', title='') Propuesta
+
+                            li
+                                a(href='#democracia', title='') Democracia
+
+                            li
+                                a(href='#manifiesto', title='') Manifiesto
+                            li
+                                a(href='#quienes-somos', title='') Pares
+                            li
+                                a(href='#colaborar', title='') Colaborar
+                            li
+                                a(href="http://wiki.partidodelared.org/index.php/Página_principal", target="_blank") Wiki
+                            li
+                                a(href="http://blog.partidodelared.org", target="_blank") Blog
+
+
+
+        section.splash.section#splash
+            .section-title
+                .section-content
+                    p
+                        img(src="images/logo.png")
+                    h1 VOTÁ IDEAS, NO PERSONAS
+                    p.description
+                        | El Partido de la Red es un partido político que propone mejorar la democracia aprovechando las virtudes de Internet. Queremos que tu opinión sea escuchada: todo porteño podrá participar en nuestra plataforma online, y lo que decidamos entre todos es lo que nuestros legisladores votarán en la Legislatura.
+                    p.description
+                        | Para presentarnos en las elecciones 2013, necesitamos 4000 adhesiones. 
+
+                    .countdown-container
+                        strong Nos faltan 
+                        span 0
+                        - each digit in counter
+                            span=digit
+                        strong adhesiones
+
+                    a.btn(href='http://wiki.partidodelared.org/index.php/D%C3%B3nde_firmar_como_Adherente', target="_blank").btn-kickstarter Sumate y firmá tu adhesión
+                    a(target="_blank",href="http://twitter.com/share?text=Al%20@PartidoDeLaRed%20le%20faltan%20#{counter}%20adhesiones%20para%20presentarse%20en%20las%20elecciones%202013%20¡Sumate%20y%20firmá%20la%20tuya!&url=http://bit.ly/145rO6T").share-twitter 
+                        span.flaticon.social.twitter
+                        span Compartilo en Twitter
+            a(href="#argentina").arrow-down
+                i
+
+        section.argentina.section#argentina
+            .section-title
+                img(src="/images/icons/icon-1.png")
+                h2 Propuesta
+        
+            .argentina-content.clearfix
+                .video-buenos-aires
+                    iframe(width='560', height='290', src='http://www.youtube.com/embed/mfEsv0JgMik', frameborder='0', allowfullscreen='allowfullscreen')
 
-				.what-we-need
-					p Somos un partido con el objetivo de abrir el ancho de banda de la democracia: no alcanza con votar cada dos años si podemos expresarnos todos los días usando la red.
-					p Los legisladores de la red se comprometen a votar siempre acorde a lo que se resuelve online en la Democracia en Red. Cada click es ahora también un voto.
+                .what-we-need
+                    p Somos un partido con el objetivo de abrir el ancho de banda de la democracia: no alcanza con votar cada dos años si podemos expresarnos todos los días usando la red.
+                    p Los legisladores de la red se comprometen a votar siempre acorde a lo que se resuelve online en la Democracia en Red. Cada click es ahora también un voto.
 
-					a(href='#myModal', role='button', data-toggle='modal').btn Enviar datos
-					a(href="http://wiki.partidodelared.org/index.php/FAQ_-_Preguntas_Frecuentes", target="_blank").btn Preguntas Frecuentes
+                    a(href='#myModal', role='button', data-toggle='modal').btn Enviar datos
+                    a(href="http://wiki.partidodelared.org/index.php/FAQ_-_Preguntas_Frecuentes", target="_blank").btn Preguntas Frecuentes
 
 
-		
-		section.democracy-network.section#democracia
-			.section-title
-				img(src="/images/icons/icon-2.png")
-				h2 Democracia en red
-				p.description
-					| Nuestro software, de código abierto y libre, es una plataforma que permite a todo ciudadano hacerle llegar su voto diario a los legisladores de la red.
+        
+        section.democracy-network.section#democracia
+            .section-title
+                img(src="/images/icons/icon-2.png")
+                h2 Democracia en red
+                p.description
+                    | Nuestro software, de código abierto y libre, es una plataforma que permite a todo ciudadano hacerle llegar su voto diario a los legisladores de la red.
 
-			.browser
-				img(src="/images/browser.png")
+            .browser
+                img(src="/images/browser.png")
 
-				a(href="", data-toggle="popover", data-content="Soluciones brindadas por ciudadanos y representantes para cada problématica se debaten entre todos.", data-title="Crear problématica", data-placement="left").dot-write.dot
-					span.mapMarkGlow
-					span.mapMarkShape
+                a(href="", data-toggle="popover", data-content="Soluciones brindadas por ciudadanos y representantes para cada problématica se debaten entre todos.", data-title="Crear problématica", data-placement="left").dot-write.dot
+                    span.mapMarkGlow
+                    span.mapMarkShape
 
-				a(href="", data-toggle="popover", data-content="Se unifica la identidad virtual con la legal de todo ciudadano y luego se verifica entre pares.", data-title="Perfil de usuario", data-placement="left").dot-profile.dot
-					span.mapMarkGlow
-					span.mapMarkShape
+                a(href="", data-toggle="popover", data-content="Se unifica la identidad virtual con la legal de todo ciudadano y luego se verifica entre pares.", data-title="Perfil de usuario", data-placement="left").dot-profile.dot
+                    span.mapMarkGlow
+                    span.mapMarkShape
 
-				a(href="", data-toggle="popover", data-content="El planteo de un problema ciudadano se delimita por tiempo y región, y todos pueden contribuir con fuentes y datos.", data-title="Problematica", data-placement="right").dot-problematica.dot
-					span.mapMarkGlow
-					span.mapMarkShape
+                a(href="", data-toggle="popover", data-content="El planteo de un problema ciudadano se delimita por tiempo y región, y todos pueden contribuir con fuentes y datos.", data-title="Problematica", data-placement="right").dot-problematica.dot
+                    span.mapMarkGlow
+                    span.mapMarkShape
 
-				//- a(href="", data-toggle="popover", data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit.", data-title="Propuestas", data-placement="right").dot-propuestas.dot
-				//- 	span.mapMarkGlow
-				//- 	span.mapMarkShape
+                //- a(href="", data-toggle="popover", data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit.", data-title="Propuestas", data-placement="right").dot-propuestas.dot
+                //-     span.mapMarkGlow
+                //-     span.mapMarkShape
 
-				a(href="", data-toggle="popover", data-content="Toda propuesta se puede votar directamente o delegar el voto a alguien de confianza.", data-title="Delegaciones", data-placement="left").dot-delegar.dot
-					span.mapMarkGlow
-					span.mapMarkShape
+                a(href="", data-toggle="popover", data-content="Toda propuesta se puede votar directamente o delegar el voto a alguien de confianza.", data-title="Delegaciones", data-placement="left").dot-delegar.dot
+                    span.mapMarkGlow
+                    span.mapMarkShape
 
-			.clearfix.align-center
-				a(href="https://github.com/DemocraciaEnRed/app/tree/development", target="_blank").read-manifiesto.btn 
-					span.flaticon.social.github-1  
-					span Ver el código fuente
+            .clearfix.align-center
+                a(href="https://github.com/DemocraciaEnRed/app/tree/development", target="_blank").read-manifiesto.btn 
+                    span.flaticon.social.github-1  
+                    span Ver el código fuente
 
 
-		section.videos-section.section#manifiesto
-			.section-title
-				img(src="/images/icons/icon-3.png")
-				h2 Manifiesto de la Red
-				p.description
-					| Fruto de las mismas prácticas que propone, este manifiesto expresa la voz de los que creemos en la consolidación de la democracia en red.
-				
-			.videos
-				
-				a(data-target="#florencia", data-toggle="modal", href="/video/C7Z7Q2qmuoc").video.florencia
-					i
-					span #Conciencia
+        section.videos-section.section#manifiesto
+            .section-title
+                img(src="/images/icons/icon-3.png")
+                h2 Manifiesto de la Red
+                p.description
+                    | Fruto de las mismas prácticas que propone, este manifiesto expresa la voz de los que creemos en la consolidación de la democracia en red.
+                
+            .videos
+                
+                a(data-target="#florencia", data-toggle="modal", href="/video/C7Z7Q2qmuoc").video.florencia
+                    i
+                    span #Conciencia
 
-				#florencia.modal.hide.fade
-					.modal-body
+                #florencia.modal.hide.fade
+                    .modal-body
 
-				a(data-target="#lucia", data-toggle="modal", href="/video/u7TRRGvLkr8").video.lucia
-					i
-					span #cooperar
+                a(data-target="#lucia", data-toggle="modal", href="/video/u7TRRGvLkr8").video.lucia
+                    i
+                    span #cooperar
 
-				#lucia.modal.hide.fade
-					.modal-body
+                #lucia.modal.hide.fade
+                    .modal-body
 
 
-				a(data-target="#santiago", data-toggle="modal", href="/video/VvDybmxxIQ4").video.santiago
-					i
-					span #DemocraciaEstancada
+                a(data-target="#santiago", data-toggle="modal", href="/video/VvDybmxxIQ4").video.santiago
+                    i
+                    span #DemocraciaEstancada
 
-				#santiago.modal.hide.fade
-					.modal-body
+                #santiago.modal.hide.fade
+                    .modal-body
 
 
-				a(data-target="#esteban", data-toggle="modal", href="/video/Fkl5J61Pm9c").video.esteban
-					i
-					span #Ideas
+                a(data-target="#esteban", data-toggle="modal", href="/video/Fkl5J61Pm9c").video.esteban
+                    i
+                    span #Ideas
 
-				#esteban.modal.hide.fade
-					.modal-body
+                #esteban.modal.hide.fade
+                    .modal-body
 
 
-				a(data-target="#guido", data-toggle="modal", href="/video/Fec7DW45CJA").video.guido
-					i
-					span #Informacion
+                a(data-target="#guido", data-toggle="modal", href="/video/Fec7DW45CJA").video.guido
+                    i
+                    span #Informacion
 
 
-				#guido.modal.hide.fade
-					.modal-body
+                #guido.modal.hide.fade
+                    .modal-body
 
 
-				a(data-target="#pia", data-toggle="modal", href="/video/syDaoqdMcZI").video.pia
-					i
-					span #DemocraciaEnRed
+                a(data-target="#pia", data-toggle="modal", href="/video/syDaoqdMcZI").video.pia
+                    i
+                    span #DemocraciaEnRed
 
-				#pia.modal.hide.fade
-					.modal-body
+                #pia.modal.hide.fade
+                    .modal-body
 
 
-				a(data-target="#lucas", data-toggle="modal", href="/video/s_uQZGzCxGg").video.lucas
-					i
-					span #Dialogo
+                a(data-target="#lucas", data-toggle="modal", href="/video/s_uQZGzCxGg").video.lucas
+                    i
+                    span #Dialogo
 
-				#lucas.modal.hide.fade
-					.modal-body
+                #lucas.modal.hide.fade
+                    .modal-body
 
 
-				a(data-target="#martin", data-toggle="modal", href="/video/fghHqAPaxuU").video.martin
-					i
-					span #DemocraciaEstancada
+                a(data-target="#martin", data-toggle="modal", href="/video/fghHqAPaxuU").video.martin
+                    i
+                    span #DemocraciaEstancada
 
-				#martin.modal.hide.fade
-					.modal-body
+                #martin.modal.hide.fade
+                    .modal-body
 
 
-				a(data-target="#nicole", data-toggle="modal", href="/video/KLUN5pXOIJc").video.nicole
-					i
-					span #Instituciones
+                a(data-target="#nicole", data-toggle="modal", href="/video/KLUN5pXOIJc").video.nicole
+                    i
+                    span #Instituciones
 
-				#nicole.modal.hide.fade
-					.modal-body
+                #nicole.modal.hide.fade
+                    .modal-body
 
-				a(data-target="#brenda", data-toggle="modal", href="/video/4YQXCMkvvSM").video.brenda
-					i
-					span #Comunidad
+                a(data-target="#brenda", data-toggle="modal", href="/video/4YQXCMkvvSM").video.brenda
+                    i
+                    span #Comunidad
 
-				#brenda.modal.hide.fade
-					.modal-body
+                #brenda.modal.hide.fade
+                    .modal-body
 
 
 
-				//- a(data-target="#partidodelared", data-toggle="modal", href="/video/MYl7vfiqivE").video.video-large
-				//- 	i
-				//- 	span #PartidoDeLaRed
+                //- a(data-target="#partidodelared", data-toggle="modal", href="/video/MYl7vfiqivE").video.video-large
+                //-     i
+                //-     span #PartidoDeLaRed
 
-				//- #partidodelared.modal.hide.fade
-				//- 	.modal-body
-				
+                //- #partidodelared.modal.hide.fade
+                //-     .modal-body
+                
 
-				a(data-target="#agustin", data-toggle="modal", href="/video/PzhmbcvRZpk").video.agustin
-					i
-					span #Ciudadano
-			
-				#agustin.modal.hide.fade
-					.modal-body
-				
-
-
-				a(data-target="#valentina", data-toggle="modal", href="/video/33u8U0czJoQ").video.valentina
-					i
-					span #Franqueza
-
-				#valentina.modal.hide.fade
-					.modal-body
-				
-
-				a(data-target="#sebastian", data-toggle="modal", href="/video/PtVwu9HiAPc").video.sebastian
-					i
-					span #Transparencia
-
-				#sebastian.modal.hide.fade
-					.modal-body
-				
-				a(data-target="#santis", data-toggle="modal", href="/video/vSrl30RuHwM").video.santis
-					i
-					span #Participacion
-			
-				#santis.modal.hide.fade
-					.modal-body
-			
-
-				a(data-target="#gonzalo", data-toggle="modal", href="/video/XTHpiw_2V4w").video.gonzalo
-					i
-					span #Empatia
-
-				#gonzalo.modal.hide.fade
-					.modal-body
-		
-				
-				a(data-target="#mariano", data-toggle="modal", href="/video/u6dvu_pJQbU").video.mariano
-					i
-					span #Derechos
-
-				#mariano.modal.hide.fade
-					.modal-body
-		
-
-				a(data-target="#felipe", data-toggle="modal", href="/video/L16NZJyY19o").video.felipe
-					i
-					span #Red
-
-				#felipe.modal.hide.fade
-					.modal-body
-		
-
-				a(data-target="#francisco", data-toggle="modal", href="/video/oAyAeQSbeuQ").video.francisco
-					i
-					span #Pares
-				#francisco.modal.hide.fade
-					.modal-body
-		
-
-				a(data-target="#pablo", data-toggle="modal", href="/video/hP8MPLKrNPU").video.pablo
-					i
-					span #InteligenciaColectiva
-				#pablo.modal.hide.fade
-					.modal-body
-		
-
-				a(data-target="#ricardo", data-toggle="modal", href="/video/A-mwOr6ZlTA").video.ricardo
-					i
-					span #SoftwareLibre
-				#ricardo.modal.hide.fade
-					.modal-body
-	
-			.clearfix.align-center
-				a(href="http://wiki.partidodelared.org/index.php/Manifiesto_de_la_Red", target="_blank").read-manifiesto.btn Lee el manifiesto de la red
-
-
-
-
-		section.who-we-are.section.clearfix#quienes-somos
-			.section-title
-				img(src="/images/icons/icon-4.png")
-				h2 Pares De La Red
-				.clearfix
-					p.description.left
-						| Desde Mayo de 2012, un grupo de emprendedores de la sociedad civil, la tecnología, la política, educadores y comunicadores se juntan como pares para debatir y llevar adelante el Partido de la Red con el objetivo de instalar la Democracia en Red como sistema de gobierno.
-					p.description.right
-						| Es a partir de aquellas reuniones que el proyecto cobra vida y nos impusimos como meta presentarnos a elecciones distritales y al mismo tiempo, impulsar el desarrollo del software que permita llevar directamente la voz de cada ciudadano a su parlamento correspondiente.
-		
-			.members.clearfix
-				- each member, id in members
-					- if(id >= 50) return;
-					- var status = member.statuses[0] || {}
-					- var date = new Date(status.created_at)
-
-					- if(status.text) {
-						a(target="_blank"
-							, href=member.url
-							, data-toggle="popover"
-							, data-html="true"
-							, data-content= status.text
-							, data-title=member.name) 
-							img(src=member.image)
-					- } else {
-						a(target="_blank"
-							, href=member.url)
-							img(src=member.image)
-					- }
-
-
-			.join-the-team
-				p
-					span Si te interesa participar del equipo del Partido De La Red 
-					a.btn.btn-join(href='#myModal', role='button', data-toggle='modal') Dejanos tus datos para sumarte
-
-					#myModal.modal.hide.fade
-						.modal-header
-							h3 Sumate al partido
-
-						.modal-body
-							form#subForm(action='http://gravityonmars.createsend.com/t/r/s/jdlliyj/', method='post').form-horizontal
-								div.control-group
-									label.control-label(for='name') Nombre:
-									.controls
-										input#name(type='text', name='cm-name')
-
-								div.control-group
-									label.control-label(for='lastname') Apellido:
-									.controls
-										input#lastname(type='text', name='cm-f-ydkhhiu')
-
-								div.control-group
-									label.control-label(for='jdlliyj-jdlliyj') Email:
-									.controls
-										input#jdlliyj-jdlliyj(type='text', name='cm-jdlliyj-jdlliyj')
-								div.control-group
-									label.control-label(for='Localidad') Localidad:
-									.controls
-										select(name='cm-fo-ydkhdui')
-											option(value='3698109') Capital Federal
-											option(value='3698110') Gran Buenos Aires
-											option(value='3698111') Otros
-								p
-									input(type='submit', value='Sumate ahora!').btn.btn-sumate-ahora
-
-
-		section.how-to-join.section.clearfix#colaborar
-
-			.colaborate-box
-				.section-title
-					img(src="/images/icons/icon-5.png")
-					h2 ¿Como puedo colaborar?
-					p.description
-						| Hay varias formas de apoyar esta iniciativa. Hoy necesitamos 4000 adhesiones para conformarnos como Partido en la ciudad de Buenos Aires y financiar el desarrollo de nuestro software.
-			
-				//- a(href="#").help-link.help-money
-				//- 	i 
-				//- 	| Pronto podrás colaborar
-
-
-				//- a(href="#").help-link.ideame
-				//- 	i 
-				//- 	| Pronto podrás colaborar
-
-				a(href="http://wiki.partidodelared.org/index.php/D%C3%B3nde_firmar_como_Adherente", target="_blank").help-link.help-sign
-					i
-					| Firma tu adhesión
-
-
-				//- hr
-				//- p Nuestras puertas están abiertas para todos los que quieran impulsar un cambio real en pos de mejorar nuestra democracia.
-
-
-		section.section.links.clearfix
-			.facebook.link-box
-				span Facebook
-				iframe(src='//www.facebook.com/plugins/like.php?href=http%3A%2F%2Ffacebook.com%2Fpartidodelared&send=false&layout=standard&width=400&show_faces=false&font&colorscheme=light&action=like&height=70', scrolling='no', frameborder='0', allowtransparency='true')
-
-			.twitter.link-box
-				span Twitter
-
-				a.twitter-follow-button(href='https://twitter.com/partidodelared', data-show-count='false', data-size='large') Follow @partidodelared
-					script
-						!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
-				
-				a.twitter-hashtag-button(href='https://twitter.com/intent/tweet?button_hashtag=PartidoDeLaRed', data-size='large') Tweet #PartidoDeLaRed
-					script
-						!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
-
-
-
-
-		footer
-			nav
-				ul.nav
-					li.hide.active
-						a(href='#splash', title='') Somos Red
-					li 	
-						a(href='#argentina', title='') Propuesta
-					li
-						a(href='#democracia', title='') Democracia
-					li
-						a(href='#manifiesto', title='') Manifiesto					
-					li
-						a(href='#quienes-somos', title='') Pares
-					li
-						a(href='#colaborar', title='') Colaborar
-					li
-						a(href="http://wiki.partidodelared.org", target="_blank") Wiki
-					li
-						a(href="http://blog.partidodelared.org", target="_blank") Blog
-			
-			.last-line (CC) 2013 FUNDACION HORMIGAS ARGENTINAS - BUENOS AIRES, ARGENTINA
-
-		script
-			$('.members a').popover({
-				trigger: 'hover',
-				placement: function (tip, element) {
-					var offset = $(element).offset()
-						, width = $(document).outerWidth()
-						, horiz = 0.5 * width - offset.left
-						, horizPlacement = horiz > 0 ? 'right' : 'left'
-					return horizPlacement;
-				}
-			});
-
-		script
-			var _gaq = _gaq || [];
-			_gaq.push(['_setAccount', 'UA-39850000-1']);
-			_gaq.push(['_trackPageview']);
-
-			(function() {
-				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-			})();
+                a(data-target="#agustin", data-toggle="modal", href="/video/PzhmbcvRZpk").video.agustin
+                    i
+                    span #Ciudadano
+            
+                #agustin.modal.hide.fade
+                    .modal-body
+                
+
+
+                a(data-target="#valentina", data-toggle="modal", href="/video/33u8U0czJoQ").video.valentina
+                    i
+                    span #Franqueza
+
+                #valentina.modal.hide.fade
+                    .modal-body
+                
+
+                a(data-target="#sebastian", data-toggle="modal", href="/video/PtVwu9HiAPc").video.sebastian
+                    i
+                    span #Transparencia
+
+                #sebastian.modal.hide.fade
+                    .modal-body
+                
+                a(data-target="#santis", data-toggle="modal", href="/video/vSrl30RuHwM").video.santis
+                    i
+                    span #Participacion
+            
+                #santis.modal.hide.fade
+                    .modal-body
+            
+
+                a(data-target="#gonzalo", data-toggle="modal", href="/video/XTHpiw_2V4w").video.gonzalo
+                    i
+                    span #Empatia
+
+                #gonzalo.modal.hide.fade
+                    .modal-body
+        
+                
+                a(data-target="#mariano", data-toggle="modal", href="/video/u6dvu_pJQbU").video.mariano
+                    i
+                    span #Derechos
+
+                #mariano.modal.hide.fade
+                    .modal-body
+        
+
+                a(data-target="#felipe", data-toggle="modal", href="/video/L16NZJyY19o").video.felipe
+                    i
+                    span #Red
+
+                #felipe.modal.hide.fade
+                    .modal-body
+        
+
+                a(data-target="#francisco", data-toggle="modal", href="/video/oAyAeQSbeuQ").video.francisco
+                    i
+                    span #Pares
+                #francisco.modal.hide.fade
+                    .modal-body
+        
+
+                a(data-target="#pablo", data-toggle="modal", href="/video/hP8MPLKrNPU").video.pablo
+                    i
+                    span #InteligenciaColectiva
+                #pablo.modal.hide.fade
+                    .modal-body
+        
+
+                a(data-target="#ricardo", data-toggle="modal", href="/video/A-mwOr6ZlTA").video.ricardo
+                    i
+                    span #SoftwareLibre
+                #ricardo.modal.hide.fade
+                    .modal-body
+    
+            .clearfix.align-center
+                a(href="http://wiki.partidodelared.org/index.php/Manifiesto_de_la_Red", target="_blank").read-manifiesto.btn Lee el manifiesto de la red
+
+
+
+
+        section.who-we-are.section.clearfix#quienes-somos
+            .section-title
+                img(src="/images/icons/icon-4.png")
+                h2 Pares De La Red
+                .clearfix
+                    p.description.left
+                        | Desde Mayo de 2012, un grupo de emprendedores de la sociedad civil, la tecnología, la política, educadores y comunicadores se juntan como pares para debatir y llevar adelante el Partido de la Red con el objetivo de instalar la Democracia en Red como sistema de gobierno.
+                    p.description.right
+                        | Es a partir de aquellas reuniones que el proyecto cobra vida y nos impusimos como meta presentarnos a elecciones distritales y al mismo tiempo, impulsar el desarrollo del software que permita llevar directamente la voz de cada ciudadano a su parlamento correspondiente.
+        
+            .members.clearfix
+                - each member, id in members
+                    - if(id >= 50) return;
+                    - var status = member.statuses[0] || {}
+                    - var date = new Date(status.created_at)
+
+                    - if(status.text) {
+                        a(target="_blank"
+                            , href=member.url
+                            , data-toggle="popover"
+                            , data-html="true"
+                            , data-content= status.text
+                            , data-title=member.name) 
+                            img(src=member.image)
+                    - } else {
+                        a(target="_blank"
+                            , href=member.url)
+                            img(src=member.image)
+                    - }
+
+
+            .join-the-team
+                p
+                    span Si te interesa participar del equipo del Partido De La Red 
+                    a.btn.btn-join(href='#myModal', role='button', data-toggle='modal') Dejanos tus datos para sumarte
+
+                    #myModal.modal.hide.fade
+                        .modal-header
+                            h3 Sumate al partido
+
+                        .modal-body
+                            form#subForm(action='http://gravityonmars.createsend.com/t/r/s/jdlliyj/', method='post').form-horizontal
+                                div.control-group
+                                    label.control-label(for='name') Nombre:
+                                    .controls
+                                        input#name(type='text', name='cm-name')
+
+                                div.control-group
+                                    label.control-label(for='lastname') Apellido:
+                                    .controls
+                                        input#lastname(type='text', name='cm-f-ydkhhiu')
+
+                                div.control-group
+                                    label.control-label(for='jdlliyj-jdlliyj') Email:
+                                    .controls
+                                        input#jdlliyj-jdlliyj(type='text', name='cm-jdlliyj-jdlliyj')
+                                div.control-group
+                                    label.control-label(for='Localidad') Localidad:
+                                    .controls
+                                        select(name='cm-fo-ydkhdui')
+                                            option(value='3698109') Capital Federal
+                                            option(value='3698110') Gran Buenos Aires
+                                            option(value='3698111') Otros
+                                p
+                                    input(type='submit', value='Sumate ahora!').btn.btn-sumate-ahora
+
+
+        section.how-to-join.section.clearfix#colaborar
+
+            .colaborate-box
+                .section-title
+                    img(src="/images/icons/icon-5.png")
+                    h2 ¿Como puedo colaborar?
+                    p.description
+                        | Hay varias formas de apoyar esta iniciativa. Hoy necesitamos 4000 adhesiones para conformarnos como Partido en la ciudad de Buenos Aires y financiar el desarrollo de nuestro software.
+            
+                .help-link.help-money
+                    i 
+                    script(src='http://coinwidget.com/widget/coin.js')
+                    script
+                        CoinWidgetCom.go({
+                        wallet_address: "153biPL6t6Nb9ib7ZFZN3MgABHqSAhRBVT"
+                        , currency: "bitcoin"
+                        , counter: "count"
+                        , alignment: "bl"
+                        , qrcode: true
+                        , auto_show: false
+                        , lbl_button: "Donate"
+                        , lbl_address: "My Bitcoin Address:"
+                        , lbl_count: "donations"
+                        , lbl_amount: "BTC"
+                        });
+
+
+
+                //- a(href="#").help-link.ideame
+                //-     i 
+                //-     | Pronto podrás colaborar
+
+                a(href="http://wiki.partidodelared.org/index.php/D%C3%B3nde_firmar_como_Adherente", target="_blank").help-link.help-sign
+                    i
+                    | Firma tu adhesión
+
+
+
+
+                //- hr
+                //- p Nuestras puertas están abiertas para todos los que quieran impulsar un cambio real en pos de mejorar nuestra democracia.
+
+
+        section.section.links.clearfix
+            .facebook.link-box
+                span Facebook
+                iframe(src='//www.facebook.com/plugins/like.php?href=http%3A%2F%2Ffacebook.com%2Fpartidodelared&send=false&layout=standard&width=400&show_faces=false&font&colorscheme=light&action=like&height=70', scrolling='no', frameborder='0', allowtransparency='true')
+
+            .twitter.link-box
+                span Twitter
+
+                a.twitter-follow-button(href='https://twitter.com/partidodelared', data-show-count='false', data-size='large') Follow @partidodelared
+                    script
+                        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+                
+                a.twitter-hashtag-button(href='https://twitter.com/intent/tweet?button_hashtag=PartidoDeLaRed', data-size='large') Tweet #PartidoDeLaRed
+                    script
+                        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+
+
+
+
+        footer
+            nav
+                ul.nav
+                    li.hide.active
+                        a(href='#splash', title='') Somos Red
+                    li  
+                        a(href='#argentina', title='') Propuesta
+                    li
+                        a(href='#democracia', title='') Democracia
+                    li
+                        a(href='#manifiesto', title='') Manifiesto                  
+                    li
+                        a(href='#quienes-somos', title='') Pares
+                    li
+                        a(href='#colaborar', title='') Colaborar
+                    li
+                        a(href="http://wiki.partidodelared.org", target="_blank") Wiki
+                    li
+                        a(href="http://blog.partidodelared.org", target="_blank") Blog
+            
+            .last-line (CC) 2013 FUNDACION HORMIGAS ARGENTINAS - BUENOS AIRES, ARGENTINA
+
+        script
+            $('.members a').popover({
+                trigger: 'hover',
+                placement: function (tip, element) {
+                    var offset = $(element).offset()
+                        , width = $(document).outerWidth()
+                        , horiz = 0.5 * width - offset.left
+                        , horizPlacement = horiz > 0 ? 'right' : 'left'
+                    return horizPlacement;
+                }
+            });
+
+        script
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-39850000-1']);
+            _gaq.push(['_trackPageview']);
+
+            (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
 
 
 

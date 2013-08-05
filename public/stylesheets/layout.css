@@ -679,11 +679,10 @@ section.section.how-to-join .colaborate-box {
 section.section.how-to-join .colaborate-box .help-link {
   margin-bottom: 20px;
   width: 300px;
-  display: block;
+  display: inline-block;
   text-align: center;
-  background: #333;
   padding: 2%;
-  margin: auto;
+  margin: auto 20px;
   color: #fff;
   text-decoration: none;
   font-family: "brandon-grotesque";
@@ -692,7 +691,7 @@ section.section.how-to-join .colaborate-box .help-link {
   letter-spacing: 1px;
   font-size: 11px;
   border-radius: 3px;
-  background: #222 url("../images/logo-kickstarter.png") center 56px no-repeat;
+  background: #fe8a31 url("../images/logo-bitcoin.png") center 56px no-repeat;
 }
 section.section.how-to-join .colaborate-box .help-link.ideame {
   background: #fff url("../images/logo-ideame.png") center 40px no-repeat;
