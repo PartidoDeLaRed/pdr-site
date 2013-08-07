@@ -289,11 +289,11 @@ section.section.splash .section-title .btn.btn-kickstarter {
   border-color: #2cabed;
   background-color: #2cabed;
   color: #fff;
-  font-size:20px;
-  font-weight:800;
+  font-size: 20px;
+  font-weight: 800;
   vertical-align: middle;
-  padding-left:10px;
-  padding-right:10px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 section.section.splash .section-title .btn.btn-kickstarter:hover {
   background-color: #fff;
