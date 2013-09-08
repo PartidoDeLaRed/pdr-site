@@ -50,4 +50,4 @@ setInterval(function() {
 
     console.log('members updated!')
   });
-}, 1000 * 60 * 60); // 1hr update timeout
+}, 1000 * 60 * 30); // 1hr update timeout
