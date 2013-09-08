@@ -77,22 +77,16 @@ html(lang='en')
                 .section-content
                     p
                         img(src="images/logo.png")
-                    h1 #FESTEJEMOSENRED
+                    h1 #Difundamos
                     p.description
-                        | Nos pedían 4000 adhesiones para presentarnos a las elecciones locales porteñas.
+                        | Si el 27 de octubre estás decidido a votar ideas
+                        br 
+                        | votemos al @PartidodelaRed
+              
                     p.description
-                        span Nos validaron
-
-                    .countdown-container
-                        span 4
-                        span 2
-                        span 4
-                        span 4
-                    p.description
-                        span ¡Primer objetivo cumplido!
-                        a.btn.btn-kickstarter(target="_blank",href="http://twitter.com/intent/tweet?text=%23FestejemosEnRed+que+el+%40PartidoDeLaRed+logró+las+4000+adhesiones+válidas+para+presentarnos+en+Octubre!!+%23Elecciones2013").share-twitter 
+                        a.btn.btn-kickstarter(target="_blank",href="http://twitter.com/intent/tweet?text=Si+el+27+de+octubre+estás+decidido+a+votar+ideas%2C+votemos+al+%40PartidodelaRed+http%3A%2F%2Fvotemosideas.com%2FPartidodelaRed%2Findex.php+%23Elecciones2013+%2327O+%23CortaBoletaPdR").share-twitter 
                             span.flaticon.social.twitter
-                            span FESTEJEMOS
+                            span Difundamos
             a(href="#argentina").arrow-down
                 i
 
@@ -404,8 +398,15 @@ html(lang='en')
                     img(src="/images/icons/icon-5.png")
                     h2 ¿Como puedo colaborar?
                     p.description
-                        | Hay varias formas de apoyar esta iniciativa. Hoy necesitamos 4000 adhesiones para conformarnos como Partido en la ciudad de Buenos Aires y financiar el desarrollo de nuestro software.
+                        | Hay varias formas de apoyar esta iniciativa.
             
+
+
+                a(href="http://wiki.partidodelared.org/index.php/Instrucciones_para_participar", target="_blank").help-link.help-sign
+                    i
+                    | Ver Instrucciones
+
+
                 .help-link.help-money
                     i 
                     script(src='http://coinwidget.com/widget/coin.js')
@@ -425,21 +426,6 @@ html(lang='en')
 
 
 
-                //- a(href="#").help-link.ideame
-                //-     i 
-                //-     | Pronto podrás colaborar
-
-                a(href="http://wiki.partidodelared.org/index.php/D%C3%B3nde_firmar_como_Adherente", target="_blank").help-link.help-sign
-                    i
-                    | Firma tu adhesión
-
-
-
-
-                //- hr
-                //- p Nuestras puertas están abiertas para todos los que quieran impulsar un cambio real en pos de mejorar nuestra democracia.
-
-
         section.section.links.clearfix
             .facebook.link-box
                 span Facebook
@@ -452,9 +438,14 @@ html(lang='en')
                     script
                         !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
                 
-                a.twitter-hashtag-button(href='https://twitter.com/intent/tweet?button_hashtag=PartidoDeLaRed', data-size='large') Tweet #PartidoDeLaRed
-                    script
-                        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+                //- a.twitter-hashtag-button(href='https://twitter.com/intent/tweet?button_hashtag=PartidoDeLaRed', data-size='large') Tweet #PartidoDeLaRed
+                //-     script
+                //-         !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+
+                a.twitter-share-button(href='https://twitter.com/share', data-text='Si el 27 de octubre estás decidido a votar ideas, votemos al @PartidodelaRed http://votemosideas.com/PartidodelaRed/index.php #Elecciones2013 #27O #CortaBoletaPdR', data-via='partidodelared', data-size='large') Tweet #PartidoDeLaRed
+                  script
+                      !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+
 
 
 
