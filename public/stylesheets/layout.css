@@ -249,10 +249,6 @@ section.section.splash .section-title {
 section.section.splash .section-title .section-content {
   max-width: 960px;
   margin: auto;
-  opacity: 0;
-  animation: fadeIn ease-in 1;
-  animation-fill-mode: forwards;
-  animation-duration: 1s;
 }
 section.section.splash .section-title .section-content strong {
   font-size: 24px;
@@ -498,6 +494,9 @@ section.section.videos-section .videos .video.video-large {
   background-image: url("../images/videos/all.png");
   width: 516px;
   height: 320px;
+}
+section.section.candidatos-section {
+  background-color: #f9f9f9;
 }
 section.section.democracy-network {
   background: #fff url("../images/bg-argentina.jpg") fixed;

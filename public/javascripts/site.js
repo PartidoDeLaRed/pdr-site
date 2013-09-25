@@ -76,7 +76,7 @@ $(function(){
 
 	var new_height = $(window).height();
 
-	$('section.section.splash').delay(300).animate({height: new_height}, 1000, function(){
+	$('section.section.splash').css({height: new_height}, 1000, function(){
 		$('.navbar').scrollspy();
 	});
 
@@ -84,7 +84,7 @@ $(function(){
 
 		var new_height = $(window).height();
 
-		$('section.section.splash').animate({height: new_height}, 10);
+		$('section.section.splash').css({height: new_height}, 10);
 	});
 
 	$('.dot').popover({trigger: 'hover'})
